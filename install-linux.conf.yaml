@@ -5,8 +5,9 @@
 - clean: ['~']
 
 - link:
-    ~/.mydotfiles: ''
-    ~/.myconf: 'myconf.conf'
+    ~/.dotfiles: ''
+    ~/.myconf: 'macos/myconf.conf'
+    ~/.bash_profile: 'macos/bash_profile.sh'
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
