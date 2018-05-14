@@ -1,0 +1,12 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.mydotfiles: ''
+    ~/.myconf: 'myconf.conf'
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
