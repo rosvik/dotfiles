@@ -5,21 +5,14 @@ My own dotfile repo for keeping track of configs across systems. I try to keep t
 I use [Dotbot](https://git.io/dotbot) to handle installation.
 
 ## Installation
-First, clone this repo to a place where you want to keep it permanently. A symlink to the folder will be placed at `~/.dotfiles`.
+1. The dotfiles will be placed at `~`, so make sure you are logged in with the right user, or change the `clean` value in the `install-[OS].conf.yaml` file.
 
+2. Clone this repo to a place where you want to keep it permanently. A symlink to the folder will be placed at `~/.dotfiles`.
 
-### MacOS
-
+3. 
 ```
-./install-macos
-```
-
-### Linux
-```
-./install-linux
+./install-[OS]
 ```
 
 # Credits
-Built on: https://github.com/anishathalye/dotbot
-
-To update, run `git submodule update --remote dotbot`
+Dotbot: https://github.com/anishathalye/dotbot

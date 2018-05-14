@@ -1,15 +1,13 @@
-# Aliases
-alias ip="curl icanhazip.com" # Your public IP address
+# -------------------
+#    LINUX ALIASES
+# -------------------
+
 alias ls="ls --color"
 alias ll="ls -lah --color" # List all files in current directory in long list format
-alias ldir="ls -la | grep ^d" # List all directories in current directory in long list format
-alias up="uptime" # Computer uptime
 alias py="python3.6"
-#alias pip3="pip3.6"
-#alias pip="pip3.6"
 alias diskutil="df -h"
 
-# Shortcuts
+# Directory shortcuts
 alias db="cd /var/www/qore.no/db;pwd"
 alias beta="cd /var/www/qore.no/beta;pwd"
 alias qore="cd /var/www/qore.no;pwd"

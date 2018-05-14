@@ -1,7 +1,8 @@
+# ---------------------------
+#    .bash_profile - MACOS
+# ---------------------------
 #
-# .bash_profile, macOS
-#
-# Author: Johannes T. Røsvik
+#  Author: Johannes T. Røsvik
 #
 
 
@@ -9,14 +10,14 @@
 #    ALIASES
 # ----------------
 
-# Import alias file
-if [ -f ~/.bash_aliases ]; then
-	. ~/.bash_aliases
+# Import cross platform aliases
+if [ -f ~/.bash_aliases_unix ]; then
+	. ~/.bash_aliases_unix
 fi
 
-# Import cross platform aliases
-if [ -f ~/.bash_aliases_global ]; then
-	. ~/.bash_aliases_global
+# Import MacOS alias file
+if [ -f ~/.bash_aliases ]; then
+	. ~/.bash_aliases
 fi
 
 
@@ -41,9 +42,10 @@ export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 export PS1="\[$(tput setaf 6)\]\W\[$(tput setaf 7)$(tput bold)\] > \[$(tput sgr0)\]"
 #export PS1="\W > "
 
-# -----------
-#    PATHS
-# -----------
+
+# ----------------
+#    PATH SETUP
+# ----------------
 
 # Java and Maven
 export JAVA_HOME="$(/usr/libexec/java_home)"
@@ -68,31 +70,7 @@ PATH="/usr/local/Cellar/php/7.2.3_2/bin:$PATH"
 
 export PATH
 
-
-# -------------
-#    ALIASES
-# -------------
-
-# Composer
-alias composer="php /usr/local/bin/composer.phar"
-
-# Chrome
-alias chrome="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary"
-alias chrome-headless="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary --headless --disable-gpu --remote-debugging-port=9222"
-
-# Directory shortcuts
-alias ntnu="cd ~/Documents/NTNU;pwd"
-alias gitdir="cd ~/Documents/Git;pwd"
-alias qore="cd ~/OneDrive/qore;pwd"
-
-# DIV
-alias ip="curl icanhazip.com" # Public IP address
-alias ll="ls -la" # List all files in current directory in long list format
-alias ldir="ls -la | grep ^d" # List all directories in current directory in long list format
-alias o="open ." # Open the current directory in Finder
-alias up="uptime" # Computer uptime
-alias py="python3" # Make using python less cancer
-
+# ¯\_(ツ)_/¯ 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/rosvik/.sdkman"
 [[ -s "/Users/rosvik/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/rosvik/.sdkman/bin/sdkman-init.sh"
