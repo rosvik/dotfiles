@@ -6,8 +6,9 @@
 
 - link:
     ~/.dotfiles: ''
-    ~/.myconf: 'macos/myconf.conf'
-    ~/.bash_profile: 'macos/bash_profile.sh'
+    ~/.bash_profile: 'linux/bashrc.sh'
+    ~/.bash_aliases_unix: 'unix/bash_aliases.sh'
+    ~/.bash_aliases_unix: 'unix/bash_aliases_unix.sh'
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
