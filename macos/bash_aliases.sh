@@ -6,8 +6,9 @@ alias o="open ." # Open the current directory in Finder
 alias py="python3" # Make using python less cancer
 alias ll="ls -la" # List all files in current directory in long list format
 
-# Composer
+# PHP
 alias composer="php /usr/local/bin/composer.phar"
+alias hs="vagrant up 56b15ac"
 
 # Chrome
 alias chrome="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary"
