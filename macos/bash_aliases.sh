@@ -8,7 +8,7 @@ alias ll="ls -la" # List all files in current directory in long list format
 
 # PHP
 alias composer="php /usr/local/bin/composer.phar"
-alias hs="vagrant up 56b15ac"
+alias hs="vagrant up 56b15ac;npm run watch"
 
 # Chrome
 alias chrome="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary"
