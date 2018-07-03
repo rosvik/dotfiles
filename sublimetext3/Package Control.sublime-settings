@@ -10,12 +10,15 @@
 		"Blade Snippets",
 		"CSS3",
 		"Emmet",
+		"Javascript Beautify",
+		"Laravel 5 Snippets",
 		"Laravel Blade Highlighter",
 		"Nodejs",
 		"P3 Assembly",
 		"Package Control",
 		"rsub",
 		"Sass",
-		"Swift"
+		"Swift",
+		"WordCount"
 	]
 }

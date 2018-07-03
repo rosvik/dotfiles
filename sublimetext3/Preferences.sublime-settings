@@ -1,5 +1,5 @@
 {
-	"color_scheme": "Packages/ayu/ayu-mirage.tmTheme",
+	"color_scheme": "Packages/ayu/ayu-dark.tmTheme",
 	"ensure_newline_at_eof_on_save": true,
 	"font_size": 15,
 	"highlight_line": true,
@@ -11,6 +11,5 @@
 	"scroll_past_end": true,
 	"shift_tab_unindent": true,
 	"show_full_path": true,
-	"theme": "ayu-mirage.sublime-theme",
-	// "wrap_width": 80
+	"theme": "ayu-dark.sublime-theme"
 }
