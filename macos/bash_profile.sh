@@ -33,6 +33,7 @@ export LANG=en_US.UTF-8
 # Generate LSCOLORS: https://geoff.greer.fm/lscolors/
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
+# export LS_COLORS=gxBxhxDxfxhxhxhxhxcxcx
 
 # Set prompt
 # Parameters: http://osxdaily.com/2006/12/11/how-to-customize-your-terminal-prompt/
@@ -74,3 +75,5 @@ export PATH
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/rosvik/.sdkman"
 [[ -s "/Users/rosvik/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/rosvik/.sdkman/bin/sdkman-init.sh"
+
+export PATH="$HOME/.cargo/bin:$PATH"
