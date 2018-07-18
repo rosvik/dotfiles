@@ -16,5 +16,5 @@ alias chrome-headless="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/G
 
 # Directory shortcuts
 alias ntnu="cd ~/Documents/NTNU;pwd"
-alias gitdir="cd ~/Documents/Git;pwd"
+alias gitdir="cd ~/Git;pwd"
 alias qore="cd ~/OneDrive/qore;pwd"
