@@ -20,6 +20,6 @@ To install the config files for Sublime Text 3, a few additional steps is requir
 4. Install Package Control
 5. Restart Sublime Text
 
-# Credits
+## Credits
 I use Dotbot by Anish Athalye to handle installation: 
 https://github.com/anishathalye/dotbot
