@@ -9,6 +9,7 @@
     ~/.bashrc: 'linux/bashrc.sh'
     ~/.bash_aliases: 'linux/bash_aliases.sh'
     ~/.bash_aliases_unix: 'unix/bash_aliases_unix.sh'
+    ~/.nanorc: 'unix/nanorc.sh'
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
