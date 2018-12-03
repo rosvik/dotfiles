@@ -129,6 +129,8 @@ fi
 #  Author: Johannes T. Røsvik
 #
 
+export SHELL="bash -l"
+
 export LC_ALL=en_US.UTF-8
 
 # Laravel vendor public access:
