@@ -25,6 +25,8 @@ fi
 #    BASH SETUP
 # ----------------
 
+export SHELL="bash -l"
+
 # Setting locale settings
 export LC_ALL=en_US.UTF-8  
 export LANG=en_US.UTF-8
@@ -77,3 +79,6 @@ export SDKMAN_DIR="/Users/rosvik/.sdkman"
 [[ -s "/Users/rosvik/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/rosvik/.sdkman/bin/sdkman-init.sh"
 
 export PATH="$HOME/.cargo/bin:$PATH"
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
