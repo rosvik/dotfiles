@@ -5,6 +5,7 @@
 	"highlight_line": true,
 	"ignored_packages":
 	[
+		"A File Icon",
 		"Laravel Blade Highlighter",
 		"Vintage"
 	],

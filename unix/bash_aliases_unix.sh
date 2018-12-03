@@ -12,6 +12,7 @@ alias t="tree -CF --filelimit 25 --dirsfirst"
 # Display connected drives
 alias disks="df -h"
 alias disk="df -h"
+alias daisy="ncdu"
 
 alias ..="cd .."
 alias ...="cd ../.."
