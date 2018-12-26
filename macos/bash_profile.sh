@@ -25,7 +25,8 @@ fi
 #    BASH SETUP
 # ----------------
 
-export SHELL="bash -l"
+export EDITOR="nano"
+export NCDU_SHELL="bash -l"
 
 # Setting locale settings
 export LC_ALL=en_US.UTF-8  
@@ -35,15 +36,11 @@ export LANG=en_US.UTF-8
 # Generate LSCOLORS: https://geoff.greer.fm/lscolors/
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
-# export LS_COLORS=gxBxhxDxfxhxhxhxhxcxcx
 
 # Set prompt
 # Parameters: http://osxdaily.com/2006/12/11/how-to-customize-your-terminal-prompt/
-
-#PS1="${RED}\W${RESET} ${BOLD}>${RESET} "
-
 export PS1="\[$(tput setaf 6)\]\W\[$(tput setaf 7)$(tput bold)\] > \[$(tput sgr0)\]"
-#export PS1="\W > "
+#PS1="${RED}\W${RESET} ${BOLD}>${RESET} "
 
 
 # ----------------
@@ -81,4 +78,3 @@ export SDKMAN_DIR="/Users/rosvik/.sdkman"
 export PATH="$HOME/.cargo/bin:$PATH"
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
-

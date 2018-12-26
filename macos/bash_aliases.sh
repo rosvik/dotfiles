@@ -2,9 +2,10 @@
 #    MACOS ALIASES
 # -------------------
 
+alias ll="ls -laF" # List all files in current directory in long list format
 alias o="open ." # Open the current directory in Finder
 alias py="python3" # Make using python less cancer
-alias ll="ls -laF" # List all files in current directory in long list format
+alias daisy="ncdu --color dark"
 
 # PHP
 alias composer="php /usr/local/bin/composer.phar"

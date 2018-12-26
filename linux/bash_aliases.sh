@@ -2,10 +2,11 @@
 #    LINUX ALIASES
 # -------------------
 
-alias ls="ls --color"
 alias ll="ls -lah --color" # List all files in current directory in long list format
+alias ls="ls --color"
 alias py="python3.6"
 alias diskutil="df -h"
+alias daisy="ncdu"
 
 # Directory shortcuts
 alias db="cd /var/www/qore.no/db;pwd"
