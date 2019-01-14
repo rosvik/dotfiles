@@ -7,7 +7,7 @@ alias ldir="ls -la | grep ^d" # List all directories in current directory in lon
 alias up="uptime" # Computer uptime
 alias reload="exec bash -l"
 alias t="tree -CF --filelimit 25 --dirsfirst"
-alias portsplz="D3 gogs > sudo lsof -i -P -n | grep LISTEN"
+alias portsplz="sudo lsof -i -P -n | grep LISTEN"
 
 # Display connected drives
 alias disks="df -h"
