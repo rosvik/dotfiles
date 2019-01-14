@@ -7,6 +7,7 @@ alias o="open ." # Open the current directory in Finder
 alias py="python3" # Make using python less cancer
 alias daisy="ncdu --color dark"
 alias yt-best="youtube-dl -f bestvideo+bestaudio"
+alias firefox="/Applications/Firefox.app/Contents/MacOS/firefox-bin"
 
 # PHP
 alias composer="php /usr/local/bin/composer.phar"
