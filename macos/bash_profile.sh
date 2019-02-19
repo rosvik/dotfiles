@@ -8,9 +8,9 @@
 #
 
 
-# ----------------
+# -------------
 #    ALIASES
-# ----------------
+# -------------
 
 # Import cross platform aliases
 if [ -f ~/.bash_aliases_unix ]; then
@@ -22,11 +22,11 @@ if [ -f ~/.bash_aliases ]; then
 	. ~/.bash_aliases
 fi
 
-# ----------------
+# -------------
 #    SCRIPTS
-# ----------------
+# -------------
 
-# GitKraken
+# Open repo in GitKraken
 kraken() {
 	# Set the $target variable by temporarily going there
 	current="$PWD";cd "$1";target="$PWD";cd "$current"
@@ -35,20 +35,18 @@ kraken() {
 	open -a "GitKraken" --args -p "$target";
 }
 
+# Open URL or file in Safari.app
 safari() {
+	# https://stackoverflow.com/a/3184819/5976426
 	regex="(https?|ftp|file)://[-A-Za-z0-9\+&@#/%?=~_|!:,.;]*[-A-Za-z0-9\+&@#/%=~_|]"
 	string="$1"
 	if [[ $string =~ $regex ]]
-	then 
-		# URL valid
+	then # URL valid
 		osascript -e "tell application \"Safari\" to open location \"$1\""
-	else
-		# URL not valid
-
+	else # URL not valid
 		# Set the $target variable to absolute path
 		# https://stackoverflow.com/a/3915420/5976426
 		target="$(cd "$(dirname "$1")"; pwd -P)/$(basename "$1")"
-
 		osascript -e "tell application \"Safari\" to open location \"$target\""
 	fi
 }
