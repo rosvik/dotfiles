@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # ---------------------------
 #    .bash_profile - MACOS
 # ---------------------------
@@ -20,6 +22,36 @@ if [ -f ~/.bash_aliases ]; then
 	. ~/.bash_aliases
 fi
 
+# ----------------
+#    SCRIPTS
+# ----------------
+
+# GitKraken
+kraken() {
+	# Set the $target variable by temporarily going there
+	current="$PWD";cd "$1";target="$PWD";cd "$current"
+
+	# Will open GitKraken to parameter given in first argument
+	open -a "GitKraken" --args -p "$target";
+}
+
+safari() {
+	regex="(https?|ftp|file)://[-A-Za-z0-9\+&@#/%?=~_|!:,.;]*[-A-Za-z0-9\+&@#/%=~_|]"
+	string="$1"
+	if [[ $string =~ $regex ]]
+	then 
+		# URL valid
+		osascript -e "tell application \"Safari\" to open location \"$1\""
+	else
+		# URL not valid
+
+		# Set the $target variable to absolute path
+		# https://stackoverflow.com/a/3915420/5976426
+		target="$(cd "$(dirname "$1")"; pwd -P)/$(basename "$1")"
+
+		osascript -e "tell application \"Safari\" to open location \"$target\""
+	fi
+}
 
 # ----------------
 #    BASH SETUP
@@ -47,10 +79,12 @@ export PS1="\[$(tput setaf 6)\]\W\[$(tput setaf 7)$(tput bold)\] > \[$(tput sgr0
 #    PATH SETUP
 # ----------------
 
-# Java and Maven
+# Java
 export JAVA_HOME="$(/usr/libexec/java_home)"
 export M2_HOME=/usr/local/apache-maven-3.3.9
 export M2=$M2_HOME/bin
+export GRADLE_HOME=$(brew info gradle | grep /usr/local/Cellar/gradle | awk '{print $1}')
+
 PATH=$M2:$PATH
 
 # Python 3.6
