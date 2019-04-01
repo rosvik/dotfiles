@@ -1,0 +1,53 @@
+// Place your settings in this file to overwrite the default settings
+{
+  // Controls if the editor will insert spaces for tabs. Accepted values:  "auto", true, false. If set to "auto", the value will be guessed when a file is opened.
+  "editor.insertSpaces": false,
+
+  // Controlsa the rendering size of tabs in characters. Accepted values: "auto", 2, 4, 6, etc. If set to "auto", the value will be guessed when a file is opened.
+  "editor.tabSize": 4,
+
+  // Controls after how many characters the editor will wrap to the next line. Setting this to 0 turns on viewport width wrapping
+  "editor.wordWrapColumn": 100,
+  "editor.rulers": [100],
+  "editor.wordWrap": "wordWrapColumn",
+
+  // Wrap at ruler in markdown
+  "[markdown]": {
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.quickSuggestions": false
+  },
+
+  // Controls if the editor should automatically format the line after typing
+  "editor.formatOnType": true,
+
+  // Prettier format on save
+  "editor.formatOnSave": false,
+  // Enable per-language
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  "[vue]": {
+    "editor.formatOnSave": false
+  },
+
+  "workbench.colorTheme": "Ayu Dark",
+  "workbench.iconTheme": "material-icon-theme",
+  "material-icon-theme.showWelcomeMessage": false,
+  "window.zoomLevel": 1,
+
+  // https://github.com/crsandeep/simple-react-full-stack
+  "eslint.alwaysShowStatus": true,
+  "eslint.autoFixOnSave": false,
+  
+  "prettier.eslintIntegration": false,
+  
+  "workbench.activityBar.visible": false,
+  "workbench.editor.showTabs": false,
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.statusBar.feedback.visible": false,
+  "vsicons.dontShowNewVersionMessage": true,
+
+  "code-runner.executorMapByFileExtension": {
+    ".pde": "processing-java --sketch=$dir --run"
+  }
+}

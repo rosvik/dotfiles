@@ -11,6 +11,9 @@
     ~/.bash_aliases_unix: 'unix/bash_aliases_unix.sh'
     ~/.nanorc: 'unix/nanorc.sh'
     ~/Library/Application Support/Sublime Text 3/Packages/User: 'sublimetext3/'
+    ~/Library/Application Support/Code/User/keybindings.json: 'vscode/keybindings.json'
+    ~/Library/Application Support/Code/User/settings.json: 'vscode/settings.json'
+    ~/Library/Application Support/Code/User/snippets: 'vscode/snippets/'
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
