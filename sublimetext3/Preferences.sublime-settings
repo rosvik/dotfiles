@@ -1,7 +1,7 @@
 {
 	"color_scheme": "Packages/ayu/ayu-dark.tmTheme",
 	"ensure_newline_at_eof_on_save": true,
-	"font_size": 15,
+	"font_size": 13,
 	"highlight_line": true,
 	"ignored_packages":
 	[
