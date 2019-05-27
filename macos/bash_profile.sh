@@ -22,35 +22,6 @@ if [ -f ~/.bash_aliases ]; then
 	. ~/.bash_aliases
 fi
 
-# -------------
-#    SCRIPTS
-# -------------
-
-# Open repo in GitKraken
-kraken() {
-	# Set the $target variable by temporarily going there
-	current="$PWD";cd "$1";target="$PWD";cd "$current"
-
-	# Will open GitKraken to parameter given in first argument
-	open -a "GitKraken" --args -p "$target";
-}
-
-# Open URL or file in Safari.app
-safari() {
-	# https://stackoverflow.com/a/3184819/5976426
-	regex="(https?|ftp|file)://[-A-Za-z0-9\+&@#/%?=~_|!:,.;]*[-A-Za-z0-9\+&@#/%=~_|]"
-	string="$1"
-	if [[ $string =~ $regex ]]
-	then # URL valid
-		osascript -e "tell application \"Safari\" to open location \"$1\""
-	else # URL not valid
-		# Set the $target variable to absolute path
-		# https://stackoverflow.com/a/3915420/5976426
-		target="$(cd "$(dirname "$1")"; pwd -P)/$(basename "$1")"
-		osascript -e "tell application \"Safari\" to open location \"$target\""
-	fi
-}
-
 # ----------------
 #    BASH SETUP
 # ----------------
@@ -88,6 +59,9 @@ PATH=$M2:$PATH
 # Python 3.6
 PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
 
+# Some Python modules
+PATH="~/.local/bin:$PATH"
+
 # Added by Miniconda3 installer
 PATH="~/.miniconda3/bin:$PATH"
 
@@ -99,6 +73,9 @@ PATH="~/.composer/vendor/bin:$PATH"
 
 # PHP 7.2
 PATH="/usr/local/Cellar/php/7.2.3_2/bin:$PATH"
+
+# Custom user scripts
+PATH="~/.scripts:${PATH}"
 
 export PATH
 

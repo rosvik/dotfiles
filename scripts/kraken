@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# Set the $target variable by temporarily going there
+current="$PWD";cd "$1";target="$PWD";cd "$current"
+
+# Will open GitKraken to parameter given in first argument
+open -a "GitKraken" --args -p "$target";

@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+# https://stackoverflow.com/a/3184819/5976426
+regex="(https?|ftp|file)://[-A-Za-z0-9\+&@#/%?=~_|!:,.;]*[-A-Za-z0-9\+&@#/%=~_|]"
+string="$1"
+if [[ $string =~ $regex ]]
+then # URL valid
+	osascript -e "tell application \"Safari\" to open location \"$1\""
+else # URL not valid
+	# Set the $target variable to absolute path
+	# https://stackoverflow.com/a/3915420/5976426
+	target="$(cd "$(dirname "$1")"; pwd -P)/$(basename "$1")"
+	osascript -e "tell application \"Safari\" to open location \"$target\""
+fi

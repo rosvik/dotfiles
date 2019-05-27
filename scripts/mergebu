@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Source 
+# https://unix.stackexchange.com/questions/127712/merging-folders-with-mv/155633#155633
+DEST="${@:${#@}}"
+ABS_DEST="$(cd "$(dirname "$DEST")"; pwd)/$(basename "$DEST")"
+
+for SRC in ${@:1:$((${#@} -1))}; do   (
+    cd "$SRC";
+    find . -type d -exec mkdir -p "${ABS_DEST}"/\{} \;
+    find . -type f -exec rsync -u \{} "${ABS_DEST}"/\{} \;
+) done
