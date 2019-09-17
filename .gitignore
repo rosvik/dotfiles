@@ -11,3 +11,5 @@ __pycache__
 .SublimeREPLHistory
 oscrypto-ca-bundle.crt
 *.sublime-workspace
+
+unix/ripme.jar
