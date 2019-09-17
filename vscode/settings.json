@@ -42,9 +42,9 @@
   // https://github.com/crsandeep/simple-react-full-stack
   "eslint.alwaysShowStatus": true,
   "eslint.autoFixOnSave": false,
-  
+
   "prettier.eslintIntegration": false,
-  
+
   "workbench.activityBar.visible": false,
   "workbench.editor.showTabs": true,
   "workbench.startupEditor": "newUntitledFile",
@@ -53,5 +53,43 @@
 
   "code-runner.executorMapByFileExtension": {
     ".pde": "processing-java --sketch=$dir --run"
-  }
+  },
+  "workbench.iconTheme": "vscode-icons",
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "python.jediEnabled": false,
+  "gitlens.views.repositories.location": "scm",
+  "gitlens.views.fileHistory.location": "scm",
+  "gitlens.views.lineHistory.location": "scm",
+  "gitlens.views.compare.location": "scm",
+  "gitlens.views.search.location": "scm",
+  "gitlens.menus": false,
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.currentLine.scrollable": false,
+  "gitlens.blame.heatmap.location": "left",
+  "gitlens.blame.highlight.locations": [
+    "gutter",
+    "line",
+    "overview"
+  ],
+  "gitlens.hovers.enabled": false,
+  "gitlens.codeLens.scopes": [
+    "document"
+  ],
+  "gitlens.codeLens.enabled": false,
+  "gitlens.recentChanges.highlight.locations": [
+    "overview",
+    "gutter"
+  ],
+  "gitlens.currentLine.enabled": false,
+  "gitlens.views.repositories.files.compact": false,
+  "gitlens.views.repositories.avatars": false,
+  "gitlens.mode.statusBar.enabled": false,
+  "liveshare.featureSet": "insiders"
 }
