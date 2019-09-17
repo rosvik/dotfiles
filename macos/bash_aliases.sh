@@ -2,7 +2,7 @@
 #    MACOS ALIASES
 # -------------------
 
-alias ll="ls -laF" # List all files in current directory in long list format
+alias ll="ls -laFh" # List all files in current directory in long list format
 alias o="open ." # Open the current directory in Finder
 alias py="python3" # Make using python less cancer
 alias daisy="ncdu --color dark"
