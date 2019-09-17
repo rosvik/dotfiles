@@ -3,13 +3,10 @@
   // Controls if the editor will insert spaces for tabs. Accepted values:  "auto", true, false. If set to "auto", the value will be guessed when a file is opened.
   "editor.insertSpaces": false,
 
-  // Controlsa the rendering size of tabs in characters. Accepted values: "auto", 2, 4, 6, etc. If set to "auto", the value will be guessed when a file is opened.
-  "editor.tabSize": 4,
-
   // Controls after how many characters the editor will wrap to the next line. Setting this to 0 turns on viewport width wrapping
   "editor.wordWrapColumn": 100,
+  // "editor.wordWrap": "wordWrapColumn",
   "editor.rulers": [100],
-  "editor.wordWrap": "wordWrapColumn",
 
   // Wrap at ruler in markdown
   "[markdown]": {
@@ -34,12 +31,12 @@
   "[python]": {
     "editor.tabSize": 4,
     "editor.insertSpaces": true,
-    "editor.formatOnSave": true
-  },
+    "editor.formatOnSave": true,
 
-  "workbench.colorTheme": "Ayu Dark",
-  "workbench.iconTheme": "vscode-icons",
-  "material-icon-theme.showWelcomeMessage": false,
+  },
+  "autoDocstring.generateDocstringOnEnter": true,
+  
+  "workbench.colorTheme": "Night Owl",
   "window.zoomLevel": 1,
 
   // https://github.com/crsandeep/simple-react-full-stack
@@ -49,7 +46,7 @@
   "prettier.eslintIntegration": false,
   
   "workbench.activityBar.visible": false,
-  "workbench.editor.showTabs": false,
+  "workbench.editor.showTabs": true,
   "workbench.startupEditor": "newUntitledFile",
   "workbench.statusBar.feedback.visible": false,
   "vsicons.dontShowNewVersionMessage": true,
