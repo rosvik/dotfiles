@@ -87,3 +87,12 @@ export SDKMAN_DIR="/Users/rosvik/.sdkman"
 export PATH="$HOME/.cargo/bin:$PATH"
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
+##
+# Your previous /Users/rosvik/.bash_profile file was backed up as /Users/rosvik/.bash_profile.macports-saved_2019-08-12_at_14:42:05
+##
+
+# MacPorts Installer addition on 2019-08-12_at_14:42:05: adding an appropriate PATH variable for use with MacPorts.
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+# Finished adapting your PATH environment variable for use with MacPorts.
+
