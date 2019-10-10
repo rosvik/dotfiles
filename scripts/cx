@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-# Compile a C file on the form *.c to the *.
-
-# Source: https://stackoverflow.com/a/125340/5976426
-cc "$1" -o "${1%.*}"
+# Compile a C file on the form *.c to *, and run it
+cc "$1" -o "${1%.*}";
+"$PWD/${1%.*}";
