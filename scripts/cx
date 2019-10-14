@@ -2,4 +2,4 @@
 
 # Compile a C file on the form *.c to *, and run it
 cc "$1" -o "${1%.*}";
-"$PWD/${1%.*}";
+"$PWD/${1%.*}" $@;
