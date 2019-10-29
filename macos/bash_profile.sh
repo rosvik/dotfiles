@@ -53,6 +53,9 @@ fi
 #    PATH SETUP
 # ----------------
 
+# Custom user scripts
+PATH="~/.scripts:$PATH"
+
 # Java
 #export JAVA_HOME="$(/usr/libexec/java_home)" # Dynamic 
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home
@@ -80,8 +83,8 @@ PATH="~/.composer/vendor/bin:$PATH"
 # PHP 7.2
 PATH="/usr/local/Cellar/php/7.2.3_2/bin:$PATH"
 
-# Custom user scripts
-PATH="~/.scripts:${PATH}"
+# Rust / Cargo
+PATH="~/.cargo/bin:$PATH"
 
 export PATH
 
