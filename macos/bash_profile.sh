@@ -54,7 +54,8 @@ fi
 # ----------------
 
 # Java
-export JAVA_HOME="$(/usr/libexec/java_home)"
+#export JAVA_HOME="$(/usr/libexec/java_home)" # Dynamic 
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home
 export M2_HOME=/usr/local/apache-maven-3.3.9
 export M2=$M2_HOME/bin
 export GRADLE_HOME=$(brew info gradle | grep /usr/local/Cellar/gradle | awk '{print $1}')
