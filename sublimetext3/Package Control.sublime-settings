@@ -6,7 +6,6 @@
 	"installed_packages":
 	[
 		"A File Icon",
-		"Arduino-like IDE",
 		"ayu",
 		"Babel",
 		"Babel Snippets",
@@ -17,6 +16,7 @@
 		"Javascript Beautify",
 		"Laravel 5 Snippets",
 		"Laravel Blade Highlighter",
+		"Night Owl",
 		"Nodejs",
 		"P3 Assembly",
 		"Package Control",
