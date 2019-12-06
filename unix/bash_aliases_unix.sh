@@ -10,7 +10,7 @@ alias reload="exec bash -l"
 alias t="tree -CF --filelimit 25 --dirsfirst"
 alias portsplz="sudo lsof -i -P -n | grep LISTEN"
 alias psearch="ps ax | grep"
-alias dog="cat"
+alias dog="pygmentize -g"
 
 # Display connected drives
 alias disks="df -h"
