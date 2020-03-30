@@ -38,6 +38,8 @@ export LANG=en_US.UTF-8
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
+export HASTE_SERVER="https://haste.qore.no"
+
 # Set prompt
 # Parameters: http://osxdaily.com/2006/12/11/how-to-customize-your-terminal-prompt/
 export PS1="\[$(tput setaf 6)\]\W\[$(tput setaf 7)$(tput bold)\] > \[$(tput sgr0)\]"

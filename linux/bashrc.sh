@@ -133,6 +133,8 @@ export SHELL="bash -l"
 
 export LC_ALL=en_US.UTF-8
 
+export HASTE_SERVER="https://haste.qore.no"
+
 # Laravel vendor public access:
 export PATH="$PATH:$HOME/.config/composer/vendor/bin"
 
