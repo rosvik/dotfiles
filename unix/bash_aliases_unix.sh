@@ -11,6 +11,7 @@ alias t="tree -CF --filelimit 25 --dirsfirst"
 alias portsplz="sudo lsof -i -P -n | grep LISTEN"
 alias psearch="ps ax | grep"
 alias dog="pygmentize -g"
+alias grep="grep --color=always"
 
 # Display connected drives
 alias disks="df -h"
