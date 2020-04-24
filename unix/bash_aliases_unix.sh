@@ -10,7 +10,7 @@ alias reload="exec bash -l"
 alias t="tree -CF --filelimit 25 --dirsfirst"
 alias portsplz="sudo lsof -i -P -n | grep LISTEN"
 alias psearch="ps ax | grep"
-alias dog="pygmentize -g"
+alias dog="highlight --base16=seti --force"
 alias grep="grep --color=always"
 
 # Display connected drives
