@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#
+# R markdown export bash command
+# Author: Johannes T. Røsvik
+# 
+# Installation: 
+# - Move this file to your $PATH
+# - Make executable 'chmod +x rmd'
+# 
+# Usage:
+# > rmd /path/to/file.rmd
+# 
+
+echo "Rscript -e 'library(rmarkdown); rmarkdown::render('$1')'"
+Rscript -e "library(rmarkdown); rmarkdown::render('$1')"
