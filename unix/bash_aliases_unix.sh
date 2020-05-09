@@ -12,6 +12,7 @@ alias portsplz="sudo lsof -i -P -n | grep LISTEN"
 alias psearch="ps ax | grep"
 alias dog="highlight --base16=seti --force"
 alias grep="grep --color=always"
+alias calc="bc -l <<<"
 
 # Display connected drives
 alias disks="df -h"
