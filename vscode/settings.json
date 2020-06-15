@@ -52,7 +52,7 @@
 
   // https://github.com/crsandeep/simple-react-full-stack
   "eslint.alwaysShowStatus": true,
-  "eslint.autoFixOnSave": false,
+  "eslint.codeActionsOnSave.mode": "all",
 
   "workbench.activityBar.visible": false,
   "workbench.editor.showTabs": true,
@@ -107,7 +107,7 @@
   },
   "extensions.showRecommendationsOnlyOnDemand": true,
   "workbench.tree.indent": 14,
-  "editor.minimap.enabled": false,
+  "editor.minimap.enabled": true,
   "editor.glyphMargin": false,
   "workbench.colorTheme": "Night Owl",
 }
