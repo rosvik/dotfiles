@@ -1,0 +1,19 @@
+#!/usr/bin/env python3
+
+
+# Will convert strings like "Fix bug about foo and bar #129"
+# to "129-fix-bug-about-foo-and-bar"
+
+import re
+import pyperclip
+
+s = input()
+
+d = re.findall(r"(?<=\#)[0-9]+$",s)[-1]
+p = re.compile(r"[\W]*#[0-9]+$")
+s = p.sub("", s)
+s = s.lower().replace(" ", "-")
+s = f"{d}-{s}"
+
+pyperclip.copy(s)
+print(s)
