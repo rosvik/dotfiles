@@ -1,19 +1,27 @@
 #!/usr/bin/env python3
 
-
-# Will convert strings like "Fix bug about foo and bar #129"
-# to "129-fix-bug-about-foo-and-bar"
+# Will convert strings like "Fix bug about foo and bar #123"
+# to "123-fix-bug-about-foo-and-bar"
 
 import re
 import pyperclip
 
+# Get user input
 s = input()
 
+# Find issue number (123)
 d = re.findall(r"(?<=\#)[0-9]+$",s)[-1]
+
+# Get description part of string (Fix bug about foo and bar)
 p = re.compile(r"[\W]*#[0-9]+$")
 s = p.sub("", s)
+
+# "Fix bug about foo and bar" -> fix-bug-about-foo-and-bar
 s = s.lower().replace(" ", "-")
+
+# Combine number and description
 s = f"{d}-{s}"
 
+# Copy to clipboard and print to console
 pyperclip.copy(s)
 print(s)
