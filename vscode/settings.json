@@ -24,7 +24,7 @@
 
   // Enable per-language
   "[javascript]": {
-    "editor.formatOnSave": false
+    "editor.formatOnSave": true
   },
   "[vue]": {
     "editor.formatOnSave": false
@@ -110,4 +110,12 @@
   "editor.minimap.enabled": true,
   "editor.glyphMargin": false,
   "workbench.colorTheme": "Night Owl",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
 }
