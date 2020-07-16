@@ -26,9 +26,14 @@
 		"React Native Autocomplete",
 		"rsub",
 		"Sass",
+		"sublime-minimal-tabs",
 		"Swift",
 		"TypeScript Syntax",
 		"Vue Syntax Highlight",
 		"WordCount"
+	],
+	"repositories":
+	[
+		"https://github.com/rosvik/sublime-minimal-tabs"
 	]
 }
