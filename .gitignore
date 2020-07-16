@@ -1,4 +1,6 @@
 .DS_Store
+__pycache__
+unix/ripme.jar
 
 # Sublime Text 3
 sublimetext3/*/
@@ -7,9 +9,6 @@ Package Control.merged-ca-bundle
 Package Control.system-ca-bundle
 Package Control.user-ca-bundle
 Package Control.last-run
-__pycache__
 .SublimeREPLHistory
 oscrypto-ca-bundle.crt
 *.sublime-workspace
-
-unix/ripme.jar
