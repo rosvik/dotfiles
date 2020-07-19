@@ -2,7 +2,7 @@
   "bttv_autoExpandChannels": true,
   "bttv_hideRecommendedFriends": true,
   "bttv_disableVodRecommendationAutoplay": true,
-  "bttv_clickToPlay": true,
+  "bttv_clickToPlay": false,
   "bttv_disableFPVideo": true,
   "bttv_hideCommunityHighlights": true,
   "bttv_hostButton": false,
