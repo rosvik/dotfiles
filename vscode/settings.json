@@ -49,6 +49,47 @@
     "editor.quickSuggestions": false
   },
 
+  // Latex
+  "[latex]": {
+    "editor.wordWrap": "wordWrapColumn",
+    // "editor.acceptSuggestionOnEnter": "off",
+    "editor.rulers": [80],
+    "editor.wordWrapColumn": 80,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true
+    // "editor.suggestSelection": "recentlyUsedByPrefix"
+  },
+
+  // https://github.com/James-Yu/LaTeX-Workshop/wiki
+  "latex-workshop.latex.autoClean.run": "onBuilt",
+  "latex-workshop.chktex.enabled": true,
+  "latex-workshop.chktex.run": "onType",
+  "latex-workshop.chktex.args.active": [
+    "-wall",
+    "-n22",
+    "-n30",
+    "-e16",
+    "-q"
+  ],
+  "latex-workshop.message.latexlog.exclude": ["Overfull"],
+  "latex-workshop.message.update.show": false,
+  "latex-workshop.message.warning.show": false,
+  "latex-workshop.view.pdf.viewer": "tab",
+  "latex-workshop.bibtex-format.sort.enabled": true,
+  "latex-workshop.message.badbox.show": false,
+  "latex-workshop.progress.enabled": false,
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "pdflatex ➞ bibtex ➞ pdflatex`×2",
+      "tools": [
+        "pdflatex",
+        "bibtex",
+        "pdflatex",
+        "pdflatex"
+      ]
+    }
+  ],
+
   "python.formatting.provider": "black",
   "python.jediEnabled": false,
   "[python]": {
