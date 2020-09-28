@@ -45,8 +45,9 @@
 
   // Wrap at ruler in markdown
   "[markdown]": {
+    "editor.wordWrapColumn": 80,
     "editor.wordWrap": "wordWrapColumn",
-    "editor.quickSuggestions": false
+    "editor.quickSuggestions": false,
   },
 
   // Latex
