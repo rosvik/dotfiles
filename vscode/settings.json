@@ -18,6 +18,8 @@
   // Prettier format on save
   "editor.formatOnSave": false,
 
+  "workbench.editor.pinnedTabSizing": "compact",
+
   "files.exclude": {
     "**/__pycache__/": true
   },
