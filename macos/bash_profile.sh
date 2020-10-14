@@ -88,6 +88,14 @@ PATH="/usr/local/Cellar/php/7.2.3_2/bin:$PATH"
 # Rust / Cargo
 PATH="~/.cargo/bin:$PATH"
 
+# Go
+if [ -e go ]
+then
+	export GOPATH=$HOME/go
+	export GOBIN=$(go env GOPATH)/bin
+	PATH="$GOBIN:$PATH"
+fi
+
 export PATH
 
 # ---------------
