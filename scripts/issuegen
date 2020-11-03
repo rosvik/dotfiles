@@ -8,7 +8,7 @@ from os import system
 from sys import platform
 
 # Get user input
-s = input()
+s = input("Enter issue header, e.g. 'Fix bug about foo and bar #352':\n> ")
 
 # Find issue number (123)
 d = re.findall(r"(?<=\#)[0-9]+$",s)[-1]
