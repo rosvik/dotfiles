@@ -17,8 +17,18 @@ d = re.findall(r"(?<=\#)[0-9]+$",s)[-1]
 p = re.compile(r"[\W]*#[0-9]+$")
 s = p.sub("", s)
 
-# "Fix bug about foo/bar" -> fix-bug-about-foo-bar
-s = s.lower().replace(" ", "-").replace("/", "-")
+# "Fix 'bug' about foo/bar" -> fix-bug-about-foo-bar
+s = s.lower()
+
+substitutions = [
+	[" ", "-"], 
+	["/", "-"], 
+	["\"", ""], 
+	["'", ""],
+	["\\", ""],
+]
+for pair in substitutions:
+	s = s.replace(pair[0], pair[1])
 
 # Combine number and description
 s = f"{d}-{s}"
