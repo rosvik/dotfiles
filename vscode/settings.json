@@ -15,7 +15,7 @@
   // Controls if the editor should automatically format the line after typing
   "editor.formatOnType": false,
 
-  // Prettier format on save
+  // Linting format on save
   "editor.formatOnSave": false,
 
   "workbench.editor.pinnedTabSizing": "compact",
@@ -29,6 +29,7 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+
   "[vue]": {
     "editor.formatOnSave": false
   },
@@ -162,7 +163,7 @@
   "workbench.tree.indent": 14,
   "editor.minimap.enabled": true,
   "editor.glyphMargin": false,
-  "workbench.colorTheme": "Night Owl",
+  "workbench.colorTheme": "Hack The Box",
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
@@ -171,4 +172,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
+  "editor.fontFamily": "'Fira Code', 'Iosevka Type', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": true, // -> ++ -- >= <= <>
 }
