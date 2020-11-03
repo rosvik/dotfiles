@@ -4,7 +4,8 @@
 # to "123-fix-bug-about-foo-and-bar"
 
 import re
-import pyperclip
+from os import system
+from sys import platform
 
 # Get user input
 s = input()
@@ -22,6 +23,8 @@ s = s.lower().replace(" ", "-")
 # Combine number and description
 s = f"{d}-{s}"
 
-# Copy to clipboard and print to console
-pyperclip.copy(s)
+if platform.find('darwin') > -1:
+	# Copy to clipboard on MacOS
+	system(f'echo "{s}" | pbcopy')
+
 print(s)
