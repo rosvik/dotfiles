@@ -1,16 +1,18 @@
-// Place your settings in this file to overwrite the default settings
 {
-  // Controls if the editor will insert spaces for tabs. Accepted values:  "auto", true, false. If set to "auto", the value will be guessed when a file is opened.
-  "editor.insertSpaces": false,
+  // Font
+  "editor.fontFamily": "'Fira Code', 'Iosevka Type', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontWeight": "400",
+  "editor.fontLigatures": true, // -> ++ -- >= <= <>
 
-  // Controls after how many characters the editor will wrap to the next line. Setting this to 0 turns on viewport width wrapping
+  // Controls after how many characters the editor will wrap to the next line. Setting this to 0 
+  // turns on viewport width wrapping
   "editor.wordWrapColumn": 100,
   // "editor.wordWrap": "wordWrapColumn",
   "editor.rulers": [80, 100],
 
-  "editor.suggestSelection": "first",
-
-  "emmet.triggerExpansionOnTab": true,
+  // Controls if the editor will insert spaces for tabs. Accepted values:  "auto", true, false. If 
+  // set to "auto", the value will be guessed when a file is opened.
+  "editor.insertSpaces": false,
 
   // Controls if the editor should automatically format the line after typing
   "editor.formatOnType": false,
@@ -18,41 +20,90 @@
   // Linting format on save
   "editor.formatOnSave": false,
 
+  "editor.suggestSelection": "first",
+  "editor.minimap.enabled": true,
+  "editor.glyphMargin": false,
+
+  "window.zoomLevel": 1, // Cmd +
+
+  "workbench.colorTheme": "Hack The Box",
   "workbench.editor.pinnedTabSizing": "compact",
+  "workbench.tree.indent": 14,
+  "workbench.activityBar.visible": false,
+  "workbench.editor.showTabs": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.statusBar.feedback.visible": false,
+
+  "extensions.showRecommendationsOnlyOnDemand": true,
+  "extensions.ignoreRecommendations": true,
+
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
 
   "files.exclude": {
     "**/__pycache__/": true
   },
-
-  // Enable per-language
-  "[javascript]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "files.associations": {
+    "*.html": "html"
   },
 
-  "[vue]": {
-    "editor.formatOnSave": false
+
+  // Per-language settings
+
+  "[markdown]": {
+    // Wrap at ruler
+    "editor.wordWrapColumn": 80,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.quickSuggestions": false,
   },
+  "[python]": {
+    "editor.tabSize": 4,
+    "editor.insertSpaces": false,
+    "editor.formatOnSave": false,
+  },
+  "python.pythonPath": "/Users/rosvik/.miniconda3/bin/python",
+  "python.formatting.provider": "black",
+  "python.languageServer": "Pylance",
+  "python.dataScience.askForKernelRestart": false,
+  "python.jediEnabled": false,
+  "autoDocstring.generateDocstringOnEnter": true,
 
   "[html]": {
     "editor.wordWrap": "wordWrapColumn",
     "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
-
   "[scss]": {
     "editor.defaultFormatter": "stylelint.vscode-stylelint",
     "editor.codeActionsOnSave": {
       "source.fixAll.stylelint": true
     },
   },
-
-  // Wrap at ruler in markdown
-  "[markdown]": {
-    "editor.wordWrapColumn": 80,
-    "editor.wordWrap": "wordWrapColumn",
-    "editor.quickSuggestions": false,
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
   },
 
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.formatOnSave": false
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  // https://github.com/crsandeep/simple-react-full-stack
+  "eslint.alwaysShowStatus": true,
+  "eslint.codeActionsOnSave.mode": "all",
+  
   // Latex
   "[latex]": {
     "editor.wordWrap": "wordWrapColumn",
@@ -63,7 +114,6 @@
     "editor.formatOnSave": true
     // "editor.suggestSelection": "recentlyUsedByPrefix"
   },
-
   // https://github.com/James-Yu/LaTeX-Workshop/wiki
   "latex-workshop.latex.autoClean.run": "onBuilt",
   "latex-workshop.chktex.enabled": true,
@@ -94,38 +144,29 @@
     }
   ],
 
-  "python.formatting.provider": "black",
-  "python.jediEnabled": false,
-  "[python]": {
-    "editor.tabSize": 4,
-    "editor.insertSpaces": false,
-    "editor.formatOnSave": false,
+  "[FortranFreeForm]": {
+    "editor.insertSpaces": true,    
   },
-  "autoDocstring.generateDocstringOnEnter": true,
-  "window.zoomLevel": 1,
 
-  // https://github.com/crsandeep/simple-react-full-stack
-  "eslint.alwaysShowStatus": true,
-  "eslint.codeActionsOnSave.mode": "all",
+  // Extensions
 
-  "workbench.activityBar.visible": false,
-  "workbench.editor.showTabs": true,
-  "workbench.startupEditor": "newUntitledFile",
-  "workbench.statusBar.feedback.visible": false,
   "vsicons.dontShowNewVersionMessage": true,
 
   "code-runner.executorMapByFileExtension": {
     ".pde": "processing-java --sketch=$dir --run"
   },
-  "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
+
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 
   "liveshare.featureSet": "insiders",
+
+  "polacode.backgroundColor": "#0000", // transparent (#RGBA)
+  "polacode.transparentBackground": true,
+  "polacode.shadow": "rgba(0, 0, 0, 0) 0px 0px 0px",
+
+  "emmet.triggerExpansionOnTab": true,
+
+  "tabnine.experimentalAutoImports": true,
 
   // GitLens
   "gitlens.views.repositories.location": "scm",
@@ -149,29 +190,4 @@
     "overview",
     "gutter"
   ],
-  "explorer.confirmDragAndDrop": false,
-  "explorer.confirmDelete": false,
-  "extensions.ignoreRecommendations": true,
-  "polacode.backgroundColor": "transparent",
-  "polacode.transparentBackground": true,
-  "polacode.shadow": "rgba(0, 0, 0, 0) 0px 0px 0px",
-  "python.pythonPath": "/Users/rosvik/.miniconda3/bin/python",
-  "files.associations": {
-    "*.html": "html"
-  },
-  "extensions.showRecommendationsOnlyOnDemand": true,
-  "workbench.tree.indent": 14,
-  "editor.minimap.enabled": true,
-  "editor.glyphMargin": false,
-  "workbench.colorTheme": "Hack The Box",
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-  },
-  "editor.fontFamily": "'Fira Code', 'Iosevka Type', Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontLigatures": true, // -> ++ -- >= <= <>
 }
