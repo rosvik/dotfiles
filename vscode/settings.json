@@ -175,6 +175,7 @@
   "emmet.triggerExpansionOnTab": true,
 
   "tabnine.experimentalAutoImports": true,
+  "tabnine.disable_file_regex": ["settings.json$"],
 
   // GitLens
   "gitlens.views.repositories.location": "scm",
