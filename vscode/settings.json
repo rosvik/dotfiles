@@ -118,6 +118,10 @@
     "editor.formatOnSave": true
     // "editor.suggestSelection": "recentlyUsedByPrefix"
   },
+  "[bibtex]": {
+    "editor.wordWrap": "wordWrapColumn",
+
+  },
   // https://github.com/James-Yu/LaTeX-Workshop/wiki
   "latex-workshop.latex.autoClean.run": "onBuilt",
   "latex-workshop.chktex.enabled": true,
