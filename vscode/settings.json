@@ -31,11 +31,17 @@
   "workbench.tree.indent": 14,
   "workbench.colorCustomizations": {
     "editorRuler.foreground": "#FFFFFF08",
+    "editor.selectionHighlightBackground": "#FFFFFF0F"
   },
   "workbench.activityBar.visible": false,
   "workbench.editor.showTabs": true,
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.statusBar.feedback.visible": false,
+  "workbench.editor.revealIfOpen": true,
+  "workbench.settings.editor": "json",
+  "breadcrumbs.enabled": false,
+
+
+  "telemetry.enableTelemetry": false,
 
   "extensions.showRecommendationsOnlyOnDemand": true,
   "extensions.ignoreRecommendations": true,
@@ -60,6 +66,13 @@
     "editor.wordWrap": "wordWrapColumn",
     "editor.quickSuggestions": false,
   },
+  "[rmd]": {
+    // Wrap at ruler
+    "editor.rulers": [80],
+    "editor.wordWrapColumn": 80,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.quickSuggestions": false,
+  },
   "[python]": {
     "editor.tabSize": 4,
     "editor.insertSpaces": false,
@@ -68,8 +81,10 @@
   "python.pythonPath": "/Users/rosvik/.miniconda3/bin/python",
   "python.formatting.provider": "black",
   "python.languageServer": "Pylance",
-  "python.dataScience.askForKernelRestart": false,
-  "python.jediEnabled": false,
+  "python.showStartPage": false,
+  "jupyter.askForKernelRestart": false,
+  "jupyter.changeDirOnImportExport": true,
+  "jupyter.alwaysTrustNotebooks": true,
   "autoDocstring.generateDocstringOnEnter": true,
 
   "[html]": {
@@ -151,6 +166,13 @@
       ]
     }
   ],
+  "latex-workshop.latexindent.args": [
+    "-c",
+    "%DIR%/",
+    "%TMPFILE%",
+    "-y=defaultIndent: '%INDENT%', ",
+    "-l=%DIR%/indentconfig.yaml"
+  ],
 
   "[FortranFreeForm]": {
     "editor.insertSpaces": true,    
@@ -175,14 +197,9 @@
   "emmet.triggerExpansionOnTab": true,
 
   "tabnine.experimentalAutoImports": true,
-  "tabnine.disable_file_regex": ["settings.json$"],
+  "tabnine.disable_file_regex": ["settings.json$", ".env$"],
 
   // GitLens
-  "gitlens.views.repositories.location": "scm",
-  "gitlens.views.fileHistory.location": "scm",
-  "gitlens.views.lineHistory.location": "scm",
-  "gitlens.views.compare.location": "scm",
-  "gitlens.views.search.location": "scm",
   "gitlens.views.repositories.files.compact": false,
   "gitlens.views.repositories.avatars": false,
   "gitlens.menus": false,
@@ -194,9 +211,7 @@
   "gitlens.blame.heatmap.location": "left",
   "gitlens.blame.highlight.locations": ["gutter", "line", "overview"],
   "gitlens.codeLens.enabled": false,
-  "gitlens.codeLens.scopes": ["document"],
-  "gitlens.recentChanges.highlight.locations": [
-    "overview",
-    "gutter"
+  "gitlens.codeLens.scopes": [
+    "document"
   ],
 }
