@@ -22,7 +22,7 @@ To install the config files for Sublime Text 3, a few additional steps is requir
 
 1. Install Sublime Text 3
 2. Remove the `User` folder (Located at `~/Library/Application Support/Sublime Text 3/Packages/User` on macOS).
-3. Run `./install-[OS]`
+3. Run `./install`
 4. Make sure [Package Control](https://packagecontrol.io/installation) is installed 
 
 ## Credits
