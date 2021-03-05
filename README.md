@@ -17,7 +17,7 @@ _Disclaimer: You probably shouldn't. These config files contain lots of settings
 2. Clone this repo to a place where you want to keep it permanently. A symlink to the folder will be placed at `~/.dotfiles`.
 3. Run `./install-[OS]`
 
-### Sublime Text 3
+### Sublime Text 3 (macOS)
 To install the config files for Sublime Text 3, a few additional steps is required.
 
 1. Install Sublime Text 3
