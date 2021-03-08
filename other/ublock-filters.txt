@@ -1,0 +1,112 @@
+! 11/28/2019 https://www.last.fm
+last.fm###_evidon_banner
+
+! 11/30/2019 https://www.mic.com
+mic.com##.as-oil-content-overlay
+mic.com##.bF.bz.bA
+
+! 12/10/2019 https://www.pinterest.com
+pinterest.com##div:nth-of-type(3) > div > div:nth-of-type(2)
+pinterest.com##body > div:nth-of-type(1) > div > div > .Hsu.iyn.zI7 > div:nth-of-type(3) > div
+
+! 12/11/2019 https://www.wired.com
+wired.com###failsafe-clickthrough
+wired.com##.ad-stickyhero
+wired.com##.social-icons__list-item--has-background
+wired.com##.ad--rail.ad
+wired.com##.callout--related-list
+
+! 12/17/2019 https://www.the-tls.co.uk
+the-tls.co.uk##.optanon-alert-box-wrapper
+the-tls.co.uk##.tls-sharing
+the-tls.co.uk##.tls-subscriptions-banner
+
+! 2/24/2020 https://hub.docker.com
+hub.docker.com###truste-consent-track
+
+! 3/10/2020 https://www.gatesfoundation.org
+gatesfoundation.org##.cookie-message
+
+! 3/10/2020 https://ntnu.blackboard.com
+ntnu.blackboard.com##.eesy
+
+! 3/17/2020 https://www.youtube.com
+youtube.com###clarify-box > .ytd-watch-flexy.style-scope
+
+! 3/30/2020 https://www.freeforfonts.com
+freeforfonts.com##.kill-adblock-hide.kill-adblock-2.kill-adblock-container
+
+! 5/22/2020 https://en.wikipedia.org
+en.wikipedia.org###frb-inline
+en.wikipedia.org##.frb-button.frb-nag-link
+
+! 6/4/2020 https://usa.yamaha.com
+usa.yamaha.com###pop-div0039839572796802836
+||consent.trustarc.com/asset/trans.png$image
+usa.yamaha.com###pop-div2025857536621143296
+
+! 2020-11-13 https://www.fastcompany.com
+fastcompany.com##.sticky-inner-wrapper
+fastcompany.com##.social
+fastcompany.com##.highlight-share-popover
+fastcompany.com##.preloaded_lightbox
+
+! 2020-11-17 https://bits.blogs.nytimes.com
+bits.blogs.nytimes.com##.ribbon
+bits.blogs.nytimes.com##.theme-speech-bubble
+bits.blogs.nytimes.com##.sharetools
+
+! 2020-11-17 https://twitter.com
+twitter.com##[aria-label$="trending now" i]
+twitter.com##[aria-label$="who to follow" i]
+twitter.com##.r-zchlnj.r-1xcajam.r-12vffkv.r-1d2f490.r-1p0dtai.r-aqfbo4.css-1dbjc4n > div.r-12vffkv.css-1dbjc4n
+
+! 2020-12-25 https://www.urbanpixxels.com
+urbanpixxels.com###gdprc_bar
+
+! 2020-12-28 https://www.urbanpixxels.com
+twitch.tv##.video-player__container--theatre-whispers:style(bottom:0 !important;)
+
+! 2020-12-31 https://no.pinterest.com
+pinterest.com##[data-grid-item]:has([title="Promoted by"])
+
+! 2021-01-20 https://www.nasaspaceflight.com
+nasaspaceflight.com###sidebar
+
+! 2021-01-21 https://ethermine.org
+ethermine.org##.tos-container
+
+! 2021-02-22 https://www.newyorker.com
+newyorker.com##.persistent-bottom
+newyorker.com##.article__social-share
+
+! 2021-02-27 https://www.scientificamerican.com
+scientificamerican.com##.house__home_ad
+scientificamerican.com##.tooltip-outer.share-box
+scientificamerican.com##.container.tout_subscribe
+scientificamerican.com##.cart__icon.tx_meta.meta-list__item
+scientificamerican.com##.header__left:style(visibility: hidden !important;)
+scientificamerican.com##.is-sticky.page-context-nav
+scientificamerican.com##.container.newsletter-promo
+scientificamerican.com##.newsletter-subscribe-container.container
+scientificamerican.com###promo-header
+
+! 2021-03-03 https://www.bloomberg.com
+bloomberg.com##.mini-player
+bloomberg.com##.postr-recirc
+bloomberg.com##.leaderboard-ad-mock
+
+! 2021-03-04 https://www.independent.co.uk
+independent.co.uk##.related
+independent.co.uk##.sidebar
+independent.co.uk##.social-share
+independent.co.uk###comments
+independent.co.uk##.show-comments
+
+! 2021-03-04 https://www.theverge.com
+theverge.com##.m-privacy-consent
+theverge.com##.c-comments
+theverge.com##.l-col__sidebar:style(visibility: hidden !important;)
+
+! 2021-03-04 https://faq.whatsapp.com
+faq.whatsapp.com###u_0_7_4x
