@@ -9,10 +9,6 @@ last.fm###_evidon_banner
 mic.com##.as-oil-content-overlay
 mic.com##.bF.bz.bA
 
-! 12/10/2019 https://www.pinterest.com
-pinterest.com##div:nth-of-type(3) > div > div:nth-of-type(2)
-pinterest.com##body > div:nth-of-type(1) > div > div > .Hsu.iyn.zI7 > div:nth-of-type(3) > div
-
 ! 12/11/2019 https://www.wired.com
 wired.com###failsafe-clickthrough
 wired.com##.ad-stickyhero
