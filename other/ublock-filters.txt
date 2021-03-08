@@ -1,3 +1,7 @@
+! Ublock Origin custom filter list by Johannes Røsvik
+! Installation: Settings > Filter lists > Custom > Import...
+! https://raw.githubusercontent.com/rosvik/dotfiles/master/other/ublock-filters.txt
+
 ! 11/28/2019 https://www.last.fm
 last.fm###_evidon_banner
 
