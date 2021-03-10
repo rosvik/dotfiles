@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+currentstate=$(defaults read com.apple.dock autohide)
+
+if [ $currentstate == 0 ]; then
+	defaults write com.apple.dock autohide -bool true && \
+	killall Dock
+else
+	defaults write com.apple.dock autohide -bool false && \
+	killall Dock
+fi
