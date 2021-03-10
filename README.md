@@ -1,6 +1,6 @@
 # Dotfiles 🎉
 
-My very own dotfile repo for keeping track of configurations across systems. I try to keep the OS specific settings seperate. You're welcome to use this repo for for inspiration, and copy whatever you want.
+My very own dotfile repo for keeping track of configurations across systems. I try to keep OS specific settings seperate. You're welcome to use this repo for for inspiration, and copy whatever you want.
 
 ### What's a dotfile?
 
