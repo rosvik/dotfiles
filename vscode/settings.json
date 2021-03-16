@@ -43,7 +43,6 @@
 
   "telemetry.enableTelemetry": false,
 
-  "extensions.showRecommendationsOnlyOnDemand": true,
   "extensions.ignoreRecommendations": true,
 
   "explorer.confirmDragAndDrop": false,
@@ -87,9 +86,17 @@
   "jupyter.alwaysTrustNotebooks": true,
   "autoDocstring.generateDocstringOnEnter": true,
 
+  "[rust]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "statiolake.vscode-rustfmt",
+  },
+
   "[html]": {
     "editor.wordWrap": "wordWrapColumn",
     "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[css]": {
+    "editor.defaultFormatter": "stylelint.vscode-stylelint",
   },
   "[scss]": {
     "editor.defaultFormatter": "stylelint.vscode-stylelint",
@@ -197,16 +204,14 @@
   "emmet.triggerExpansionOnTab": true,
 
   "tabnine.experimentalAutoImports": true,
-  "tabnine.disable_file_regex": ["settings.json$", ".env$"],
+  "tabnine.disable_file_regex": ["settings.json$", ".env$", ".rs$"],
 
   // GitLens
   "gitlens.views.repositories.files.compact": false,
   "gitlens.views.repositories.avatars": false,
   "gitlens.menus": false,
   "gitlens.mode.statusBar.enabled": false,
-  "gitlens.hovers.enabled": false,
   "gitlens.hovers.currentLine.over": "line",
-  "gitlens.currentLine.enabled": false,
   "gitlens.currentLine.scrollable": false,
   "gitlens.blame.heatmap.location": "left",
   "gitlens.blame.highlight.locations": ["gutter", "line", "overview"],
@@ -214,4 +219,10 @@
   "gitlens.codeLens.scopes": [
     "document"
   ],
+  "gitlens.currentLine.pullRequests.enabled": false,
+  "gitlens.currentLine.enabled": false,
+  "gitlens.hovers.avatars": false,
+  "gitlens.hovers.currentLine.changes": false,
+  "gitlens.hovers.currentLine.enabled": false,
+  "gitlens.hovers.annotations.enabled": false,
 }
