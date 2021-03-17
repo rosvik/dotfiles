@@ -13,6 +13,8 @@ alias psearch="ps ax | grep"
 alias dog="highlight --base16=seti --force"
 alias grep="grep --color=always"
 alias calc="bc -l <<<"
+alias dl="curl -O"
+alias gitnvm="git reset --soft HEAD~1"
 
 # Display connected drives
 alias disks="df -h"
