@@ -123,3 +123,8 @@ www.nytimes.com##.expanded-dock
 
 ! 2021-03-19 https://www.reuters.com
 ajo.prod.reuters.tv
+www.reuters.com###onetrust-consent-sdk
+www.reuters.com##[class*="OldSiteBanner__banner"]
+www.reuters.com##[class*="SiteFooter__product"]
+www.reuters.com##[class*="RegularArticleLayout__content"] *:style(color: white !important;)
+
