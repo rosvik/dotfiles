@@ -110,3 +110,16 @@ theverge.com##.l-col__sidebar:style(visibility: hidden !important;)
 
 ! 2021-03-04 https://faq.whatsapp.com
 faq.whatsapp.com###u_0_7_4x
+
+! 2021-03-09 https://www.quantamagazine.org
+www.quantamagazine.org##.sshare
+www.quantamagazine.org##.theme__anchors--solid.flex-justify-center:style(visibility: hidden !important;)
+
+! 2021-03-11 https://tex.stackexchange.com
+tex.stackexchange.com##.js-consent-banner
+
+! 2021-03-16 https://www.nytimes.com
+www.nytimes.com##.expanded-dock
+
+! 2021-03-19 https://www.reuters.com
+ajo.prod.reuters.tv
