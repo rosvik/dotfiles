@@ -108,8 +108,9 @@ theverge.com##.m-privacy-consent
 theverge.com##.c-comments
 theverge.com##.l-col__sidebar:style(visibility: hidden !important;)
 
-! 2021-03-04 https://faq.whatsapp.com
-faq.whatsapp.com###u_0_7_4x
+! 2021-04-02 https://whatsapp.com
+whatsapp.com##body > div[tabindex^="-1"]
+whatsapp.com###hide_till_load:style(position:static !important;)
 
 ! 2021-03-09 https://www.quantamagazine.org
 www.quantamagazine.org##.sshare
