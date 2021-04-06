@@ -129,3 +129,42 @@ www.reuters.com##[class*="OldSiteBanner__banner"]
 www.reuters.com##[class*="SiteFooter__product"]
 www.reuters.com##[class*="RegularArticleLayout__content"] *:style(color: white !important;)
 
+! 2021-03-27 https://www.newyorker.com
+www.newyorker.com###signInContainer
+
+! 2021-03-27 https://snohetta.com
+snohetta.com###cookie
+
+! 2021-03-29 https://www.cbsnews.com
+www.cbsnews.com###onetrust-consent-sdk:style(display: none !important;)
+www.cbsnews.com##.newsletter_signup
+www.cbsnews.com##.recirculation__wrapper
+
+! 2021-03-29 https://www.reuters.com
+www.reuters.com##div[class^="BreakingNews-pill-"]
+www.reuters.com##div[class^="RCOMVideo-"]
+www.reuters.com##div[class^="SocialTools"]
+
+! 2021-03-29 https://www.vg.no
+||comments.vg.no/$subdocument
+
+! 2021-04-02 https://www.youtube.com
+www.youtube.com###player-theater-container:style(max-height:calc(100vh - 56px) !important;)
+
+! 2021-04-02 https://whatsapp.com
+whatsapp.com##body > div[tabindex^="-1"]
+whatsapp.com###hide_till_load:style(position:static !important;)
+
+! 2021-04-03 https://www.politico.eu
+www.politico.eu###amazon-polly-audio-table
+www.politico.eu##.social-sharing
+www.politico.eu###pl-sp-privacy-button
+www.politico.eu##header:style(position:static !important;)
+www.politico.eu##.widget:style(border:none !important;)
+
+! 2021-04-06 https://fortune.com
+||buy.tinypass.com/$subdocument
+fortune.com###article_overlay:style(filter:none !important;z-index:inherit !important;pointer-events:inherit !important;user-select:inherit !important;)
+fortune.com##div[class^="gutenbergContent__content"] > div:style(width:calc((100% - 288px)/7*5 + 288px) !important;)
+fortune.com##div[class^="socialList"]:style(visibility:hidden !important;)
+fortune.com##div[class^="popularPosts__"]
