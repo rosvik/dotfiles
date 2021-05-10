@@ -1,7 +1,7 @@
 {
   // Font
   "editor.fontFamily": "'Fira Code', 'Iosevka Type', Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontWeight": "400",
+  "editor.fontWeight": "500",
   "editor.fontLigatures": true, // -> ++ -- >= <= <>
 
   // Controls after how many characters the editor will wrap to the next line. Setting this to 0 
@@ -21,12 +21,9 @@
   "editor.formatOnSave": false,
 
   "editor.suggestSelection": "first",
-  "editor.minimap.enabled": true,
-  "editor.glyphMargin": false,
+  "editor.glyphMargin": false, // Cmd +
 
-  "window.zoomLevel": 1, // Cmd +
-
-  "workbench.colorTheme": "Hack The Box",
+  "workbench.colorTheme": "Tokyo City Darker",
   "workbench.editor.pinnedTabSizing": "compact",
   "workbench.tree.indent": 14,
   "workbench.colorCustomizations": {
@@ -38,8 +35,11 @@
   "workbench.startupEditor": "newUntitledFile",
   "workbench.editor.revealIfOpen": true,
   "workbench.settings.editor": "json",
-  "breadcrumbs.enabled": false,
 
+  "breadcrumbs.enabled": true,
+
+  "window.titleBarStyle": "native",
+  "window.zoomLevel": 1,
 
   "telemetry.enableTelemetry": false,
 
@@ -55,7 +55,6 @@
     "*.html": "html"
   },
 
-
   // Per-language settings
 
   "[markdown]": {
@@ -63,21 +62,21 @@
     "editor.rulers": [80],
     "editor.wordWrapColumn": 80,
     "editor.wordWrap": "wordWrapColumn",
-    "editor.quickSuggestions": false,
+    "editor.quickSuggestions": false
   },
   "[rmd]": {
     // Wrap at ruler
     "editor.rulers": [80],
     "editor.wordWrapColumn": 80,
     "editor.wordWrap": "wordWrapColumn",
-    "editor.quickSuggestions": false,
+    "editor.quickSuggestions": false
   },
   "[python]": {
     "editor.tabSize": 4,
     "editor.insertSpaces": false,
-    "editor.formatOnSave": false,
+    "editor.formatOnSave": false
   },
-  "python.pythonPath": "/Users/rosvik/.miniconda3/bin/python",
+  "python.pythonPath": "~/.miniconda3/bin/python",
   "python.formatting.provider": "black",
   "python.languageServer": "Pylance",
   "python.showStartPage": false,
@@ -88,21 +87,21 @@
 
   "[rust]": {
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "statiolake.vscode-rustfmt",
+    "editor.defaultFormatter": "statiolake.vscode-rustfmt"
   },
 
   "[html]": {
     "editor.wordWrap": "wordWrapColumn",
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[css]": {
-    "editor.defaultFormatter": "stylelint.vscode-stylelint",
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
   },
   "[scss]": {
     "editor.defaultFormatter": "stylelint.vscode-stylelint",
     "editor.codeActionsOnSave": {
       "source.fixAll.stylelint": true
-    },
+    }
   },
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
@@ -130,59 +129,8 @@
   "eslint.alwaysShowStatus": true,
   "eslint.codeActionsOnSave.mode": "all",
   
-  // Latex
-  "[latex]": {
-    "editor.wordWrap": "wordWrapColumn",
-    // "editor.acceptSuggestionOnEnter": "off",
-    "editor.rulers": [80],
-    "editor.wordWrapColumn": 80,
-    "editor.formatOnPaste": true,
-    "editor.formatOnSave": true
-    // "editor.suggestSelection": "recentlyUsedByPrefix"
-  },
-  "[bibtex]": {
-    "editor.wordWrap": "wordWrapColumn",
-
-  },
-  // https://github.com/James-Yu/LaTeX-Workshop/wiki
-  "latex-workshop.latex.autoClean.run": "onBuilt",
-  "latex-workshop.chktex.enabled": true,
-  "latex-workshop.chktex.run": "onType",
-  "latex-workshop.chktex.args.active": [
-    "-wall",
-    "-n22",
-    "-n30",
-    "-e16",
-    "-q"
-  ],
-  "latex-workshop.message.latexlog.exclude": ["Overfull"],
-  "latex-workshop.message.update.show": false,
-  "latex-workshop.message.warning.show": false,
-  "latex-workshop.view.pdf.viewer": "tab",
-  "latex-workshop.bibtex-format.sort.enabled": true,
-  "latex-workshop.message.badbox.show": false,
-  "latex-workshop.progress.enabled": false,
-  "latex-workshop.latex.recipes": [
-    {
-      "name": "pdflatex ➞ bibtex ➞ pdflatex`×2",
-      "tools": [
-        "pdflatex",
-        "bibtex",
-        "pdflatex",
-        "pdflatex"
-      ]
-    }
-  ],
-  "latex-workshop.latexindent.args": [
-    "-c",
-    "%DIR%/",
-    "%TMPFILE%",
-    "-y=defaultIndent: '%INDENT%', ",
-    "-l=%DIR%/indentconfig.yaml"
-  ],
-
   "[FortranFreeForm]": {
-    "editor.insertSpaces": true,    
+    "editor.insertSpaces": true
   },
 
   // Extensions
@@ -206,6 +154,13 @@
   "tabnine.experimentalAutoImports": true,
   "tabnine.disable_file_regex": ["settings.json$", ".env$", ".rs$"],
 
+  // Customize UI
+  "customizeUI.titleBar": "inline",
+  "customizeUI.activityBar": "bottom",
+  "customizeUI.stylesheet": {
+    ".editor-actions": "display: none !important;"
+  },
+  
   // GitLens
   "gitlens.views.repositories.files.compact": false,
   "gitlens.views.repositories.avatars": false,
@@ -225,4 +180,14 @@
   "gitlens.hovers.currentLine.changes": false,
   "gitlens.hovers.currentLine.enabled": false,
   "gitlens.hovers.annotations.enabled": false,
+
+  "docker.showStartPage": false,
+  
+  "liveServer.settings.donotShowInfoMsg": true,
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    }
+  ]
 }
