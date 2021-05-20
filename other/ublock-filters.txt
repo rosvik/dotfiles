@@ -167,8 +167,11 @@ fortune.com##div[class^="popularPosts__"]
 www.nature.com##.recommended
 www.nature.com##.social
 
-! 2021-05-12 https://meta.stackexchange.com
-meta.stackexchange.com##.js-freemium-cta
+! 2021-05-20 https://stackoverflow.com
+stackoverflow.com##.js-freemium-cta
+
+! 2021-05-20 https://stackexchange.com
+stackexchange.com##.js-freemium-cta
 
 ! 2021-05-12 https://www.last.fm
 www.last.fm##.mpu-subscription-upsell--mpu
