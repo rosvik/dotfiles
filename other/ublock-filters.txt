@@ -33,9 +33,6 @@ ntnu.blackboard.com##.eesy
 ! 3/17/2020 https://www.youtube.com
 youtube.com###clarify-box > .ytd-watch-flexy.style-scope
 
-! 3/30/2020 https://www.freeforfonts.com
-freeforfonts.com##.kill-adblock-hide.kill-adblock-2.kill-adblock-container
-
 ! 5/22/2020 https://en.wikipedia.org
 en.wikipedia.org###frb-inline
 en.wikipedia.org##.frb-button.frb-nag-link
@@ -72,9 +69,6 @@ pinterest.com##[data-grid-item]:has([title="Promoted by"])
 
 ! 2021-01-20 https://www.nasaspaceflight.com
 nasaspaceflight.com###sidebar
-
-! 2021-01-21 https://ethermine.org
-ethermine.org##.tos-container
 
 ! 2021-02-22 https://www.newyorker.com
 newyorker.com##.persistent-bottom
