@@ -33,9 +33,6 @@ ntnu.blackboard.com##.eesy
 ! 3/17/2020 https://www.youtube.com
 youtube.com###clarify-box > .ytd-watch-flexy.style-scope
 
-! 3/30/2020 https://www.freeforfonts.com
-freeforfonts.com##.kill-adblock-hide.kill-adblock-2.kill-adblock-container
-
 ! 5/22/2020 https://en.wikipedia.org
 en.wikipedia.org###frb-inline
 en.wikipedia.org##.frb-button.frb-nag-link
@@ -72,9 +69,6 @@ pinterest.com##[data-grid-item]:has([title="Promoted by"])
 
 ! 2021-01-20 https://www.nasaspaceflight.com
 nasaspaceflight.com###sidebar
-
-! 2021-01-21 https://ethermine.org
-ethermine.org##.tos-container
 
 ! 2021-02-22 https://www.newyorker.com
 newyorker.com##.persistent-bottom
@@ -168,3 +162,35 @@ fortune.com###article_overlay:style(filter:none !important;z-index:inherit !impo
 fortune.com##div[class^="gutenbergContent__content"] > div:style(width:calc((100% - 288px)/7*5 + 288px) !important;)
 fortune.com##div[class^="socialList"]:style(visibility:hidden !important;)
 fortune.com##div[class^="popularPosts__"]
+
+! 2021-05-11 https://www.nature.com
+www.nature.com##.recommended
+www.nature.com##.social
+
+! 2021-05-20 https://stackoverflow.com
+stackoverflow.com##.js-freemium-cta
+
+! 2021-05-20 https://stackexchange.com
+stackexchange.com##.js-freemium-cta
+
+! 2021-05-12 https://www.last.fm
+www.last.fm##.mpu-subscription-upsell--mpu
+
+! 2021-05-13 https://www.gq.com
+www.gq.com##.social-icons
+
+! 2021-05-13 https://www.zdnet.com
+||open.spotify.com/embed-podcast/$subdocument
+www.zdnet.com##.breaking-news-container
+www.zdnet.com##.social-links
+www.zdnet.com##.relatedContent
+
+! 2021-05-16 https://www.businessinsider.com
+www.businessinsider.com##.popular-post
+
+! 2021-04-08 https://www.theparisreview.org
+www.theparisreview.org##.article-body:style(font-size:1.1em;text-align:justify;)
+www.theparisreview.org##.article-tools_desktop
+www.theparisreview.org##.paywall
+www.theparisreview.org##.article-tools-social
+www.theparisreview.org##.header-nav-social
