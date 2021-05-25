@@ -9,6 +9,7 @@ alias daisy="ncdu --color dark"
 alias yt-best="youtube-dl -f bestvideo+bestaudio"
 alias firefox="/Applications/Firefox.app/Contents/MacOS/firefox-bin"
 alias eclipse="open -g /Applications/Eclipse.app/Contents/MacOS/eclipse"
+alias ql='qlmanage -p "$@" &> /dev/null'
 
 # PHP
 alias composer="php /usr/local/bin/composer.phar"

@@ -15,6 +15,7 @@ alias grep="grep --color=always"
 alias calc="bc -l <<<"
 alias dl="curl -O"
 alias gitnvm="git reset --soft HEAD~1"
+alias gtl='git log --graph --pretty='\''%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset'\'
 
 # Display connected drives
 alias disks="df -h"
