@@ -88,6 +88,8 @@ PATH="/usr/local/Cellar/php/7.2.3_2/bin:$PATH"
 # Rust / Cargo
 PATH="~/.cargo/bin:$PATH"
 
+PATH="/usr/local/texlive/2021/bin/universal-darwin:$PATH"
+
 # Go
 if [ -e go ]
 then
