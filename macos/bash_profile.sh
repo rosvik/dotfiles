@@ -50,6 +50,7 @@ export PS1="\[$(tput setaf 6)\]\W\[$(tput setaf 7)$(tput bold)\] > \[$(tput sgr0
 
 # iTerm window and tab title as current directory. 
 # Source: https://gist.github.com/phette23/5270658
+unset PROMPT_COMMAND
 if [ $ITERM_SESSION_ID ]; then
   export PROMPT_COMMAND='echo -ne "\033];${PWD##*/}\007"; ':"$PROMPT_COMMAND";
 fi
