@@ -29,6 +29,9 @@ fi
 export EDITOR="nano"
 export NCDU_SHELL="bash -l"
 
+export INFIPATH="$HOME/Git/infinote/"
+export INFIFILE="$HOME/Git/infinote/infinote.md"
+
 # Setting locale settings
 export LC_ALL=en_US.UTF-8  
 export LANG=en_US.UTF-8
