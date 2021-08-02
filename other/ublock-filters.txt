@@ -194,3 +194,95 @@ www.theparisreview.org##.article-tools_desktop
 www.theparisreview.org##.paywall
 www.theparisreview.org##.article-tools-social
 www.theparisreview.org##.header-nav-social
+
+! 2021-04-09 Memex highlighting and Dark Reader fix
+*##html[data-darkreader-scheme="dark"] hypothesis-highlight:style(color: black !important;)
+
+! 2021-05-05 https://www.vg.no
+||cmp.vg.no$subdocument
+www.vg.no###sp_message_container_481243
+
+! 2021-05-24 https://columbianewsservice.com
+columbianewsservice.com##.share-this-page-links
+
+! 2021-05-24 https://home.aliexpress.com
+aliexpress.com##.ui-fixed-panel
+aliexpress.com###J_xiaomi_dialog
+aliexpress.com##.mobile-app
+aliexpress.com##.drogue-poplayer-modal
+aliexpress.com##.product-fix-sns
+aliexpress.com##.multi-sidebar-outer
+
+! 2021-05-27 https://devblogs.microsoft.com
+devblogs.microsoft.com##.social-icon-bar
+
+! 2021-05-30 https://www.marketwatch.com
+www.marketwatch.com##.article__social
+www.marketwatch.com##.region--aside
+www.marketwatch.com##.more-headlines.element--list.element
+
+! 2021-05-31 https://longreads.com
+||widgets.wp.com$subdocument
+longreads.com##.in-story:has-text(Sign up)
+longreads.com##.sd-like-enabled
+longreads.com###actionbar
+longreads.com##.wp-footer
+longreads.com##.entry-email-signup
+longreads.com##.member-promo
+longreads.com###container:style(margin-top:0!important)
+longreads.com##.modal
+
+! 2021-05-31 https://www.newyorker.com
+www.newyorker.com##.paywall-modal-container
+www.newyorker.com##.modal-overlay
+www.newyorker.com##.journey-template--paywall-modal.paywall-modal-full-barrier
+www.newyorker.com##[class*="consumer-marketing-unit"]
+www.newyorker.com##.ticker-view:has-text(Subscribe today)
+www.newyorker.com##.ticker-view:has-text(newsletter)
+www.newyorker.com##a[href*="subscribe.newyorker.com"]
+www.newyorker.com##.grid-layout__aside
+www.newyorker.com##.social-icons__list
+
+! 2021-06-09 https://www.yr.no
+www.yr.no##.clippy
+
+! 2021-06-09 https://duckduckgo.com
+duckduckgo.com##.serp__bottom-right
+duckduckgo.com##.showcase
+duckduckgo.com##.social
+
+! 2021-06-11 https://www.adressa.no
+www.adressa.no###pm-privacy-banner
+
+! 2021-06-12 https://psyche.co
+psyche.co##div[class^="styled__Wrapper"]
+psyche.co##div[class^="styled__SocialLinks"]
+psyche.co##div[class^="styled__SocialShare"]
+
+! 2021-06-26 https://www.homeandcottage.no
+www.homeandcottage.no##.product__badge
+www.homeandcottage.no##.product__price--old.product__price
+www.homeandcottage.no##.product__price--discount
+www.homeandcottage.no##[href="/finansiering"]
+www.homeandcottage.no##.product-detail__badge
+www.homeandcottage.no##.product-detail__badge--percent
+www.homeandcottage.no##.broadcast-block__item
+
+! 2021-06-27 https://www.homeandcottage.no
+www.homeandcottage.no##.product-detail__social-share
+www.homeandcottage.no##.a2a_kit
+
+! 2021-06-27 https://www.mobelringen.no
+www.mobelringen.no##.ec-gtm-cookie-directive
+www.mobelringen.no##.visma-store-selected-message
+
+! 2021-06-28 https://app.thestorygraph.com
+app.thestorygraph.com###freshworks-container
+app.thestorygraph.com##.icon-cheveron-up-circle
+
+! 2021-07-03 https://leetcode.com
+leetcode.com###subscribe
+
+! 2021-07-07 https://secure.runescape.com
+secure.runescape.com##.c-cookie-consent
+secure.runescape.com##.c-news-article__share
