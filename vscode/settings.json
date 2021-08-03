@@ -149,9 +149,12 @@
 
   "liveshare.featureSet": "insiders",
 
-  "polacode.backgroundColor": "#0000", // transparent (#RGBA)
-  "polacode.transparentBackground": true,
-  "polacode.shadow": "rgba(0, 0, 0, 0) 0px 0px 0px",
+  "codesnap.showWindowTitle": false,
+  "codesnap.showWindowControls": false,
+  "codesnap.backgroundColor": "#0000",
+  "codesnap.transparentBackground": true,
+  "codesnap.boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px",
+  "codesnap.containerPadding": "0",
 
   "emmet.triggerExpansionOnTab": true,
 
