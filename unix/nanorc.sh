@@ -73,7 +73,7 @@ set linenumbers
 # set matchbrackets "(<[{)>]}"
 
 ## Use the blank line below the title bar as extra editing space.
-set morespace
+# set morespace
 
 ## Enable mouse support, if available for your system.  When enabled,
 ## mouse clicks can be used to place the cursor, set the mark (with a
@@ -148,7 +148,7 @@ set positionlog
 # set smarthome
 
 ## Use line-by-line scrolling instead of chunk-by-chunk.
-set smooth
+# set smooth
 
 ## Enable soft line wrapping (AKA full-line display).
 set softwrap
