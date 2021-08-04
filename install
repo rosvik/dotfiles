@@ -2,8 +2,7 @@
 
 set -e
 
-OS=$(uname)
-CONFIG="install-${OS,,}.conf.yaml"
+CONFIG="install-$(uname).conf.yaml"
 
 DOTBOT_DIR="dotbot"
 DOTBOT_BIN="bin/dotbot"
