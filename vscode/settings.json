@@ -1,7 +1,7 @@
 {
   // Font
   "editor.fontFamily": "'Fira Code', 'Iosevka Type', Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontWeight": "500",
+  "editor.fontWeight": "400",
   "editor.fontLigatures": true, // -> ++ -- >= <= <>
 
   // Controls after how many characters the editor will wrap to the next line. Setting this to 0
@@ -80,7 +80,6 @@
     "editor.insertSpaces": false,
     "editor.formatOnSave": false
   },
-  "python.pythonPath": "~/.miniconda3/bin/python",
   "python.formatting.provider": "black",
   "python.languageServer": "Pylance",
   "python.showStartPage": false,
