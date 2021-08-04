@@ -32,8 +32,4 @@
 		"Vue Syntax Highlight",
 		"WordCount"
 	],
-	"repositories":
-	[
-		"https://github.com/rosvik/sublime-minimal-tabs"
-	]
 }
