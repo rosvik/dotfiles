@@ -143,7 +143,7 @@ www.reuters.com##div[class^="SocialTools"]
 ||comments.vg.no/$subdocument
 
 ! 2021-04-02 https://www.youtube.com
-www.youtube.com###player-theater-container:style(max-height:calc(100vh - 56px) !important;)
+!www.youtube.com###player-theater-container:style(max-height:calc(100vh - 56px) !important;)
 
 ! 2021-04-02 https://whatsapp.com
 whatsapp.com##body > div[tabindex^="-1"]
