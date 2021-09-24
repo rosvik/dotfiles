@@ -9,6 +9,7 @@ from sys import platform
 
 # Get user input
 s = input("Enter issue header, e.g. 'Fix bug about foo and bar #352':\n> ")
+s = s.strip()
 
 # Find issue number (123)
 d = re.findall(r"(?<=\#)[0-9]+$",s)[-1]
@@ -26,6 +27,7 @@ substitutions = [
 	["\"", ""], 
 	["'", ""],
 	["\\", ""],
+	[",", ""],
 ]
 for pair in substitutions:
 	s = s.replace(pair[0], pair[1])
