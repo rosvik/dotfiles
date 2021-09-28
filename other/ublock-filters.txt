@@ -142,8 +142,9 @@ www.reuters.com##div[class^="SocialTools"]
 ! 2021-03-29 https://www.vg.no
 ||comments.vg.no/$subdocument
 
-! 2021-04-02 https://www.youtube.com
-!www.youtube.com###player-theater-container:style(max-height:calc(100vh - 56px) !important;)
+! 2021-09-28 https://www.youtube.com
+www.youtube.com##ytd-watch-flexy[theater] #player-theater-container:style(max-height: calc(100vh - 56px) !important;)
+www.youtube.com##ytd-watch-flexy[fullscreen] #player-theater-container:style(max-height: none !important;)
 
 ! 2021-04-02 https://whatsapp.com
 whatsapp.com##body > div[tabindex^="-1"]
