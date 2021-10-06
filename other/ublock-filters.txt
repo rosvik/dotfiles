@@ -287,3 +287,76 @@ leetcode.com###subscribe
 ! 2021-07-07 https://secure.runescape.com
 secure.runescape.com##.c-cookie-consent
 secure.runescape.com##.c-news-article__share
+
+! 2021-08-03 https://code.visualstudio.com
+code.visualstudio.com###cookie-banner
+
+! 2021-08-04 https://duckduckgo.com
+duckduckgo.com##.feedback-btn
+
+! 2021-08-04 https://linuxhint.com
+linuxhint.com###cbox
+
+! 2021-08-05 https://www.komplett.no
+www.komplett.no##.sticky-box
+
+! 2021-08-05 https://hillsong.com
+hillsong.com##.optanon-show-settings-popup-wrapper
+
+! 2021-08-08 https://www.bohus.no
+www.bohus.no###coi-cookie
+||magicwidget.socialboards.com/$subdocument
+
+! 2021-08-08 https://www.yr.no
+www.yr.no##.clippy
+
+! 2021-08-08 https://www.mydomaine.com
+www.mydomaine.com###social-share--sticky_1-0
+
+! 2021-08-08 https://www.ikea.com
+www.ikea.com##.survey
+
+! 2021-08-12 https://www.dagbladet.no
+www.dagbladet.no##.css-pp-box
+
+! 2021-08-14 https://www.homeandcottage.no
+www.homeandcottage.no###onetrust-consent-sdk
+
+! 2021-08-14 https://www.adobe.com
+www.adobe.com###onetrust-consent-sdk
+
+! 2021-08-14 https://ld.reddit.com
+ld.reddit.com##.cookie-infobar
+
+! 2021-08-19 https://old.reddit.com
+old.reddit.com##.cookie-infobar
+
+! 2021-08-19 https://www.clasohlson.com
+www.clasohlson.com##.cookie-bar
+
+! 2021-08-23 https://duckduckgo.com
+duckduckgo.com##.footer_cards
+duckduckgo.com##.social
+duckduckgo.com##.showcase
+
+! 2021-08-23 https://www.last.fm
+www.last.fm##.ot-sdk-show-settings
+
+! 2021-09-03 https://www.gear4music.no
+www.gear4music.no###cookieConsentWidgetDiv
+
+! 2021-09-03 https://askubuntu.com
+askubuntu.com##.js-consent-banner
+askubuntu.com##.js-dismissable-hero
+
+! 2021-09-24 https://opensource.stackexchange.com
+stackexchange.com##.js-dismissable-hero
+stackexchange.com##.js-freemium-cta
+
+! 2021-09-28 https://www.youtube.com
+www.youtube.com##ytd-watch-flexy[theater] #player-theater-container:style(max-height: calc(100vh - 56px) !important;)
+www.youtube.com##ytd-watch-flexy[fullscreen] #player-theater-container:style(max-height: none !important;)
+
+! 2021-10-01 https://devblogs.microsoft.com
+devblogs.microsoft.com###cookie-banner
+devblogs.microsoft.com##.social-icon-bar
