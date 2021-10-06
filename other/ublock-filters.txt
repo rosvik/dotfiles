@@ -4,6 +4,8 @@
 
 ! 11/28/2019 https://www.last.fm
 last.fm###_evidon_banner
+last.fm##.mpu-subscription-upsell--mpu
+last.fm##.ot-sdk-show-settings
 
 ! 11/30/2019 https://www.mic.com
 mic.com##.as-oil-content-overlay
@@ -29,9 +31,6 @@ gatesfoundation.org##.cookie-message
 
 ! 3/10/2020 https://ntnu.blackboard.com
 ntnu.blackboard.com##.eesy
-
-! 3/17/2020 https://www.youtube.com
-youtube.com###clarify-box > .ytd-watch-flexy.style-scope
 
 ! 5/22/2020 https://en.wikipedia.org
 en.wikipedia.org###frb-inline
@@ -110,8 +109,13 @@ whatsapp.com###hide_till_load:style(position:static !important;)
 www.quantamagazine.org##.sshare
 www.quantamagazine.org##.theme__anchors--solid.flex-justify-center:style(visibility: hidden !important;)
 
-! 2021-03-11 https://tex.stackexchange.com
-tex.stackexchange.com##.js-consent-banner
+! 2021-03-11 https://*.stackexchange.com
+stackexchange.com##.js-consent-banner
+stackexchange.com##.js-dismissable-hero
+stackexchange.com##.js-freemium-cta
+
+! 2021-05-20 https://stackoverflow.com
+stackoverflow.com##.js-freemium-cta
 
 ! 2021-03-16 https://www.nytimes.com
 www.nytimes.com##.expanded-dock
@@ -143,8 +147,9 @@ www.reuters.com##div[class^="SocialTools"]
 ||comments.vg.no/$subdocument
 
 ! 2021-09-28 https://www.youtube.com
-www.youtube.com##ytd-watch-flexy[theater] #player-theater-container:style(max-height: calc(100vh - 56px) !important;)
-www.youtube.com##ytd-watch-flexy[fullscreen] #player-theater-container:style(max-height: none !important;)
+youtube.com##ytd-watch-flexy[theater] #player-theater-container:style(max-height: calc(100vh - 56px) !important;)
+youtube.com##ytd-watch-flexy[fullscreen] #player-theater-container:style(max-height: none !important;)
+youtube.com###clarify-box > .ytd-watch-flexy.style-scope
 
 ! 2021-04-02 https://whatsapp.com
 whatsapp.com##body > div[tabindex^="-1"]
@@ -167,15 +172,6 @@ fortune.com##div[class^="popularPosts__"]
 ! 2021-05-11 https://www.nature.com
 www.nature.com##.recommended
 www.nature.com##.social
-
-! 2021-05-20 https://stackoverflow.com
-stackoverflow.com##.js-freemium-cta
-
-! 2021-05-20 https://stackexchange.com
-stackexchange.com##.js-freemium-cta
-
-! 2021-05-12 https://www.last.fm
-www.last.fm##.mpu-subscription-upsell--mpu
 
 ! 2021-05-13 https://www.gq.com
 www.gq.com##.social-icons
@@ -251,9 +247,10 @@ www.yr.no##.clippy
 duckduckgo.com##.serp__bottom-right
 duckduckgo.com##.showcase
 duckduckgo.com##.social
+duckduckgo.com##.footer_cards
 
 ! 2021-06-11 https://www.adressa.no
-www.adressa.no###pm-privacy-banner
+adressa.no###pm-privacy-banner
 
 ! 2021-06-12 https://psyche.co
 psyche.co##div[class^="styled__Wrapper"]
@@ -268,10 +265,9 @@ www.homeandcottage.no##[href="/finansiering"]
 www.homeandcottage.no##.product-detail__badge
 www.homeandcottage.no##.product-detail__badge--percent
 www.homeandcottage.no##.broadcast-block__item
-
-! 2021-06-27 https://www.homeandcottage.no
 www.homeandcottage.no##.product-detail__social-share
 www.homeandcottage.no##.a2a_kit
+www.homeandcottage.no###onetrust-consent-sdk
 
 ! 2021-06-27 https://www.mobelringen.no
 www.mobelringen.no##.ec-gtm-cookie-directive
@@ -307,9 +303,6 @@ hillsong.com##.optanon-show-settings-popup-wrapper
 www.bohus.no###coi-cookie
 ||magicwidget.socialboards.com/$subdocument
 
-! 2021-08-08 https://www.yr.no
-www.yr.no##.clippy
-
 ! 2021-08-08 https://www.mydomaine.com
 www.mydomaine.com###social-share--sticky_1-0
 
@@ -319,28 +312,14 @@ www.ikea.com##.survey
 ! 2021-08-12 https://www.dagbladet.no
 www.dagbladet.no##.css-pp-box
 
-! 2021-08-14 https://www.homeandcottage.no
-www.homeandcottage.no###onetrust-consent-sdk
-
 ! 2021-08-14 https://www.adobe.com
 www.adobe.com###onetrust-consent-sdk
 
-! 2021-08-14 https://ld.reddit.com
-ld.reddit.com##.cookie-infobar
-
-! 2021-08-19 https://old.reddit.com
-old.reddit.com##.cookie-infobar
+! 2021-08-14 https://reddit.com
+reddit.com##.cookie-infobar
 
 ! 2021-08-19 https://www.clasohlson.com
 www.clasohlson.com##.cookie-bar
-
-! 2021-08-23 https://duckduckgo.com
-duckduckgo.com##.footer_cards
-duckduckgo.com##.social
-duckduckgo.com##.showcase
-
-! 2021-08-23 https://www.last.fm
-www.last.fm##.ot-sdk-show-settings
 
 ! 2021-09-03 https://www.gear4music.no
 www.gear4music.no###cookieConsentWidgetDiv
@@ -348,14 +327,6 @@ www.gear4music.no###cookieConsentWidgetDiv
 ! 2021-09-03 https://askubuntu.com
 askubuntu.com##.js-consent-banner
 askubuntu.com##.js-dismissable-hero
-
-! 2021-09-24 https://opensource.stackexchange.com
-stackexchange.com##.js-dismissable-hero
-stackexchange.com##.js-freemium-cta
-
-! 2021-09-28 https://www.youtube.com
-www.youtube.com##ytd-watch-flexy[theater] #player-theater-container:style(max-height: calc(100vh - 56px) !important;)
-www.youtube.com##ytd-watch-flexy[fullscreen] #player-theater-container:style(max-height: none !important;)
 
 ! 2021-10-01 https://devblogs.microsoft.com
 devblogs.microsoft.com###cookie-banner
