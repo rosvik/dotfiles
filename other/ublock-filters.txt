@@ -2,6 +2,15 @@
 ! Installation: Settings > Filter lists > Custom > Import...
 ! https://raw.githubusercontent.com/rosvik/dotfiles/master/other/ublock-filters.txt
 
+! Usefull commands
+! CSS rule
+!   no.sofacompany.com##body:style(overflow:scroll !important;)
+! Classname contains
+!   fortune.com##div[class^="popularPosts__"]
+! Filter on attribute
+!   www.homeandcottage.no##[href="/finansiering"]
+
+
 ! 11/28/2019 https://www.last.fm
 last.fm###_evidon_banner
 last.fm##.mpu-subscription-upsell--mpu
