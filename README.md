@@ -1,6 +1,6 @@
 # Dotfiles 🎉
 
-My very own dotfile repo for keeping track of configurations across systems. I try to keep OS specific settings seperate. You're welcome to use this repo for for inspiration, and copy whatever you want.
+This is my very own dotfile repo for keeping track of configurations across systems. I try to keep OS specific settings seperate. You're welcome to use this repo for for inspiration, and copy whatever you want, ref. [The Unlicense](LICENSE).
 
 ### What's a dotfile?
 
@@ -8,10 +8,10 @@ My very own dotfile repo for keeping track of configurations across systems. I t
 
 > User-specific application configuration is traditionally stored in so called dotfiles. It is common practice to track dotfiles with a version control system such as Git to keep track of changes and synchronize dotfiles across various hosts. [⎋](https://wiki.archlinux.org/index.php/Dotfiles)
 
-If you want to create your own dotfile repo, you should read [this](https://www.anishathalye.com/2014/08/03/managing-your-dotfiles/).
+If you want to create your own dotfile repo, I recommed reading [this article](https://www.anishathalye.com/2014/08/03/managing-your-dotfiles/).
 
 ## Installation
-_Disclaimer: You probably shouldn't. These config files contain lots of settings that might only work on my machine. They are meant to replace the config files that are already on your computer, so things will probably break._
+_Disclaimer: You probably shouldn't. These config files contain lots of settings that might only work on my machine™. They are meant to replace the config files that are already on your computer, so things will probably break._
 
 1. The dotfiles will be placed relative to `~/`, so make sure you are logged in with the right user, or change the `clean` value in the `install-[OS].conf.yaml` file.
 2. Clone this repo to a place where you want to keep it permanently. A symlink to the folder will be placed at `~/.dotfiles`.
