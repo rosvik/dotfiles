@@ -1,6 +1,6 @@
 # Dotfiles 🎉
 
-This is my very own dotfile repo for keeping track of configurations across systems. I try to keep OS specific settings seperate. You're welcome to use this repo for for inspiration, and copy whatever you want, ref. [The Unlicense](LICENSE).
+This is my very own dotfile repo for keeping track of configurations across systems. I try to keep OS specific settings seperate. You're welcome to use this repo for for inspiration, and [copy whatever you want](LICENSE).
 
 ### What's a dotfile?
 
