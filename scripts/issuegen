@@ -28,12 +28,16 @@ substitutions = [
 	["'", ""],
 	["\\", ""],
 	[",", ""],
+	[":", ""],
 ]
 for pair in substitutions:
 	s = s.replace(pair[0], pair[1])
 
 # Combine number and description
 s = f"{d}-{s}"
+
+# Add user ID
+s = f"rosvik/{s}"
 
 if platform.find('darwin') > -1:
 	# Copy to clipboard on MacOS
