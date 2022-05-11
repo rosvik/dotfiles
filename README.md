@@ -8,7 +8,7 @@ This is my very own dotfile repo for keeping track of configurations across syst
 
 > User-specific application configuration is traditionally stored in so called dotfiles. It is common practice to track dotfiles with a version control system such as Git to keep track of changes and synchronize dotfiles across various hosts. [⎋](https://wiki.archlinux.org/index.php/Dotfiles)
 
-If you want to create your own dotfile repo, I recommed reading [this article](https://www.anishathalye.com/2014/08/03/managing-your-dotfiles/).
+If you want to create your own dotfile repo, I recommed reading [this](https://www.anishathalye.com/2014/08/03/managing-your-dotfiles/).
 
 ## Installation
 _Disclaimer: You probably shouldn't. These config files contain lots of settings that might only work on my machine™. They are meant to replace the config files that are already on your computer, so things will probably break._
