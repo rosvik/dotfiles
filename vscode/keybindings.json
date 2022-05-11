@@ -55,4 +55,9 @@
     "command": "-notebook.cell.executeAndInsertBelow",
     "when": "notebookCellListFocused && notebookMissingKernelExtension && !notebookCellExecuting && notebookCellType == 'code' || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelCount > 0"
   },
+  {
+    "key": "cmd+shift+d",
+    "command": "workbench.action.splitEditorRight",
+    "when": "editorTextFocus"
+  }
 ]

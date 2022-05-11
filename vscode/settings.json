@@ -26,16 +26,17 @@
   "editor.glyphMargin": false, // Cmd +
   "files.trimTrailingWhitespace": true,
 
-  "workbench.colorTheme": "Tokyo City",
+  "workbench.colorTheme": "Gruvbox Dark Soft",
   "workbench.editor.pinnedTabSizing": "compact",
   "workbench.tree.indent": 14,
+  "editor.detectIndentation": true,
   "workbench.colorCustomizations": {
     "editorRuler.foreground": "#FFFFFF08",
     "editor.selectionHighlightBackground": "#FFFFFF0F",
     "editor.lineHighlightBackground": "#FFFFFF08",
     "editor.lineHighlightBorder": "#FFFFFF02",
   },
-  "workbench.activityBar.visible": false,
+  "workbench.activityBar.visible": true,
   "workbench.editor.showTabs": true,
   "workbench.startupEditor": "newUntitledFile",
   "workbench.editor.revealIfOpen": true,
@@ -44,7 +45,6 @@
   "breadcrumbs.enabled": true,
 
   "window.titleBarStyle": "native",
-  "window.zoomLevel": 1,
 
   "telemetry.telemetryLevel": "off",
 
@@ -133,6 +133,13 @@
   // https://github.com/crsandeep/simple-react-full-stack
   "eslint.alwaysShowStatus": true,
   "eslint.codeActionsOnSave.mode": "all",
+  "eslint.run": "onSave",
+  "eslint.rules.customizations": [
+    {
+      "rule": "react/self-closing-comp",
+      "severity": "warn",
+    }
+  ],
 
   "[FortranFreeForm]": {
     "editor.insertSpaces": true
@@ -193,7 +200,43 @@
 
   "liveServer.settings.donotShowInfoMsg": true,
   "workbench.editorAssociations": {
-    "*.ipynb": "jupyter.notebook.ipynb"
+    "*.ipynb": "jupyter-notebook"
   },
-  "editor.minimap.enabled": false
+  "editor.minimap.maxColumn": 60,
+  "editor.minimap.showSlider": "always",
+  "editor.minimap.renderCharacters": false,
+  "notebook.cellToolbarVisibility": "hover",
+  "notebook.diff.ignoreMetadata": true,
+  "notebook.lineNumbers": "on",
+  "git.autofetch": true,
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  },
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [
+      80
+    ],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": false
+  },
+  "workbench.editor.splitInGroupLayout": "vertical",
+  "editor.accessibilitySupport": "off",
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "editor.tabSize": 2,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.iconTheme": "vscode-icons",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "azure.resourceFilter": [
+    "0f16d077-bd82-4a6c-b498-52741239205f/b7ef0cfa-36d4-4ba9-9063-f5868bf1273e"
+  ],
+  "window.zoomLevel": 1,
+  "workbench.editor.untitled.hint": "hidden",
+  "react-native-tools.showUserTips": false,
 }
