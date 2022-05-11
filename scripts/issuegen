@@ -29,12 +29,17 @@ substitutions = [
 	["\\", ""],
 	[",", ""],
 	[":", ""],
+	["?", ""],
 ]
 for pair in substitutions:
 	s = s.replace(pair[0], pair[1])
 
 # Combine number and description
 s = f"{d}-{s}"
+
+# Remove duplicate dashes "fix---bug" -> "fix-bug"
+dash = re.compile(r"[-]{2,}")
+s = dash.sub("-", s)
 
 # Add user ID
 s = f"rosvik/{s}"
