@@ -2,13 +2,27 @@
 ! Installation: Settings > Filter lists > Custom > Import...
 ! https://raw.githubusercontent.com/rosvik/dotfiles/master/other/ublock-filters.txt
 
+
 ! Useful commands
+
 ! CSS rule
-!   no.sofacompany.com##body:style(overflow:scroll !important;)
+!no.sofacompany.com##body:style(overflow:scroll !important;)
+
 ! Classname contains
-!   fortune.com##div[class^="popularPosts__"]
-! Filter on attribute
-!   www.homeandcottage.no##[href="/finansiering"]
+!fortune.com##div[class^="popularPosts__"]
+
+! Based on attribute
+!www.homeandcottage.no##[href="/finansiering"]
+
+! Disable JS
+!||www.economist.com^$csp=script-src 'none'
+
+! Upwards from aria-label
+!twitter.com##article [aria-label="NFT profile picture"]:upward(article)
+
+! Has text
+!www.aliexpress.com##div div:has-text(Subscribe to notifications)
+
 
 
 ! 11/28/2019 https://www.last.fm
