@@ -2,7 +2,7 @@
 ! Installation: Settings > Filter lists > Custom > Import...
 ! https://raw.githubusercontent.com/rosvik/dotfiles/master/other/ublock-filters.txt
 
-! Usefull commands
+! Useful commands
 ! CSS rule
 !   no.sofacompany.com##body:style(overflow:scroll !important;)
 ! Classname contains
