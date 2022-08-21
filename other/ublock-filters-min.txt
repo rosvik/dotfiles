@@ -1,0 +1,440 @@
+!! Domain filters
+||consent.trustarc.com/asset/trans.png$image
+||comments.vg.no/$subdocument
+||buy.tinypass.com/$subdocument
+||open.spotify.com/embed-podcast/$subdocument
+||cmp.vg.no$subdocument
+||widgets.wp.com$subdocument
+||magicwidget.socialboards.com/$subdocument
+||www.economist.com^$csp=script-src 'none'
+||disqus.com
+||disquscdn.com
+||intercomcdn.com
+||widget.intercom.io
+||www.scmp.com/scmp_comments/$subdocument
+||sourcepoint.theguardian.com$subdocument
+||js.driftt.com/$subdocument
+
+
+!! Misc filters
+###mtm-root-container
+###onetrust-banner-sdk
+###onetrust-consent-sdk
+*##html[data-darkreader-scheme="dark"] hypothesis-highlight:style(color: black !important;)
+ajo.prod.reuters.tv
+
+
+!! Cosmetic filters
+
+! adobe.com
+www.adobe.com###onetrust-consent-sdk
+
+! adressa.no
+adressa.no###pm-privacy-banner
+
+! aliexpress.com
+aliexpress.com##.ui-fixed-panel
+aliexpress.com###J_xiaomi_dialog
+aliexpress.com##.mobile-app
+aliexpress.com##.drogue-poplayer-modal
+aliexpress.com##.product-fix-sns
+aliexpress.com##.multi-sidebar-outer
+www.aliexpress.com##.top-banner-container
+www.aliexpress.com##div div:has-text(Subscribe to notifications)
+www.aliexpress.com##.coupon-poplayer-modal
+www.aliexpress.com##body > div > div:has-text(Sign in to get ):has-text(Welcome to AliExpress)
+www.aliexpress.com##.footer-copywrite
+
+! archive.org
+archive.org##.js-donate-banner
+
+! askubuntu.com
+askubuntu.com##.js-consent-banner
+askubuntu.com##.js-dismissable-hero
+
+! bbc.com
+www.bbc.com##.fc-dialog-overlay
+www.bbc.com##.fc-dialog
+
+! bgafotobutikk.no
+www.bgafotobutikk.no###CybotCookiebotDialog
+
+! blackboard.com
+ntnu.blackboard.com##.eesy
+
+! bloomberg.com
+bloomberg.com##.mini-player
+bloomberg.com##.postr-recirc
+bloomberg.com##.leaderboard-ad-mock
+
+! bohus.no
+www.bohus.no###coi-cookie
+
+! brushfire.com
+hillsong.brushfire.com##.help-widget-wrapper
+hillsong.brushfire.com##.goog-te-banner-frame
+
+! businessinsider.com
+www.businessinsider.com##.popular-post
+
+! cbsnews.com
+www.cbsnews.com###onetrust-consent-sdk:style(display: none !important;)
+www.cbsnews.com##.newsletter_signup
+www.cbsnews.com##.recirculation__wrapper
+
+! cemasys.com
+portal.cemasys.com###chat-widget
+portal.cemasys.com##.popmake
+
+! clasohlson.com
+www.clasohlson.com##.cookie-bar
+www.clasohlson.com##.cookie-bar-overlay
+www.clasohlson.com##body:style(overflow: inherit !important)
+
+! columbianewsservice.com
+columbianewsservice.com##.share-this-page-links
+
+! computersalg.no
+www.computersalg.no##.BannerZoneMain
+
+! dagbladet.no
+www.dagbladet.no##.css-pp-box
+
+! docker.com
+hub.docker.com###truste-consent-track
+
+! duckduckgo.com
+duckduckgo.com##.serp__bottom-right
+duckduckgo.com##.showcase
+duckduckgo.com##.social
+duckduckgo.com##.footer_cards
+duckduckgo.com##.feedback-btn
+
+! economist.com
+www.economist.com##.layout-article-sharing
+
+! fastcompany.com
+fastcompany.com##.sticky-inner-wrapper
+fastcompany.com##.social
+fastcompany.com##.highlight-share-popover
+fastcompany.com##.preloaded_lightbox
+
+! fortune.com
+fortune.com###article_overlay:style(filter:none !important;z-index:inherit !important;pointer-events:inherit !important;user-select:inherit !important;)
+fortune.com##div[class^="gutenbergContent__content"] > div:style(width:calc((100% - 288px)/7*5 + 288px) !important;)
+fortune.com##div[class^="socialList"]:style(visibility:hidden !important;)
+fortune.com##div[class^="popularPosts__"]
+
+! gatesfoundation.org
+gatesfoundation.org##.cookie-message
+
+! gear4music.no
+www.gear4music.no###cookieConsentWidgetDiv
+
+! github.com
+github.com##.js-notification-top-shelf
+
+! gq.com
+www.gq.com##.social-icons
+
+! harvestapp.com
+harvestapp.com###zendesk-widget-placeholder
+
+! helor.com
+www.helor.com##.un-before-unloader
+
+! hillsong.com
+hillsong.com##.optanon-show-settings-popup-wrapper
+
+! homeandcottage.no
+www.homeandcottage.no##.product__badge
+www.homeandcottage.no##.product__price--old.product__price
+www.homeandcottage.no##.product__price--discount
+www.homeandcottage.no##[href="/finansiering"]
+www.homeandcottage.no##.product-detail__badge
+www.homeandcottage.no##.product-detail__badge--percent
+www.homeandcottage.no##.broadcast-block__item
+www.homeandcottage.no##.product-detail__social-share
+www.homeandcottage.no##.a2a_kit
+www.homeandcottage.no###onetrust-consent-sdk
+
+! hotels.com
+no.hotels.com##.osano-cm-dialog--type_bar.osano-cm-dialog--position_bottom.osano-cm-dialog.osano-cm-window__dialog
+
+! ikea.com
+www.ikea.com##.survey
+
+! imore.com
+www.imore.com##.qc-cmp-cleanslate
+
+! independent.co.uk
+independent.co.uk##.related
+independent.co.uk##.sidebar
+independent.co.uk##.social-share
+independent.co.uk###comments
+independent.co.uk##.show-comments
+
+! komplett.no
+www.komplett.no##.sticky-box
+
+! last.fm
+last.fm###_evidon_banner
+last.fm##.mpu-subscription-upsell--mpu
+last.fm##.ot-sdk-show-settings
+
+! latimes.com
+www.latimes.com##.action-bar
+www.latimes.com##.ensNotifyBanner
+www.latimes.com##.met-flyout
+
+! leetcode.com
+leetcode.com###subscribe
+
+! linuxhint.com
+linuxhint.com###cbox
+
+! longreads.com
+longreads.com##.in-story:has-text(Sign up)
+longreads.com##.sd-like-enabled
+longreads.com###actionbar
+longreads.com##.wp-footer
+longreads.com##.entry-email-signup
+longreads.com##.member-promo
+longreads.com###container:style(margin-top:0!important)
+longreads.com##.modal
+
+! marketwatch.com
+www.marketwatch.com##.article__social
+www.marketwatch.com##.region--aside
+www.marketwatch.com##.more-headlines.element--list.element
+
+! mic.com
+mic.com##.as-oil-content-overlay
+mic.com##.bF.bz.bA
+
+! microsoft.com
+devblogs.microsoft.com##.social-icon-bar
+devblogs.microsoft.com###cookie-banner
+devblogs.microsoft.com##.social-icon-bar
+
+! mobelringen.no
+www.mobelringen.no##.ec-gtm-cookie-directive
+www.mobelringen.no##.visma-store-selected-message
+
+! mydomaine.com
+www.mydomaine.com###social-share--sticky_1-0
+
+! nasaspaceflight.com
+nasaspaceflight.com###sidebar
+
+! nature.com
+www.nature.com##.recommended
+www.nature.com##.social
+www.nature.com##.cc-banner
+www.nature.com##.c-site-messages
+
+! newyorker.com
+newyorker.com##.persistent-bottom
+newyorker.com##.article__social-share
+www.newyorker.com###signInContainer
+www.newyorker.com##.paywall-modal-container
+www.newyorker.com##.modal-overlay
+www.newyorker.com##.journey-template--paywall-modal.paywall-modal-full-barrier
+www.newyorker.com##[class*="consumer-marketing-unit"]
+www.newyorker.com##.ticker-view:has-text(Subscribe today)
+www.newyorker.com##.ticker-view:has-text(newsletter)
+www.newyorker.com##a[href*="subscribe.newyorker.com"]
+www.newyorker.com##.grid-layout__aside
+www.newyorker.com##.social-icons__list
+
+! nordnet.no
+www.nordnet.no##.cookie-consent
+www.nordnet.no##div[class*="PieContainer"]
+
+! nrk.no
+www.nrk.no##.cf.container-widget.surrogate-content.rich.widget.article > .sl18.sl12.sl9.sl6.s2.fl.col.g11 > div.container-widget-content > .article-share
+
+! nytimes.com
+bits.blogs.nytimes.com##.ribbon
+bits.blogs.nytimes.com##.theme-speech-bubble
+bits.blogs.nytimes.com##.sharetools
+www.nytimes.com##.expanded-dock
+
+! ourworldindata.org
+ourworldindata.org##.open.cookie-notice
+
+! pinterest.com
+pinterest.com##[data-grid-item]:has([title="Promoted by"])
+no.pinterest.com##video:upward(div)
+
+! politico.eu
+www.politico.eu###amazon-polly-audio-table
+www.politico.eu##.social-sharing
+www.politico.eu###pl-sp-privacy-button
+www.politico.eu##header:style(position:static !important;)
+www.politico.eu##.widget:style(border:none !important;)
+
+! princeton.edu
+www.princeton.edu##.sharebox
+
+! prisjakt.no
+www.prisjakt.no##.BannerCookieBanner
+
+! proshop.no
+www.proshop.no##.site-background-banner
+www.proshop.no##a[data-action="campaignClick"]
+www.proshop.no##.solvemate
+
+! psyche.co
+psyche.co##div[class^="styled__Wrapper"]
+psyche.co##div[class^="styled__SocialLinks"]
+psyche.co##div[class^="styled__SocialShare"]
+
+! quantamagazine.org
+www.quantamagazine.org##.sshare
+www.quantamagazine.org##.theme__anchors--solid.flex-justify-center:style(visibility: hidden !important;)
+
+! reddit.com
+reddit.com##.cookie-infobar
+
+! reuters.com
+www.reuters.com###onetrust-consent-sdk
+www.reuters.com##[class*="OldSiteBanner__banner"]
+www.reuters.com##[class*="SiteFooter__product"]
+www.reuters.com##[class*="RegularArticleLayout__content"] *:style(color: white !important;)
+www.reuters.com##div[class^="BreakingNews-pill-"]
+www.reuters.com##div[class^="RCOMVideo-"]
+www.reuters.com##div[class^="SocialTools"]
+
+! runescape.com
+secure.runescape.com##.c-cookie-consent
+secure.runescape.com##.c-news-article__share
+
+! science.org
+www.science.org##.news-article__share
+
+! scientificamerican.com
+scientificamerican.com##.house__home_ad
+scientificamerican.com##.tooltip-outer.share-box
+scientificamerican.com##.container.tout_subscribe
+scientificamerican.com##.cart__icon.tx_meta.meta-list__item
+scientificamerican.com##.header__left:style(visibility: hidden !important;)
+scientificamerican.com##.is-sticky.page-context-nav
+scientificamerican.com##.container.newsletter-promo
+scientificamerican.com##.newsletter-subscribe-container.container
+scientificamerican.com###promo-header
+
+! scmp.com
+www.scmp.com##.share-widget
+www.scmp.com##.article-details-type--iframe
+www.scmp.com##.article-details-type--h3
+www.scmp.com##.article-comment-bottom-widget
+www.scmp.com##.others__more-on-this
+
+! snohetta.com
+snohetta.com###cookie
+
+! sofacompany.com
+no.sofacompany.com###cookie-information-template-wrapper
+no.sofacompany.com##body:style(overflow:scroll !important;)
+
+! stackexchange.com
+stackexchange.com##.js-consent-banner
+stackexchange.com##.js-dismissable-hero
+stackexchange.com##.js-freemium-cta
+
+! stackoverflow.com
+stackoverflow.com##.js-freemium-cta
+
+! stripe.com
+press.stripe.com##.Notification__card
+
+! texasmonthly.com
+www.texasmonthly.com##.js-share
+
+! the-tls.co.uk
+the-tls.co.uk##.optanon-alert-box-wrapper
+the-tls.co.uk##.tls-sharing
+the-tls.co.uk##.tls-subscriptions-banner
+
+! theatlantic.com
+www.theatlantic.com##.NavAccountLinks_root__1JJK_
+
+! theparisreview.org
+www.theparisreview.org##.article-body:style(font-size:1.1em;text-align:justify;)
+www.theparisreview.org##.article-tools_desktop
+www.theparisreview.org##.paywall
+www.theparisreview.org##.article-tools-social
+www.theparisreview.org##.header-nav-social
+
+! thestorygraph.com
+app.thestorygraph.com###freshworks-container
+app.thestorygraph.com##.icon-cheveron-up-circle
+
+! theverge.com
+theverge.com##.m-privacy-consent
+theverge.com##.c-comments
+theverge.com##.l-col__sidebar:style(visibility: hidden !important;)
+
+! trd.by
+trd.by###pm-privacy-banner
+
+! twitch.tv
+twitch.tv##.video-player__container--theatre-whispers:style(bottom:0 !important;)
+
+! twitter.com
+twitter.com##[aria-label$="trending now" i]
+twitter.com##[aria-label$="who to follow" i]
+twitter.com##.r-zchlnj.r-1xcajam.r-12vffkv.r-1d2f490.r-1p0dtai.r-aqfbo4.css-1dbjc4n > div.r-12vffkv.css-1dbjc4n
+twitter.com##article [aria-label="NFT profile picture"]:upward(article)
+
+! urbanpixxels.com
+urbanpixxels.com###gdprc_bar
+
+! vg.no
+www.vg.no###sp_message_container_481243
+
+! visithaarlem.com
+www.visithaarlem.com##.cookie-message__wrapper--full.cookie-message__wrapper
+
+! visualstudio.com
+code.visualstudio.com###cookie-banner
+
+! washingtonpost.com
+www.washingtonpost.com##.softwall-overlay
+
+! whatsapp.com
+whatsapp.com##body > div[tabindex^="-1"]
+whatsapp.com###hide_till_load:style(position:static !important;)
+whatsapp.com##body > div[tabindex^="-1"]
+whatsapp.com###hide_till_load:style(position:static !important;)
+
+! wikipedia.org
+en.wikipedia.org###frb-inline
+en.wikipedia.org##.frb-button.frb-nag-link
+en.wikipedia.org##.cn-fundraising
+
+! wired.com
+wired.com###failsafe-clickthrough
+wired.com##.ad-stickyhero
+wired.com##.social-icons__list-item--has-background
+wired.com##.ad--rail.ad
+wired.com##.callout--related-list
+www.wired.com##.newsletter-subscribe-form
+
+! yamaha.com
+usa.yamaha.com###pop-div0039839572796802836
+usa.yamaha.com###pop-div2025857536621143296
+
+! youtube.com
+youtube.com##ytd-watch-flexy[theater] #player-theater-container:style(max-height: calc(100vh - 56px) !important;)
+youtube.com##ytd-watch-flexy[fullscreen] #player-theater-container:style(max-height: none !important;)
+youtube.com###clarify-box > .ytd-watch-flexy.style-scope
+
+! yr.no
+www.yr.no##.clippy
+
+! zdnet.com
+www.zdnet.com##.breaking-news-container
+www.zdnet.com##.social-links
+www.zdnet.com##.relatedContent
