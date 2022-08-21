@@ -14,6 +14,7 @@
 ||www.scmp.com/scmp_comments/$subdocument
 ||sourcepoint.theguardian.com$subdocument
 ||js.driftt.com/$subdocument
+||buy.tinypass.com/checkout/$subdocument
 
 
 !! Misc filters
@@ -44,6 +45,10 @@ www.aliexpress.com##div div:has-text(Subscribe to notifications)
 www.aliexpress.com##.coupon-poplayer-modal
 www.aliexpress.com##body > div > div:has-text(Sign in to get ):has-text(Welcome to AliExpress)
 www.aliexpress.com##.footer-copywrite
+www.aliexpress.com##.multi-sidebar-tab
+www.aliexpress.com##+js(ra, target, a)
+www.aliexpress.com##.mobile-app
+www.aliexpress.com##.ui-fixed-panel-unit
 
 ! archive.org
 archive.org##.js-donate-banner
@@ -112,6 +117,11 @@ duckduckgo.com##.feedback-btn
 
 ! economist.com
 www.economist.com##.layout-article-sharing
+www.economist.com###audio-player:upward(figure)
+www.economist.com##div[class^="adComponent"]
+www.economist.com##._podcast-promo
+www.economist.com##._newsletter-promo-container
+www.economist.com##iframe:style(height:500px)
 
 ! fastcompany.com
 fastcompany.com##.sticky-inner-wrapper
@@ -160,6 +170,9 @@ www.homeandcottage.no###onetrust-consent-sdk
 
 ! hotels.com
 no.hotels.com##.osano-cm-dialog--type_bar.osano-cm-dialog--position_bottom.osano-cm-dialog.osano-cm-window__dialog
+
+! ieee.org
+spectrum.ieee.org##.gdpr-cookie-wrapper
 
 ! ikea.com
 www.ikea.com##.survey
@@ -345,6 +358,7 @@ stackexchange.com##.js-freemium-cta
 
 ! stackoverflow.com
 stackoverflow.com##.js-freemium-cta
+stackoverflow.com##.js-consent-banner
 
 ! stripe.com
 press.stripe.com##.Notification__card
@@ -359,6 +373,10 @@ the-tls.co.uk##.tls-subscriptions-banner
 
 ! theatlantic.com
 www.theatlantic.com##.NavAccountLinks_root__1JJK_
+
+! thefederalist.com
+thefederalist.com##.article-share-simple
+thefederalist.com##.general-callout
 
 ! theparisreview.org
 www.theparisreview.org##.article-body:style(font-size:1.1em;text-align:justify;)
