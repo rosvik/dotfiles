@@ -504,3 +504,30 @@ no.pinterest.com##video:upward(div)
 ! 2022-08-16 https://en.wikipedia.org
 en.wikipedia.org##.cn-fundraising
 
+! 2022-03-01 https://www.economist.com
+||buy.tinypass.com/checkout/$subdocument
+
+! 2022-06-10 https://spectrum.ieee.org
+spectrum.ieee.org##.gdpr-cookie-wrapper
+
+! 2022-08-07 https://thefederalist.com
+thefederalist.com##.article-share-simple
+thefederalist.com##.general-callout
+
+! 2022-08-21 https://www.aliexpress.com
+www.aliexpress.com##.multi-sidebar-tab
+
+! 2022-08-21 https://stackoverflow.com
+stackoverflow.com##.js-consent-banner
+
+! 2022-08-21 https://www.aliexpress.com
+www.aliexpress.com##+js(ra, target, a)
+www.aliexpress.com##.mobile-app
+www.aliexpress.com##.ui-fixed-panel-unit
+
+! 2022-08-21 https://www.economist.com
+www.economist.com###audio-player:upward(figure)
+www.economist.com##div[class^="adComponent"]
+www.economist.com##._podcast-promo
+www.economist.com##._newsletter-promo-container
+www.economist.com##iframe:style(height:500px)
