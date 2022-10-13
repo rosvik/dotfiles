@@ -1,0 +1,85 @@
+{
+	// Place your snippets for typescriptreact here. Each snippet is defined under a snippet name and has a prefix, body and
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"Prop": {
+		"prefix": "pr",
+		"body": "$1={$0}",
+		"description": "Insert property"
+	},
+	"Console log": {
+		"prefix": "cl",
+		"body": "console.log(${1:'${0:Test}'});",
+		"description": "Insert property"
+	},
+	"Component": {
+		"prefix": "comp",
+		"description": "Basic react component for the AtB app",
+		"body": ["import {StyleSheet} from '@atb/theme';",
+			"import {useTranslation} from '@atb/translations';",
+			"import React from 'react';",
+			"import {View} from 'react-native';",
+			"",
+			"type ${1:Component}Props = {};",
+			"",
+			"export default function ${1:Component}({}: ${1:Component}Props): JSX.Element {",
+			"\tconst styles = useStyles();",
+			"\tconst {t} = useTranslation();",
+			"",
+			"\treturn <View style={styles.container}>${0}</View>;",
+			"}",
+			"",
+			"const useStyles = StyleSheet.createThemeHook((theme) => ({",
+			"\tcontainer: {},",
+			"}));",
+		],
+	},
+	"React Context Module": {
+		"prefix": "reactcontext",
+		"body": [
+			"import { useContext, createContext, PropsWithChildren } from \"react\";",
+			"",
+			"type $1 = {$2};",
+			"",
+			"type $1ContextState = {$3};",
+			"",
+			"",
+			"const $1Context =",
+			"  createContext<$1ContextState | undefined>(undefined);",
+			"",
+			"",
+			"export type $1ContextProviderProps = PropsWithChildren<{}>;",
+			"export function $1ContextProvider({",
+			"  children,",
+			"}: $1ContextProviderProps) {",
+			"  $0",
+			"",
+			"  return (",
+			"    <$1Context.Provider value={{}}>",
+			"      {children}",
+			"    </$1Context.Provider>",
+			"  );",
+			"}",
+			"",
+			"export function use$1() {",
+			"  const context = useContext($1Context);",
+			"  if (context === undefined) {",
+			"    throw new Error('use$1 must be used within $1ContextProvider');",
+			"  }",
+			"  return context;",
+			"}",
+			""
+		],
+		"description": "React Context Module Pattern"
+	}
+}
