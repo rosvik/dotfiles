@@ -20,10 +20,16 @@
   // Linting format on save
   "editor.formatOnSave": false,
 
+  "editor.stickyScroll.enabled": true,
+  "editor.stickyScroll.maxLineCount": 5,
   "editor.bracketPairColorization.enabled": true,
 
   "editor.suggestSelection": "first",
   "editor.glyphMargin": false, // Cmd +
+  "emmet.includeLanguages": {},
+  "emmet.excludeLanguages": [
+    "typescriptreact"
+  ],
   "files.trimTrailingWhitespace": true,
 
   "workbench.colorTheme": "Gruvbox Dark Soft",
@@ -55,10 +61,13 @@
 
   "files.insertFinalNewline": true,
   "files.exclude": {
-    "**/__pycache__/": true
+    "**/__pycache__/": true,
+    "node_modules/": true,
   },
   "files.associations": {
-    "*.html": "html"
+    "*.html": "html",
+    "*.py": "python",
+    "*.module.css": "postcss"
   },
 
   // Per-language settings
@@ -68,19 +77,28 @@
     "editor.rulers": [80],
     "editor.wordWrapColumn": 80,
     "editor.wordWrap": "wordWrapColumn",
-    "editor.quickSuggestions": false
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    }
   },
   "[rmd]": {
     // Wrap at ruler
     "editor.rulers": [80],
     "editor.wordWrapColumn": 80,
     "editor.wordWrap": "wordWrapColumn",
-    "editor.quickSuggestions": false
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    }
   },
   "[python]": {
-    "editor.tabSize": 4,
-    "editor.insertSpaces": false,
-    "editor.formatOnSave": false
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.formatOnSave": false,
+    // "editor.autoIndent": "full",
   },
   "python.formatting.provider": "black",
   "python.languageServer": "Pylance",
@@ -111,6 +129,7 @@
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
+
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
@@ -164,14 +183,17 @@
   "codesnap.boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px",
   "codesnap.containerPadding": "0",
 
-  "emmet.triggerExpansionOnTab": true,
-
   "tabnine.experimentalAutoImports": true,
   "tabnine.disable_file_regex": ["settings.json$", ".env$", ".rs$"],
 
   // Customize UI
   "customizeUI.titleBar": "inline",
   "customizeUI.activityBar": "bottom",
+  "customizeUI.listRowHeight": 18,
+  // "customizeUI.fontSizeMap": {
+  //   "13px": "12px",
+  //   // "monospace": "12px"
+  // },
   "customizeUI.stylesheet": {
     ".editor-actions": "display: none !important;"
   },
@@ -236,7 +258,11 @@
   "azure.resourceFilter": [
     "0f16d077-bd82-4a6c-b498-52741239205f/b7ef0cfa-36d4-4ba9-9063-f5868bf1273e"
   ],
-  "window.zoomLevel": 1,
   "workbench.editor.untitled.hint": "hidden",
   "react-native-tools.showUserTips": false,
+  "[postcss]": {
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
+  },
+  "redhat.telemetry.enabled": false,
+  "window.zoomLevel": 1,
 }
