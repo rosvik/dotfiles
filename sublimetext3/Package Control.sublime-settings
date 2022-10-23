@@ -10,9 +10,11 @@
 		"Babel",
 		"Babel Snippets",
 		"Blade Snippets",
+		"CodeFormatter",
 		"CSS3",
 		"Emmet",
 		"Formatter",
+		"gruvbox",
 		"Javascript Beautify",
 		"Laravel 5 Snippets",
 		"Laravel Blade Highlighter",
@@ -30,6 +32,6 @@
 		"Swift",
 		"TypeScript Syntax",
 		"Vue Syntax Highlight",
-		"WordCount"
+		"WordCount",
 	],
 }
