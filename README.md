@@ -15,7 +15,7 @@ _Disclaimer: You probably shouldn't. These config files contain lots of settings
 
 1. The dotfiles will be placed relative to `~/`, so make sure you are logged in with the right user, or change the `clean` value in the `install-[OS].conf.yaml` file.
 2. Clone this repo to a place where you want to keep it permanently. A symlink to the folder will be placed at `~/.dotfiles`.
-3. Run `./install-[OS]`
+3. Run `./install`
 
 ### Sublime Text 3 (macOS)
 To install the config files for Sublime Text 3, a few additional steps is required.
