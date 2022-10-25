@@ -12,6 +12,7 @@
     ~/.bash_aliases_unix: 'unix/bash_aliases_unix.sh'
     ~/.nanorc: 'unix/nanorc.sh'
     ~/.zshrc: 'macos/zshrc.sh'
+    ~/.oh-my-zsh/custom: 'macos/oh-my-zsh/'
     ~/Library/Application Support/Sublime Text/Packages/User: 'sublimetext3/'
     ~/Library/Application Support/Code/User/keybindings.json: 'vscode/keybindings.json'
     ~/Library/Application Support/Code/User/settings.json: 'vscode/settings.json'
