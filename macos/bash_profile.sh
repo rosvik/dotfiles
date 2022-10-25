@@ -1,8 +1,3 @@
-
-#### FIG ENV VARIABLES ####
-# Please make sure this block is at the start of this file.
-[ -s ~/.fig/shell/pre.sh ] && source ~/.fig/shell/pre.sh
-#### END FIG ENV VARIABLES ####
 #!/usr/bin/env bash
 
 # ---------------------------
@@ -38,7 +33,7 @@ export INFIPATH="$HOME/Git/infinote/"
 export INFIFILE="$HOME/Git/infinote/infinote.md"
 
 # Setting locale settings
-export LC_ALL=en_US.UTF-8  
+export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 # Set colored output for ls
@@ -53,7 +48,7 @@ export HASTE_SERVER="https://haste.qore.no"
 export PS1="\[$(tput setaf 6)\]\W\[$(tput setaf 7)$(tput bold)\] > \[$(tput sgr0)\]"
 #PS1="${RED}\W${RESET} ${BOLD}>${RESET} "
 
-# iTerm window and tab title as current directory. 
+# iTerm window and tab title as current directory.
 # Source: https://gist.github.com/phette23/5270658
 unset PROMPT_COMMAND
 if [ $ITERM_SESSION_ID ]; then
@@ -68,7 +63,7 @@ fi
 PATH="~/.scripts:$PATH"
 
 # Java
-#export JAVA_HOME="$(/usr/libexec/java_home)" # Dynamic 
+#export JAVA_HOME="$(/usr/libexec/java_home)" # Dynamic
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home
 export M2_HOME=/usr/local/apache-maven-3.3.9
 export M2=$M2_HOME/bin
@@ -122,10 +117,5 @@ test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shel
 # MacPorts Installer addition on 2019-08-12_at_14:42:05: adding an appropriate PATH variable for use with MacPorts.
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 . "$HOME/.cargo/env"
-
-#### FIG ENV VARIABLES ####
-# Please make sure this block is at the end of this file.
-[ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
-#### END FIG ENV VARIABLES ####
 
 complete -C /usr/local/bin/terraform terraform

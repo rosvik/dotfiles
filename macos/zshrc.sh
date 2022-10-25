@@ -1,11 +1,6 @@
 zstyle ':znap:*' repos-dir .
 source ~/git/zsh-snap/znap.zsh
 
-#### FIG ENV VARIABLES ####
-# Please make sure this block is at the start of this file.
-[ -s ~/.fig/shell/pre.sh ] && source ~/.fig/shell/pre.sh
-#### END FIG ENV VARIABLES ####
-
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -143,11 +138,6 @@ export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 export PATH="/usr/local/texlive/2022/bin/universal-darwin:$PATH"
 export MANPATH="/usr/local/texlive/2022/texmf-dist/doc/man:$MANPATH"
 export INFOPATH="/usr/local/texlive/2022/texmf-dist/doc/info:$INFOPATH"
-
-#### FIG ENV VARIABLES ####
-# Please make sure this block is at the end of this file.
-[ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
-#### END FIG ENV VARIABLES ####
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform
