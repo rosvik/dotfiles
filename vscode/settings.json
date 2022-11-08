@@ -32,9 +32,9 @@
   ],
   "files.trimTrailingWhitespace": true,
 
-  "workbench.colorTheme": "Gruvbox Dark Soft",
+  "workbench.colorTheme": "Gruvbox Dark Medium",
   "workbench.editor.pinnedTabSizing": "compact",
-  "workbench.tree.indent": 14,
+  "workbench.tree.indent": 12,
   "editor.detectIndentation": true,
   "workbench.colorCustomizations": {
     "editorRuler.foreground": "#FFFFFF08",
@@ -110,12 +110,13 @@
 
   "[rust]": {
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "statiolake.vscode-rustfmt"
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
 
   "[html]": {
     "editor.wordWrap": "wordWrapColumn",
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
   },
   "[css]": {
     "editor.defaultFormatter": "stylelint.vscode-stylelint"
@@ -147,6 +148,9 @@
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[graphql]": {
     "editor.formatOnSave": true
   },
   // https://github.com/crsandeep/simple-react-full-stack
