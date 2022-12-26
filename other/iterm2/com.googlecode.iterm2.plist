@@ -5727,6 +5727,8 @@ Split Vertically with Current Profile</string>
 	<false/>
 	<key>OpenNoWindowsAtStartup</key>
 	<false/>
+	<key>PMPrintingExpandedStateForPrint2</key>
+	<false/>
 	<key>PasteSpecialRegex</key>
 	<string></string>
 	<key>PasteSpecialSubstitution</key>
@@ -5768,6 +5770,8 @@ Split Vertically with Current Profile</string>
 			<string>kNextWindowPointerAction</string>
 		</dict>
 	</dict>
+	<key>Print In Black And White</key>
+	<true/>
 	<key>PromptOnQuit</key>
 	<false/>
 	<key>QuitWhenAllWindowsClosed</key>
