@@ -20,7 +20,6 @@ if [ -f '/Users/rosvik/bin/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/rosv
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/rosvik/bin/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/rosvik/bin/google-cloud-sdk/completion.zsh.inc'; fi
 
-export SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/Users/rosvik/.scripts:$PATH"
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
@@ -32,6 +31,8 @@ export INFOPATH="/usr/local/texlive/2022/texmf-dist/doc/info:$INFOPATH"
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform
+
+export SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk
 
 export GOOGLE_APPLICATION_CREDENTIALS="$HOME/.config/gcloud/application_default_credentials.json"
 
