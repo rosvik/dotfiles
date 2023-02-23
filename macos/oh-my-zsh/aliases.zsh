@@ -14,6 +14,9 @@ alias b='EDITOR=nano ranger'
 alias gd='git diff | bat'
 alias s='spotify'
 alias sp='spotify pause'
+alias rc='subl ~/.zshrc'
+alias ealias='subl ~/.dotfiles/macos/oh-my-zsh/aliases.zsh'
+alias eomz='subl ~/.dotfiles/macos/oh-my-zsh'
 
 
 # PHP
