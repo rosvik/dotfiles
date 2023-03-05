@@ -153,6 +153,9 @@
   "[graphql]": {
     "editor.formatOnSave": true
   },
+  "[prisma]": {
+    "editor.formatOnSave": true
+  },
   "[yaml]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "redhat.vscode-yaml"
