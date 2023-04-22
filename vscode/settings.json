@@ -41,6 +41,8 @@
     "editor.selectionHighlightBackground": "#FFFFFF0F",
     "editor.lineHighlightBackground": "#FFFFFF08",
     "editor.lineHighlightBorder": "#FFFFFF02",
+    "editorInlayHint.background": "#FFFFFF25",
+    "editorInlayHint.foreground": "#00000080",
   },
   "workbench.activityBar.visible": true,
   "workbench.editor.showTabs": true,
@@ -112,6 +114,7 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
+  "rust-analyzer.inlayHints.renderColons": false,
 
   "[html]": {
     "editor.wordWrap": "wordWrapColumn",
