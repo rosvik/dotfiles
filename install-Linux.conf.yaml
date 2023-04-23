@@ -2,15 +2,16 @@
     link:
       relink: true
 
-- clean: ['~']
+- clean: ["~"]
 
 - link:
-    ~/.dotfiles: ''
-    ~/.scripts: 'scripts/'
-    ~/.bashrc: 'linux/bashrc.sh'
-    ~/.bash_aliases: 'linux/bash_aliases.sh'
-    ~/.bash_aliases_unix: 'unix/bash_aliases_unix.sh'
-    ~/.nanorc: 'unix/nanorc.sh'
+    ~/.dotfiles: ""
+    ~/.scripts: "scripts/"
+    ~/.bashrc: "linux/bashrc.sh"
+    ~/.bash_aliases: "linux/bash_aliases.sh"
+    ~/.bash_aliases_unix: "unix/bash_aliases_unix.sh"
+    ~/.nanorc: "unix/nanorc.sh"
+    ~/.config/neofetch/config.conf: "unix/neofetch.conf"
 
 - shell:
-  - [git submodule update --init --recursive, Installing submodules]
+    - [git submodule update --init --recursive, Installing submodules]
