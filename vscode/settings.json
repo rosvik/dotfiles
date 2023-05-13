@@ -6,23 +6,24 @@
   "update.mode": "none",
 
 
-  // Theme
   // ---------------------------------------------------------------------------
+  // Theme
 
   "workbench.colorTheme": "Atom Pro Theme",
   "workbench.iconTheme": "vscode-icons",
 
 
-  // Font
   // ---------------------------------------------------------------------------
+  // Font
 
   "editor.fontFamily": "'Fira Code', 'IntelOne Mono', 'Berkeley Mono', monospace",
   "editor.fontWeight": "400",
   "editor.fontLigatures": true, // -> ++ -- >= <= <> fi
+  "terminal.integrated.fontFamily": "'Berkeley Mono', 'Fira Code', monospace",
 
 
-  // Editor
   // ---------------------------------------------------------------------------
+  // Editor
 
   "editor.rulers": [80, 100],
   "editor.wordWrapColumn": 100, // Uses Viewport if set to 0
@@ -50,8 +51,8 @@
   "editor.minimap.renderCharacters": false,
 
 
-  // Workbench
   // ---------------------------------------------------------------------------
+  // Workbench
 
   "workbench.editor.pinnedTabSizing": "compact",
   "workbench.editor.showTabs": true,
@@ -73,9 +74,9 @@
     "editorInlayHint.foreground": "#00000080",
   },
 
-  "breadcrumbs.enabled": true,
   "window.titleBarStyle": "native",
   "window.zoomLevel": 1,
+  "breadcrumbs.enabled": true,
 
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
@@ -91,16 +92,16 @@
   },
 
 
-  // Telemetry
   // ---------------------------------------------------------------------------
+  // Telemetry
 
   "telemetry.telemetryLevel": "off",
   "redhat.telemetry.enabled": false,
   "gitlens.telemetry.enabled": false,
 
 
-  // Language specific settings
   // ---------------------------------------------------------------------------
+  // Language specific settings
 
   "files.associations": {
     "*.html": "html",
@@ -248,13 +249,11 @@
   },
 
 
-  // Extensions
   // ---------------------------------------------------------------------------
+  // Extensions
 
   "extensions.ignoreRecommendations": true,
   "vsicons.dontShowNewVersionMessage": true,
-
-  "liveshare.featureSet": "insiders",
 
   "codesnap.showWindowTitle": false,
   "codesnap.showWindowControls": false,
@@ -293,11 +292,11 @@
   "docker.showStartPage": false,
 
 
-  // Misc
   // ---------------------------------------------------------------------------
+  // Misc
 
   "git.autofetch": true,
-  "terminal.integrated.env.osx": {
-    "FIG_NEW_SESSION": "1"
-  },
+  "azure.resourceFilter": [
+    "0f16d077-bd82-4a6c-b498-52741239205f/b7ef0cfa-36d4-4ba9-9063-f5868bf1273e"
+  ],
 }
