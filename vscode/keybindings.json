@@ -24,7 +24,7 @@
   },
   {
     "key": "ctrl+r",
-    "command": "code-runner.run"
+    "command": "editor.action.peekDefinition"
   },
   {
     "key": "ctrl+alt+n",

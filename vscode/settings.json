@@ -1,41 +1,69 @@
 {
+  // Sticking to Visual Studio Code v1.73.1 for now, as Customize UI + Monkey
+  // Patch was broken in the v1.74 update
+  // - https://github.com/iocave/customize-ui/issues/156
+  // - https://github.com/iocave/monkey-patch/issues/55
+  "update.mode": "none",
+
+
+  // Theme
+  // ---------------------------------------------------------------------------
+
+  "workbench.colorTheme": "Atom Pro Theme",
+  "workbench.iconTheme": "vscode-icons",
+
+
   // Font
-  "editor.fontFamily": "'Fira Code', 'Iosevka Type', Menlo, Monaco, 'Courier New', monospace",
+  // ---------------------------------------------------------------------------
+
+  "editor.fontFamily": "'Fira Code', 'IntelOne Mono', 'Berkeley Mono', monospace",
   "editor.fontWeight": "400",
-  "editor.fontLigatures": true, // -> ++ -- >= <= <>
+  "editor.fontLigatures": true, // -> ++ -- >= <= <> fi
 
-  // Controls after how many characters the editor will wrap to the next line. Setting this to 0
-  // turns on viewport width wrapping
-  "editor.wordWrapColumn": 100,
-  // "editor.wordWrap": "wordWrapColumn",
+
+  // Editor
+  // ---------------------------------------------------------------------------
+
   "editor.rulers": [80, 100],
+  "editor.wordWrapColumn": 100, // Uses Viewport if set to 0
+  //"editor.wordWrap": "wordWrapColumn",
 
-  // Controls if the editor will insert spaces for tabs. Accepted values:  "auto", true, false. If
-  // set to "auto", the value will be guessed when a file is opened.
+  // Controls if the editor will insert spaces for tabs. Accepted values:
+  // "auto", true, false. If set to "auto", the value will be guessed when a
+  // file is opened.
   "editor.insertSpaces": false,
+  "editor.tabSize": 2,
+  "editor.detectIndentation": true,
 
-  // Controls if the editor should automatically format the line after typing
   "editor.formatOnType": false,
-
-  // Linting format on save
   "editor.formatOnSave": false,
 
   "editor.stickyScroll.enabled": true,
   "editor.stickyScroll.maxLineCount": 5,
   "editor.bracketPairColorization.enabled": true,
-
   "editor.suggestSelection": "first",
-  "editor.glyphMargin": false, // Cmd +
-  "emmet.includeLanguages": {},
-  "emmet.excludeLanguages": [
-    "typescriptreact"
-  ],
-  "files.trimTrailingWhitespace": true,
+  "editor.glyphMargin": false, // Debug info column
+  "editor.accessibilitySupport": "off",
 
-  "workbench.colorTheme": "Gruvbox Dark Medium",
+  "editor.minimap.maxColumn": 60,
+  "editor.minimap.showSlider": "always",
+  "editor.minimap.renderCharacters": false,
+
+
+  // Workbench
+  // ---------------------------------------------------------------------------
+
   "workbench.editor.pinnedTabSizing": "compact",
+  "workbench.editor.showTabs": true,
+  "workbench.editor.revealIfOpen": true,
+  "workbench.editor.splitInGroupLayout": "vertical",
+  "workbench.editor.untitled.hint": "hidden",
+
   "workbench.tree.indent": 12,
-  "editor.detectIndentation": true,
+  "workbench.activityBar.visible": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.settings.editor": "json",
+
   "workbench.colorCustomizations": {
     "editorRuler.foreground": "#FFFFFF08",
     "editor.selectionHighlightBackground": "#FFFFFF0F",
@@ -44,38 +72,48 @@
     "editorInlayHint.background": "#FFFFFF25",
     "editorInlayHint.foreground": "#00000080",
   },
-  "workbench.activityBar.visible": true,
-  "workbench.editor.showTabs": true,
-  "workbench.startupEditor": "newUntitledFile",
-  "workbench.editor.revealIfOpen": true,
-  "workbench.settings.editor": "json",
 
   "breadcrumbs.enabled": true,
-
   "window.titleBarStyle": "native",
-
-  "telemetry.telemetryLevel": "off",
-
-  "extensions.ignoreRecommendations": true,
+  "window.zoomLevel": 1,
 
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
 
+  "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
+
   "files.exclude": {
     "**/__pycache__/": true,
     "node_modules/": true,
+    "cvelist/": true,
+    "cvelistV5/": true,
   },
+
+
+  // Telemetry
+  // ---------------------------------------------------------------------------
+
+  "telemetry.telemetryLevel": "off",
+  "redhat.telemetry.enabled": false,
+  "gitlens.telemetry.enabled": false,
+
+
+  // Language specific settings
+  // ---------------------------------------------------------------------------
+
   "files.associations": {
     "*.html": "html",
     "*.py": "python",
-    "*.module.css": "postcss"
+    "*.module.css": "css"
+  },
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
   },
 
-  // Per-language settings
+  // Markdown
 
   "[markdown]": {
-    // Wrap at ruler
     "editor.rulers": [80],
     "editor.wordWrapColumn": 80,
     "editor.wordWrap": "wordWrapColumn",
@@ -83,10 +121,9 @@
       "comments": "off",
       "strings": "off",
       "other": "off"
-    }
+    },
   },
   "[rmd]": {
-    // Wrap at ruler
     "editor.rulers": [80],
     "editor.wordWrapColumn": 80,
     "editor.wordWrap": "wordWrapColumn",
@@ -96,25 +133,33 @@
       "other": "off"
     }
   },
+
+  // Python
+
   "[python]": {
     "editor.tabSize": 2,
     "editor.insertSpaces": true,
     "editor.formatOnSave": false,
-    // "editor.autoIndent": "full",
   },
   "python.formatting.provider": "black",
   "python.languageServer": "Pylance",
-  "python.showStartPage": false,
+  "notebook.output.textLineLimit": 1000,
+  "notebook.cellToolbarVisibility": "hover",
+  "notebook.diff.ignoreMetadata": true,
+  "notebook.lineNumbers": "on",
   "jupyter.askForKernelRestart": false,
   "jupyter.changeDirOnImportExport": true,
   "jupyter.alwaysTrustNotebooks": true,
-  "autoDocstring.generateDocstringOnEnter": true,
+
+  // Rust
 
   "[rust]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
   "rust-analyzer.inlayHints.renderColons": false,
+
+  // Web / JS
 
   "[html]": {
     "editor.wordWrap": "wordWrapColumn",
@@ -133,11 +178,9 @@
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
-
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
-
   "[javascript]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -159,13 +202,10 @@
   "[prisma]": {
     "editor.formatOnSave": true
   },
-  "[yaml]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "redhat.vscode-yaml"
+  "[postcss]": {
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
   },
-
   // https://github.com/crsandeep/simple-react-full-stack
-  "eslint.alwaysShowStatus": true,
   "eslint.codeActionsOnSave.mode": "all",
   "eslint.run": "onSave",
   "eslint.rules.customizations": [
@@ -174,78 +214,20 @@
       "severity": "warn",
     }
   ],
-
-  "[FortranFreeForm]": {
-    "editor.insertSpaces": true
-  },
-
-  // Extensions
-
-  "vsicons.dontShowNewVersionMessage": true,
-
-  "code-runner.executorMapByFileExtension": {
-    ".pde": "processing-java --sketch=$dir --run"
-  },
-
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-
-  "liveshare.featureSet": "insiders",
-
-  "codesnap.showWindowTitle": false,
-  "codesnap.showWindowControls": false,
-  "codesnap.backgroundColor": "#0000",
-  "codesnap.transparentBackground": true,
-  "codesnap.boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px",
-  "codesnap.containerPadding": "0",
-
-  "tabnine.experimentalAutoImports": true,
-  "tabnine.disable_file_regex": ["settings.json$", ".env$", ".rs$"],
-
-  // Customize UI
-  "customizeUI.titleBar": "inline",
-  "customizeUI.activityBar": "bottom",
-  "customizeUI.listRowHeight": 18,
-  // "customizeUI.fontSizeMap": {
-  //   "13px": "12px",
-  //   // "monospace": "12px"
-  // },
-  "customizeUI.stylesheet": {
-    ".editor-actions": "display: none !important;"
-  },
-
-  // GitLens
-  "gitlens.views.repositories.files.compact": false,
-  "gitlens.views.repositories.avatars": false,
-  "gitlens.menus": false,
-  "gitlens.mode.statusBar.enabled": false,
-  "gitlens.hovers.currentLine.over": "line",
-  "gitlens.currentLine.scrollable": false,
-  "gitlens.blame.heatmap.location": "left",
-  "gitlens.blame.highlight.locations": ["gutter", "line", "overview"],
-  "gitlens.codeLens.enabled": false,
-  "gitlens.codeLens.scopes": [
-    "document"
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "react-native-tools.showUserTips": false,
+  "emmet.includeLanguages": {},
+  "emmet.excludeLanguages": [
+    "typescriptreact"
   ],
-  "gitlens.currentLine.pullRequests.enabled": false,
-  "gitlens.currentLine.enabled": false,
-  "gitlens.hovers.avatars": false,
-  "gitlens.hovers.currentLine.changes": false,
-  "gitlens.hovers.currentLine.enabled": false,
-  "gitlens.hovers.annotations.enabled": false,
 
-  "docker.showStartPage": false,
+  // Misc languages
 
-  "liveServer.settings.donotShowInfoMsg": true,
-  "workbench.editorAssociations": {
-    "*.ipynb": "jupyter-notebook"
+  "[yaml]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "redhat.vscode-yaml"
   },
-  "editor.minimap.maxColumn": 60,
-  "editor.minimap.showSlider": "always",
-  "editor.minimap.renderCharacters": false,
-  "notebook.cellToolbarVisibility": "hover",
-  "notebook.diff.ignoreMetadata": true,
-  "notebook.lineNumbers": "on",
-  "git.autofetch": true,
   "[csharp]": {
     "editor.defaultFormatter": "ms-dotnettools.csharp"
   },
@@ -261,23 +243,61 @@
     "editor.tabCompletion": "onlySnippets",
     "editor.wordBasedSuggestions": false
   },
-  "workbench.editor.splitInGroupLayout": "vertical",
-  "editor.accessibilitySupport": "off",
+  "[FortranFreeForm]": {
+    "editor.insertSpaces": true
+  },
+
+
+  // Extensions
+  // ---------------------------------------------------------------------------
+
+  "extensions.ignoreRecommendations": true,
+  "vsicons.dontShowNewVersionMessage": true,
+
+  "liveshare.featureSet": "insiders",
+
+  "codesnap.showWindowTitle": false,
+  "codesnap.showWindowControls": false,
+  "codesnap.backgroundColor": "#0000",
+  "codesnap.transparentBackground": true,
+  "codesnap.boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px",
+  "codesnap.containerPadding": "0",
+
+  "customizeUI.titleBar": "inline",
+  "customizeUI.activityBar": "bottom",
+  "customizeUI.listRowHeight": 18,
+  "customizeUI.stylesheet": {
+    ".editor-actions": "display: none !important;"
+  },
+
+  "gitlens.views.repositories.files.compact": false,
+  "gitlens.views.repositories.avatars": false,
+  "gitlens.menus": false,
+  "gitlens.mode.statusBar.enabled": false,
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.currentLine.scrollable": false,
+  "gitlens.blame.heatmap.location": "left",
+  "gitlens.blame.highlight.locations": ["gutter", "line", "overview"],
+  "gitlens.codeLens.enabled": false,
+  "gitlens.codeLens.scopes": ["document"],
+  "gitlens.currentLine.pullRequests.enabled": false,
+  "gitlens.currentLine.enabled": false,
+  "gitlens.hovers.avatars": false,
+  "gitlens.hovers.currentLine.changes": false,
+  "gitlens.hovers.currentLine.enabled": false,
+  "gitlens.hovers.annotations.enabled": false,
+
+  "tabnine.experimentalAutoImports": true,
+  "tabnine.disable_file_regex": ["settings.json$", ".env$", ".rs$"],
+
+  "docker.showStartPage": false,
+
+
+  // Misc
+  // ---------------------------------------------------------------------------
+
+  "git.autofetch": true,
   "terminal.integrated.env.osx": {
     "FIG_NEW_SESSION": "1"
   },
-  "editor.tabSize": 2,
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "workbench.iconTheme": "vscode-icons",
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "azure.resourceFilter": [
-    "0f16d077-bd82-4a6c-b498-52741239205f/b7ef0cfa-36d4-4ba9-9063-f5868bf1273e"
-  ],
-  "workbench.editor.untitled.hint": "hidden",
-  "react-native-tools.showUserTips": false,
-  "[postcss]": {
-    "editor.defaultFormatter": "stylelint.vscode-stylelint"
-  },
-  "redhat.telemetry.enabled": false,
-  "window.zoomLevel": 1,
 }
