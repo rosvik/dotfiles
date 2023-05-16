@@ -4,6 +4,8 @@
 	{ "keys": ["ctrl+tab"], "command": "next_view" },
 	{ "keys": ["ctrl+shift+tab"], "command": "prev_view" },
 	{ "keys": ["super+shift+7"], "command": "toggle_comment", "args": { "block": false } },
+	{ "keys": ["alt+up"], "command": "swap_line_up" },
+	{ "keys": ["alt+down"], "command": "swap_line_down" },
 
 	// Fn + arrow key, end/start of line
 	{ "keys": ["end"], "command": "move_to", "args": {"to": "eol", "extend": false} },
