@@ -40,6 +40,10 @@ wired.com##.ad-stickyhero
 wired.com##.social-icons__list-item--has-background
 wired.com##.ad--rail.ad
 wired.com##.callout--related-list
+wired.com##.persistent-bottom
+wired.com##.persistent-aside
+wired.com##.newsletter-subscribe-form
+wired.com##.cne-video-embed
 
 ! 12/17/2019 https://www.the-tls.co.uk
 the-tls.co.uk##.optanon-alert-box-wrapper
