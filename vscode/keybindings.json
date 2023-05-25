@@ -80,4 +80,9 @@
     "command": "-editor.emmet.action.expandAbbreviation",
     "when": "config.emmet.triggerExpansionOnTab && editorTextFocus && !editorReadonly && !editorTabMovesFocus"
   },
+  {
+    "key": "cmd+j",
+    "command": "editor.action.jumpToBracket",
+    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+  },
 ]

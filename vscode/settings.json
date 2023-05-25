@@ -18,7 +18,7 @@
 
   "editor.fontFamily": "'Fira Code', 'IntelOne Mono', 'Berkeley Mono', monospace",
   "editor.fontWeight": "400",
-  "editor.fontLigatures": true, // -> ++ -- >= <= <> fi
+  "editor.fontLigatures": true, // => --> -< <> >>= >= << !! ++ -- fi
   "terminal.integrated.fontFamily": "'Berkeley Mono', 'Fira Code', monospace",
 
 
@@ -69,6 +69,7 @@
     "editor.lineHighlightBorder": "#FFFFFF02",
     "editorInlayHint.background": "#FFFFFF25",
     "editorInlayHint.foreground": "#00000080",
+    "scrollbar.shadow": "#00000030"
   },
 
   "window.titleBarStyle": "native",
