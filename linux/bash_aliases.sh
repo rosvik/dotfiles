@@ -7,6 +7,7 @@ alias ls="ls --color"
 alias py="python3.6"
 alias diskutil="df -h"
 alias daisy="ncdu"
+alias sd="sudo systemctl"
 
 # Directory shortcuts
 alias db="cd /var/www/qore.no/db;pwd"
@@ -21,3 +22,4 @@ alias vagnes="cd /var/www/vagn.es/html;pwd"
 alias sinop="cd /var/www/sinopingenierie.fr/html;pwd"
 alias 248="cd /var/www/248.no/html;pwd"
 alias ng="cd /etc/nginx/sites-available;pwd"
+alias gf="cd ~/git;pwd"
