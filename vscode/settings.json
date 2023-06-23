@@ -267,6 +267,7 @@
     ".editor-actions": "display: none !important;"
   },
 
+  "gitlens.showWelcomeOnInstall": false,
   "gitlens.views.repositories.files.compact": false,
   "gitlens.views.repositories.avatars": false,
   "gitlens.menus": false,

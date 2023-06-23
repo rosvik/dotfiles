@@ -1,8 +1,8 @@
 {
 	"__webextOptionsSync": "Refined GitHub",
-	"actionUrl": "",
+	"actionUrl": "https://github.com/rosvik",
 	"customCSS": "",
-	"logging": false,
+	"logging": true,
 	"logHTTP": false,
 	"feature:action-pr-link": true,
 	"feature:action-used-by-link": true,
