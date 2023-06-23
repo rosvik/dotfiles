@@ -1,10 +1,16 @@
 {
 	"color_scheme": "gruvbox (Dark) (Soft).sublime-color-scheme",
 	"ensure_newline_at_eof_on_save": true,
-	"font_size": 13,
+	"font_size": 14,
 	"highlight_line": true,
 	"scroll_past_end": true,
 	"shift_tab_unindent": true,
 	"show_full_path": true,
 	"theme": "Adaptive.sublime-theme",
+	"rulers": [80, 100],
+	"wrap_width": 80,
+	"ignored_packages":
+	[
+		"Vintage",
+	],
 }
