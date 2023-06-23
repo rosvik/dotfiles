@@ -9,8 +9,18 @@
   // ---------------------------------------------------------------------------
   // Theme
 
-  "workbench.colorTheme": "Atom Pro Theme",
+  "workbench.colorTheme": "Atom One Dark",
   "workbench.iconTheme": "vscode-icons",
+
+  "workbench.colorCustomizations": {
+    "editorRuler.foreground": "#FFFFFF08",
+    "editor.selectionHighlightBackground": "#FFFFFF0F",
+    "editor.lineHighlightBackground": "#FFFFFF08",
+    "editor.lineHighlightBorder": "#FFFFFF02",
+    "editorInlayHint.background": "#FFFFFF25",
+    "editorInlayHint.foreground": "#00000080",
+    "scrollbar.shadow": "#00000030"
+  },
 
 
   // ---------------------------------------------------------------------------
@@ -61,16 +71,6 @@
   "workbench.activityBar.visible": true,
   "workbench.startupEditor": "newUntitledFile",
   "workbench.settings.editor": "json",
-
-  "workbench.colorCustomizations": {
-    "editorRuler.foreground": "#FFFFFF08",
-    "editor.selectionHighlightBackground": "#FFFFFF0F",
-    "editor.lineHighlightBackground": "#FFFFFF08",
-    "editor.lineHighlightBorder": "#FFFFFF02",
-    "editorInlayHint.background": "#FFFFFF25",
-    "editorInlayHint.foreground": "#00000080",
-    "scrollbar.shadow": "#00000030"
-  },
 
   "window.titleBarStyle": "native",
   "window.zoomLevel": 1,
@@ -224,11 +224,7 @@
   // Misc languages
 
   "[yaml]": {
-    "editor.formatOnSave": true,
     "editor.defaultFormatter": "redhat.vscode-yaml"
-  },
-  "[csharp]": {
-    "editor.defaultFormatter": "ms-dotnettools.csharp"
   },
   "[dart]": {
     "editor.formatOnSave": true,
@@ -244,6 +240,10 @@
   },
   "[FortranFreeForm]": {
     "editor.insertSpaces": true
+  },
+  "[lua]": {
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true
   },
 
 
