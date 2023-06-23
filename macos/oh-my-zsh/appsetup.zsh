@@ -5,6 +5,7 @@ export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 export GPG_TTY=$(tty)
 
 eval "$(rbenv init - zsh)"
+eval `ssh-agent -s`
 
 export DISABLE_UPDATE_PROMPT=true
 export DISABLE_AUTO_UPDATE=true
