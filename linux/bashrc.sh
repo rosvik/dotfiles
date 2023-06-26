@@ -159,7 +159,7 @@ if [ -f ~/.bash_aliases_unix ]; then
 	. ~/.bash_aliases_unix
 fi
 
-# Import aliases file 
+# Import aliases file
 if [ -f ~/.bash_aliases ]; then
         . ~/.bash_aliases
 fi

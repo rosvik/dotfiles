@@ -1,4 +1,9 @@
 zstyle ':znap:*' repos-dir .
+
+# Download Znap, if it's not there yet.
+[[ -r ~/git/zsh-snap/znap.zsh ]] ||
+    git clone --depth 1 -- \
+        https://github.com/marlonrichert/zsh-snap.git ~/git/zsh-snap
 source ~/git/zsh-snap/znap.zsh
 
 # If you come from bash you might have to change your $PATH.
@@ -105,3 +110,7 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+export NVM_DIR="$HOME/.config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
