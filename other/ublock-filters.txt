@@ -535,3 +535,6 @@ www.economist.com##div[class^="adComponent"]
 www.economist.com##._podcast-promo
 www.economist.com##._newsletter-promo-container
 www.economist.com##iframe:style(height:500px)
+
+! 2023-06-27 https://www.twitch.tv
+www.twitch.tv##button[aria-label="Hype Chat"]
