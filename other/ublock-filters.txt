@@ -173,10 +173,17 @@ www.reuters.com##div[class^="SocialTools"]
 ! 2021-03-29 https://www.vg.no
 ||comments.vg.no/$subdocument
 
-! 2021-09-28 https://www.youtube.com
-youtube.com##ytd-watch-flexy[theater] #player-theater-container:style(max-height: calc(100vh - 56px) !important;)
-youtube.com##ytd-watch-flexy[fullscreen] #player-theater-container:style(max-height: none !important;)
-youtube.com###clarify-box > .ytd-watch-flexy.style-scope
+! 2023-07-04 https://www.youtube.com
+! Theater mode height fix
+youtube.com##ytd-watch-flexy[theater] #player-wide-container:style(max-height: calc(100vh - 56px) !important;)
+youtube.com##ytd-watch-flexy[theater] #player-wide-container:style(max-height: calc(100vh - 56px) !important;)
+youtube.com##ytd-watch-flexy[fullscreen] #player-wide-container:style(max-height: none !important;)
+
+! Search improvements (https://letsblock.it/filters/youtube-search-cleanup)
+youtube.com##ytd-search ytd-item-section-renderer ytd-shelf-renderer
+youtube.com##ytd-search ytd-item-section-renderer ytd-horizontal-card-list-renderer
+youtube.com##ytd-search ytd-item-section-renderer ytd-reel-shelf-renderer
+
 
 ! 2021-04-02 https://whatsapp.com
 whatsapp.com##body > div[tabindex^="-1"]
