@@ -1,6 +1,6 @@
 {
-  // Sticking to Visual Studio Code v1.73.1 for now, as Customize UI + Monkey
-  // Patch was broken in the v1.74 update
+  // Sticking to Visual Studio Code v1.73.1 for now, as Customize UI / Monkey
+  // Patch was broken in v1.74
   // - https://github.com/iocave/customize-ui/issues/156
   // - https://github.com/iocave/monkey-patch/issues/55
   "update.mode": "none",
@@ -8,7 +8,7 @@
 
   // ---------------------------------------------------------------------------
   // Theme
-
+  "workbench.colorTheme": "Gruvbox Dark Medium",
   "workbench.colorTheme": "Atom One Dark",
   "workbench.iconTheme": "vscode-icons",
 
@@ -26,11 +26,12 @@
   // ---------------------------------------------------------------------------
   // Font
 
-  "editor.fontFamily": "'Fira Code', 'IntelOne Mono', 'Berkeley Mono', monospace",
+  "editor.fontFamily": "'Fira Code', 'Berkeley Mono', monospace",
   "editor.fontWeight": "400",
+  "editor.fontSize": 12,
   "editor.fontLigatures": true, // => --> -< <> >>= >= << !! ++ -- fi
   "terminal.integrated.fontFamily": "'Berkeley Mono', 'Fira Code', monospace",
-
+  "terminal.integrated.fontSize": 10,
 
   // ---------------------------------------------------------------------------
   // Editor
