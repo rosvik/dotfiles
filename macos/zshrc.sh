@@ -81,6 +81,7 @@ ZSH_THEME="rosvik1"
 # List of plugins: https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins
 plugins=(git macos)
 
+DISABLE_AUTO_UPDATE=true
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
