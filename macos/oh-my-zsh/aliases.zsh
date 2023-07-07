@@ -7,8 +7,7 @@ alias o="open ." # Open the current directory in Finder
 alias py="python3.9" # Make using python less terrible
 alias daisy="ncdu --color dark"
 alias yt-best="youtube-dl -f bestvideo[ext=mp4]+bestaudio[ext=m4a]"
-# alias firefox="/Applications/Firefox.app/Contents/MacOS/firefox-bin"
-# alias eclipse="open -g /Applications/Eclipse.app/Contents/MacOS/eclipse"
+alias firefox="/Applications/Firefox Nightly.app/Contents/MacOS/firefox-bin"
 alias ql='qlmanage -p "$@" &> /dev/null' # Quick look
 alias b='EDITOR=nano ranger'
 alias gd='git diff | bat'
