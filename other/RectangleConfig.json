@@ -107,7 +107,7 @@
       "int" : 0
     },
     "moveCursorAcrossDisplays" : {
-      "int" : 0
+      "int" : 2
     },
     "notifiedOfProblemApps" : {
       "bool" : false
@@ -232,8 +232,8 @@
       "modifierFlags" : 1572864
     },
     "larger" : {
-      "keyCode" : 124,
-      "modifierFlags" : 917504
+      "keyCode" : 27,
+      "modifierFlags" : 1703936
     },
     "lastFourth" : {
       "keyCode" : 46,
@@ -276,8 +276,8 @@
       "modifierFlags" : 1572864
     },
     "smaller" : {
-      "keyCode" : 126,
-      "modifierFlags" : 1572864
+      "keyCode" : 44,
+      "modifierFlags" : 1703936
     },
     "toggleTodo" : {
       "keyCode" : 11,
