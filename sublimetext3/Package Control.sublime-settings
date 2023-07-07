@@ -1,8 +1,5 @@
 {
 	"bootstrapped": true,
-	"in_process_packages":
-	[
-	],
 	"installed_packages":
 	[
 		"A File Icon",
@@ -19,7 +16,6 @@
 		"Laravel 5 Snippets",
 		"Laravel Blade Highlighter",
 		"Night Owl",
-		"Nodejs",
 		"P3 Assembly",
 		"Package Control",
 		"Pretty JSON",
@@ -28,9 +24,7 @@
 		"React Native Autocomplete",
 		"rsub",
 		"Sass",
-		"sublime-minimal-tabs",
 		"Swift",
-		"TypeScript Syntax",
 		"Vue Syntax Highlight",
 		"WordingStatus",
 	],

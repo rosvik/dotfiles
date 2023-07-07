@@ -9,8 +9,4 @@
 	"theme": "Adaptive.sublime-theme",
 	"rulers": [80, 100],
 	"wrap_width": 80,
-	"ignored_packages":
-	[
-		"Vintage",
-	],
 }
