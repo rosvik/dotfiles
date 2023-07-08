@@ -19,7 +19,7 @@ _Disclaimer: You probably shouldn't. These config files contain lots of settings
 
 ### Install macOS software
 
-To install some initial tools, brew formulae and casks, run[`install-macos-software.sh`](install-macos-software.sh)
+To install some initial tools, brew formulae and casks, run [`install-macos-software.sh`](install-macos-software.sh)
 
 When running or updating the script, keep in mind:
 - It is safe to run several times.
