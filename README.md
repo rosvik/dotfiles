@@ -31,7 +31,7 @@ Some version managers are installed instead of specific languages:
 - python:  `pyenv install 3.9 && pyenv global 3.9`
 - ruby:    `rbenv install 2.7.6 && rbenv global 2.7.6`
 
-### Sublime Text 3 (macOS)
+### Sublime Text 3
 To install the config files for Sublime Text 3, a few additional steps is required.
 
 1. Install Sublime Text 3
