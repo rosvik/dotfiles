@@ -445,7 +445,7 @@ usa.yamaha.com###pop-div0039839572796802836
 usa.yamaha.com###pop-div2025857536621143296
 
 ! youtube.com
-youtube.com##ytd-watch-flexy[theater] #player-theater-container:style(max-height: calc(100vh - 56px) !important;)
+youtube.com##ytd-watch-flexy[theater] #full-bleed-container:style(max-height: calc(100vh - 56px) !important;)
 youtube.com##ytd-watch-flexy[fullscreen] #player-theater-container:style(max-height: none !important;)
 youtube.com###clarify-box > .ytd-watch-flexy.style-scope
 
