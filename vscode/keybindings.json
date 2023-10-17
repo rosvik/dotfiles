@@ -56,8 +56,13 @@
     "when": "notebookCellListFocused && notebookMissingKernelExtension && !notebookCellExecuting && notebookCellType == 'code' || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelCount > 0"
   },
   {
-    "key": "cmd+shift+d",
-    "command": "workbench.action.splitEditorRight",
+    "key": "alt+ctrl+right",
+    "command": "workbench.action.moveEditorToRightGroup",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+ctrl+left",
+    "command": "workbench.action.moveEditorToLeftGroup",
     "when": "editorTextFocus"
   },
   {
