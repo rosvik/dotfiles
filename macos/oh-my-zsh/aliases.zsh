@@ -13,10 +13,11 @@ alias b='EDITOR=nano ranger'
 alias gd='git diff | bat'
 alias s='spotify'
 alias sp='spotify pause'
-alias rc='subl ~/.zshrc'
-alias ealias='subl ~/.dotfiles/macos/oh-my-zsh/aliases.zsh'
-alias eomz='subl ~/.dotfiles/macos/oh-my-zsh'
-
+alias rc='subl ~/.oh-my-zsh/custom && subl ~/.zshrc'
+alias ai="ollama run llama2:13b"
+alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
+alias gw="./gradlew"
+alias gradle="./gradlew"
 
 # PHP
 # alias composer="php /usr/local/bin/composer.phar"
