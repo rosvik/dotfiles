@@ -76,6 +76,7 @@ main() {
     "ruby-build"
     "sqlite3"
     "tcl-tk"
+    "tree"
     "xz"
     "zlib"
   )
