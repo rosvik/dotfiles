@@ -2,6 +2,8 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH="/Users/rosvik/.scripts:$PATH"
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 
+export PATH="$HOME/.local/bin:$PATH"
+
 export GPG_TTY=$(tty)
 
 eval "$(rbenv init - zsh)"
