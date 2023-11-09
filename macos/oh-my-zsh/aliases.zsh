@@ -18,6 +18,8 @@ alias ai="ollama run llama2:13b"
 alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 alias gw="./gradlew"
 alias gradle="./gradlew"
+alias cop="gh copilot suggest -t shell"
+alias cog="gh copilot suggest -t git"
 
 # PHP
 # alias composer="php /usr/local/bin/composer.phar"
