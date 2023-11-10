@@ -1,4 +1,3 @@
-// Place your key bindings in this file to overwrite the defaults
 [
   {
     "key": "cmd+7",
@@ -14,6 +13,10 @@
     "command": "workbench.action.previousEditor"
   },
   {
+    "key": "cmd+shift+e",
+    "command": "workbench.files.action.focusFilesExplorer",
+  },
+  {
     "key": "ctrl+r",
     "command": "-workbench.action.openRecent"
   },
@@ -27,8 +30,12 @@
     "command": "editor.action.peekDefinition"
   },
   {
-    "key": "ctrl+alt+n",
-    "command": "-code-runner.run"
+    "key": "ctrl+z",
+    "command": "workbench.action.navigateBack"
+  },
+  {
+    "key": "cmd+shift+b",
+    "command": "workbench.action.toggleAuxiliaryBar"
   },
   {
     "key": "cmd+[Backquote]",
@@ -36,6 +43,35 @@
     "when": "terminal.active"
   },
   {
+    "key": "alt+ctrl+right",
+    "command": "workbench.action.moveEditorToRightGroup",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+ctrl+left",
+    "command": "workbench.action.moveEditorToLeftGroup",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+r",
+    "command": "editor.action.rename",
+    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+j",
+    "command": "editor.action.jumpToBracket",
+    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+  },
+
+  // ---------------------------------------------------------------------------
+  // Extensions
+  {
+    "key": "ctrl+alt+n",
+    "command": "-code-runner.run"
+  },
+
+  // Notebooks
+    {
     "key": "alt+enter",
     "command": "notebook.cell.execute",
     "when": "notebookCellListFocused && notebookMissingKernelExtension && !notebookCellExecuting && notebookCellType == 'code' || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelCount > 0"
@@ -55,39 +91,5 @@
     "command": "-notebook.cell.executeAndInsertBelow",
     "when": "notebookCellListFocused && notebookMissingKernelExtension && !notebookCellExecuting && notebookCellType == 'code' || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelCount > 0"
   },
-  {
-    "key": "alt+ctrl+right",
-    "command": "workbench.action.moveEditorToRightGroup",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "alt+ctrl+left",
-    "command": "workbench.action.moveEditorToLeftGroup",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "cmd+r",
-    "command": "editor.action.rename",
-    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "f2",
-    "command": "-editor.action.rename",
-    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "shift+alt+cmd+e",
-    "command": "editor.emmet.action.expandAbbreviation",
-    "when": "config.emmet.triggerExpansionOnTab && editorTextFocus && !editorReadonly && !editorTabMovesFocus"
-  },
-  {
-    "key": "tab",
-    "command": "-editor.emmet.action.expandAbbreviation",
-    "when": "config.emmet.triggerExpansionOnTab && editorTextFocus && !editorReadonly && !editorTabMovesFocus"
-  },
-  {
-    "key": "cmd+j",
-    "command": "editor.action.jumpToBracket",
-    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
-  },
 ]
+

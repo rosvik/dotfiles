@@ -1,8 +1,7 @@
 {
   // ---------------------------------------------------------------------------
   // Theme
-  "workbench.colorTheme": "Gruvbox Dark Medium",
-  "workbench.colorTheme": "Atom One Dark",
+  "workbench.colorTheme": "Copilot Theme - Higher Contrast",
   "workbench.iconTheme": "vscode-icons",
 
   "workbench.colorCustomizations": {
@@ -19,12 +18,21 @@
   // ---------------------------------------------------------------------------
   // Font
 
+  // The quick brown fox jumps over the lazy dog
+  // => --> -< <> >>= >= << !! ++ -- fi == != *** ## <~> (*) :: || <| /> /**
+
+  // "editor.fontFamily": "'Monaspace Neon Var'",
+  // "editor.fontLigatures": "'ss03', 'ss04', 'ss06', 'ss07', 'ss08', 'calt'",
+  // "editor.fontWeight": "450",
+
   "editor.fontFamily": "'Fira Code', 'Berkeley Mono', monospace",
+  "editor.fontLigatures": true,
   "editor.fontWeight": "400",
+
   "editor.fontSize": 12,
-  "editor.fontLigatures": true, // => --> -< <> >>= >= << !! ++ -- fi
   "terminal.integrated.fontFamily": "'Berkeley Mono', 'Fira Code', monospace",
   "terminal.integrated.fontSize": 10,
+
 
   // ---------------------------------------------------------------------------
   // Editor
@@ -46,6 +54,7 @@
   "editor.suggestSelection": "first",
   "editor.glyphMargin": false, // Debug info column
   "editor.accessibilitySupport": "off",
+  "editor.inlineSuggest.enabled": true,
 
   "editor.minimap.maxColumn": 80,
   "editor.minimap.showSlider": "always",
@@ -56,18 +65,17 @@
   // Workbench
 
   "workbench.editor.pinnedTabSizing": "compact",
-  "workbench.editor.showTabs": true,
+  "workbench.editor.showTabs": "multiple",
   "workbench.editor.revealIfOpen": true,
   "workbench.editor.splitInGroupLayout": "vertical",
-  "workbench.editor.untitled.hint": "hidden",
+  "workbench.editor.empty.hint": "hidden",
 
+  "workbench.activityBar.location": "hidden",
   "workbench.tree.indent": 12,
-  "workbench.activityBar.visible": true,
   "workbench.startupEditor": "newUntitledFile",
   "workbench.settings.editor": "json",
 
-  "window.titleBarStyle": "native",
-  "window.zoomLevel": 1,
+  "window.titleBarStyle": "custom",
   "breadcrumbs.enabled": true,
 
   "explorer.confirmDragAndDrop": false,
@@ -252,6 +260,21 @@
 
   "extensions.ignoreRecommendations": true,
   "vsicons.dontShowNewVersionMessage": true,
+
+  "githubPullRequests.ignoredPullRequestBranches": [
+    "master",
+    "main"
+  ],
+  "[dotenv]": {
+    "github.copilot.editor.enableAutoCompletions": false,
+  },
+  "github.copilot.enable": {
+    "*": true,
+    "markdown": true,
+    "dotenv": false,
+    "plaintext": false,
+    "scminput": false,
+  },
 
   "codesnap.showWindowTitle": false,
   "codesnap.showWindowControls": false,
