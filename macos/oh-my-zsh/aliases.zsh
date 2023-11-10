@@ -20,6 +20,11 @@ alias gw="./gradlew"
 alias gradle="./gradlew"
 alias cop="gh copilot suggest -t shell"
 alias cog="gh copilot suggest -t git"
+alias hpe="rclone mount hpe.lan:/data ~/tmp/hpemnt &"
+
+# Directory shortcuts
+alias gf="cd ~/git;pwd"
+alias atb="cd ~/git/atb;pwd"
 
 # PHP
 # alias composer="php /usr/local/bin/composer.phar"
@@ -28,9 +33,6 @@ alias cog="gh copilot suggest -t git"
 # Chrome
 # alias chrome="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary"
 # alias chrome-headless="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary --headless --disable-gpu --remote-debugging-port=9222"
-
-# Directory shortcuts
-alias gf="cd ~/git;pwd"
 
 # ------------------
 #    UNIX ALIASES
@@ -51,7 +53,7 @@ alias dl="curl -O"
 alias gitnvm="git reset --soft HEAD~1"
 alias gtl='git log --graph --pretty='\''%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset'\'
 alias podi='npx pod-install ios'
-alias rebuild='yarn clean:install && yarn setup dev atb && podi && yarn start --reset-cache && yarn ios'
+alias rebuild='yarn clean:install && yarn setup dev atb && podi && cd android && ./gradlew clean && cd - && bundle install && yarn start --reset-cache && yarn ios'
 
 # Display connected drives
 alias disks="df -h"
