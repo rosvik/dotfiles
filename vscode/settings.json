@@ -1,4 +1,6 @@
 {
+  "update.mode": "manual",
+
   // ---------------------------------------------------------------------------
   // Theme
   "workbench.colorTheme": "Copilot Theme - Higher Contrast",
@@ -21,17 +23,19 @@
   // The quick brown fox jumps over the lazy dog
   // => --> -< <> >>= >= << !! ++ -- fi == != *** ## <~> (*) :: || <| /> /**
 
-  // "editor.fontFamily": "'Monaspace Neon Var'",
+  // "editor.fontFamily": "Monaspace Neon Var",
   // "editor.fontLigatures": "'ss03', 'ss04', 'ss06', 'ss07', 'ss08', 'calt'",
   // "editor.fontWeight": "450",
+  // "editor.inlayHints.fontFamily": "Monaspace Krypton Var",
 
   "editor.fontFamily": "'Fira Code', 'Berkeley Mono', monospace",
   "editor.fontLigatures": true,
   "editor.fontWeight": "400",
-
   "editor.fontSize": 12,
+
   "terminal.integrated.fontFamily": "'Berkeley Mono', 'Fira Code', monospace",
-  "terminal.integrated.fontSize": 10,
+  "terminal.integrated.fontSize": 12,
+
 
 
   // ---------------------------------------------------------------------------
@@ -75,7 +79,7 @@
   "workbench.startupEditor": "newUntitledFile",
   "workbench.settings.editor": "json",
 
-  "window.titleBarStyle": "custom",
+  "window.titleBarStyle": "native",
   "breadcrumbs.enabled": true,
 
   "explorer.confirmDragAndDrop": false,
@@ -231,6 +235,9 @@
 
   // Misc languages
 
+  "[dotenv]": {
+    "github.copilot.editor.enableAutoCompletions": false,
+  },
   "[yaml]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
@@ -265,15 +272,41 @@
     "master",
     "main"
   ],
-  "[dotenv]": {
-    "github.copilot.editor.enableAutoCompletions": false,
-  },
   "github.copilot.enable": {
     "*": true,
     "markdown": true,
     "dotenv": false,
     "plaintext": false,
     "scminput": false,
+  },
+
+  "apc.electron": {
+    "titleBarStyle": "hiddenInset",
+    "trafficLightPosition": {
+      "x": 14,
+      "y": 14
+    },
+  },
+
+  "apc.parts.font.family": {
+    "sidebar": "Berkeley Mono",
+    "statusbar": "Berkeley Mono",
+    "tabs": "Berkeley Mono",
+    "panel": "Berkeley Mono",
+  },
+  "apc.statusBar": {
+    "fontSize": 12,
+    "position": "editor-bottom",
+    "height": 30
+  },
+  "apc.listRow": {
+    "height": 22,
+    "fontSize": 12,
+  },
+  "apc.stylesheet": {
+    ".explorer-folders-view.custom-list-row .monaco-list-row": "border-bottom: 1px solid #00000020;",
+    ".explorer-folders-view.custom-list-row .monaco-list-row[data-parity='even']": "background-color: #FFFFFF04;",
+    ".line-numbers": "padding-left: 3px",
   },
 
   "codesnap.showWindowTitle": false,
