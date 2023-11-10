@@ -1,11 +1,4 @@
 {
-  // Sticking to Visual Studio Code v1.73.1 for now, as Customize UI / Monkey
-  // Patch was broken in v1.74
-  // - https://github.com/iocave/customize-ui/issues/156
-  // - https://github.com/iocave/monkey-patch/issues/55
-  "update.mode": "none",
-
-
   // ---------------------------------------------------------------------------
   // Theme
   "workbench.colorTheme": "Gruvbox Dark Medium",
