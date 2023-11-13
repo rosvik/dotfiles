@@ -4,7 +4,7 @@
   // ---------------------------------------------------------------------------
   // Theme
   "workbench.colorTheme": "Copilot Theme - Higher Contrast",
-  "workbench.iconTheme": "vscode-icons",
+  "workbench.iconTheme": "bearded-icons",
 
   "workbench.colorCustomizations": {
     "editorRuler.foreground": "#FFFFFF08",
@@ -35,7 +35,6 @@
 
   "terminal.integrated.fontFamily": "'Berkeley Mono', 'Fira Code', monospace",
   "terminal.integrated.fontSize": 12,
-
 
 
   // ---------------------------------------------------------------------------
@@ -75,7 +74,7 @@
   "workbench.editor.empty.hint": "hidden",
 
   "workbench.activityBar.location": "hidden",
-  "workbench.tree.indent": 12,
+  "workbench.tree.indent": 14,
   "workbench.startupEditor": "newUntitledFile",
   "workbench.settings.editor": "json",
 
@@ -281,13 +280,12 @@
   },
 
   "apc.electron": {
-    "titleBarStyle": "hiddenInset",
+    "titleBarStyle": "hidden",
     "trafficLightPosition": {
       "x": 14,
       "y": 14
     },
   },
-
   "apc.parts.font.family": {
     "sidebar": "Berkeley Mono",
     "statusbar": "Berkeley Mono",
@@ -304,9 +302,9 @@
     "fontSize": 12,
   },
   "apc.stylesheet": {
-    ".explorer-folders-view.custom-list-row .monaco-list-row": "border-bottom: 1px solid #00000020;",
-    ".explorer-folders-view.custom-list-row .monaco-list-row[data-parity='even']": "background-color: #FFFFFF04;",
     ".line-numbers": "padding-left: 3px",
+    ".explorer-folders-view.custom-list-row .monaco-list-row": "border-bottom: 1px solid #00000020;",
+    ".explorer-folders-view.custom-list-row .monaco-list-row[data-parity='even']": "background-color: #00000011;",
   },
 
   "codesnap.showWindowTitle": false,
