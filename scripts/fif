@@ -1,0 +1,52 @@
+#!/usr/bin/env bash
+
+if [ "$1" == "-h" ] || [ "$1" == "--help" ]; then
+	echo -e "\033[1mfif\033[0m: Find In Filename, a interactive fuzzy finder for file names,"
+	echo -e "     using fzf, bat and your editor of choice."
+	echo ""
+	echo -e "Usage: \033[1mfif\033[0m [options] <query>"
+	echo ""
+	echo "Options:"
+	echo -e "  \033[1m-c, --code\033[0m    Open in VS Code"
+	echo -e "  \033[1m-s, --subl\033[0m    Open in Sublime Text"
+	echo -e "  \033[1m-e, --editor\033[0m  Open in \$EDITOR"
+  echo ""
+  echo "By default, fif will copy the file name to the clipboard."
+	exit 1
+fi
+
+query=""
+for param in "$@"; do
+  if [[ $param != -* ]]; then
+    query="$param"
+    break
+  fi
+done
+
+file=$(
+	fzf \
+		-q "$query" \
+		--ansi \
+		--preview "bat --color=always {1}" \
+		--preview-window 'right,60%,border-left,+{2}+3/3,~3'
+)
+
+for p in "$@"; do
+	if [ "$p" == "--code" ] || [ "$p" == "-c" ]; then
+		fn="code -g \"$file\""
+		break
+	elif [ "$p" == "--subl" ] || [ "$p" == "-s" ]; then
+		fn="subl \"$file\""
+		break
+	elif [ "$p" == "--editor" ] || [ "$p" == "-e" ]; then
+		fn="$EDITOR \"$file\""
+		break
+	else
+		fn="echo \"$file\" | pbcopy"
+	fi
+done
+
+if [ -n "$file" ]; then
+  echo "$file"
+	eval "$fn"
+fi
