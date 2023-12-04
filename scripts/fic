@@ -1,18 +1,18 @@
 #!/usr/bin/env bash
 
 if [ "$1" == "-h" ] || [ "$1" == "--help" ]; then
-	echo -e "\033[1mfic\033[0m: Find In Content, a interactive fuzzy finder for text files,"
-	echo -e "     using ripgrep, fzf, bat and your editor of choice."
-	echo ""
-	echo -e "Usage: \033[1mfic\033[0m [options] <query>"
-	echo ""
-	echo "Options:"
-	echo -e "  \033[1m-c, --code\033[0m    Open in VS Code"
-	echo -e "  \033[1m-s, --subl\033[0m    Open in Sublime Text"
-	echo -e "  \033[1m-e, --editor\033[0m  Open in \$EDITOR"
+  echo -e "\033[1mfic\033[0m: Find In Content, a interactive fuzzy finder for text files,"
+  echo -e "     using ripgrep, fzf, bat and your editor of choice."
+  echo ""
+  echo -e "Usage: \033[1mfic\033[0m [options] <query>"
+  echo ""
+  echo "Options:"
+  echo -e "  \033[1m-c, --code\033[0m    Open in VS Code"
+  echo -e "  \033[1m-s, --subl\033[0m    Open in Sublime Text"
+  echo -e "  \033[1m-e, --editor\033[0m  Open in \$EDITOR"
   echo ""
   echo "By default, fic will copy the file name and line number to the clipboard."
-	exit 1
+  exit 1
 fi
 
 query=""
@@ -28,33 +28,34 @@ result=$(
     --ignore-case \
     --color=always \
     --line-number \
-    --no-heading "$query" \
-  | fzf \
-    --ansi \
-    --delimiter ':' \
-    --preview "bat --color=always {1} --highlight-line {2}" \
-    --preview-window 'right,60%,border-left,+{2}+3/3,~3' \
+    --no-heading "$query" |
+    fzf \
+      --ansi \
+      --delimiter ':' \
+      --preview "bat --color=always {1} --highlight-line {2}" \
+      --preview-window 'right,60%,border-left,+{2}+3/3,~3'
 )
 
 file="${result%%:*}"
 linenumber=$(echo "${result}" | cut -d: -f2)
 
 for p in "$@"; do
-	if [ "$p" == "--code" ] || [ "$p" == "-c" ]; then
-		fn="code -g \"$file:$linenumber\""
-		break
-	elif [ "$p" == "--subl" ] || [ "$p" == "-s" ]; then
-		fn="subl \"$file:$linenumber\""
-		break
-	elif [ "$p" == "--editor" ] || [ "$p" == "-e" ]; then
-		fn="$EDITOR \"$file:$linenumber\""
-		break
-	else
-		fn="echo \"$file:$linenumber\" | pbcopy"
-	fi
+  if [ "$p" == "--code" ] || [ "$p" == "-c" ]; then
+    fn="code -g \"$file:$linenumber\""
+    break
+  elif [ "$p" == "--subl" ] || [ "$p" == "-s" ]; then
+    fn="subl \"$file:$linenumber\""
+    break
+  elif [ "$p" == "--editor" ] || [ "$p" == "-e" ]; then
+    fn="$EDITOR \"$file:$linenumber\""
+    break
+  elif command -v pbcopy >/dev/null; then
+    fn="echo \"$file:$linenumber\" | pbcopy"
+    break
+  fi
 done
 
 if [ -n "$file" ]; then
   echo "$file:$linenumber"
-	eval "$fn"
+  eval "$fn"
 fi

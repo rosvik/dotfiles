@@ -79,6 +79,10 @@ main() {
     "tree"
     "xz"
     "zlib"
+    "bat"
+    "fzf"
+    "fd"
+    "ripgrep"
   )
   for formula in "${formulae[@]}"; do
     echo "  - $formula"

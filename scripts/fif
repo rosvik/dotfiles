@@ -10,17 +10,17 @@ if [ "$1" == "-h" ] || [ "$1" == "--help" ]; then
 	echo -e "  \033[1m-c, --code\033[0m    Open in VS Code"
 	echo -e "  \033[1m-s, --subl\033[0m    Open in Sublime Text"
 	echo -e "  \033[1m-e, --editor\033[0m  Open in \$EDITOR"
-  echo ""
-  echo "By default, fif will copy the file name to the clipboard."
+	echo ""
+	echo "By default, fif will copy the file name to the clipboard."
 	exit 1
 fi
 
 query=""
 for param in "$@"; do
-  if [[ $param != -* ]]; then
-    query="$param"
-    break
-  fi
+	if [[ $param != -* ]]; then
+		query="$param"
+		break
+	fi
 done
 
 file=$(
@@ -41,12 +41,13 @@ for p in "$@"; do
 	elif [ "$p" == "--editor" ] || [ "$p" == "-e" ]; then
 		fn="$EDITOR \"$file\""
 		break
-	else
+	elif command -v pbcopy >/dev/null; then
 		fn="echo \"$file\" | pbcopy"
+		break
 	fi
 done
 
 if [ -n "$file" ]; then
-  echo "$file"
+	echo "$file"
 	eval "$fn"
 fi

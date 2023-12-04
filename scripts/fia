@@ -10,30 +10,30 @@ if [ "$1" == "-h" ] || [ "$1" == "--help" ]; then
 	echo -e "  \033[1m-c, --code\033[0m    Open in VS Code"
 	echo -e "  \033[1m-s, --subl\033[0m    Open in Sublime Text"
 	echo -e "  \033[1m-e, --editor\033[0m  Open in \$EDITOR"
-  echo ""
-  echo "By default, fia will copy the file name and line number to the clipboard."
+	echo ""
+	echo "By default, fia will copy the file name and line number to the clipboard."
 	exit 1
 fi
 
 query=""
 for param in "$@"; do
-  if [[ $param != -* ]]; then
-    query="$param"
-    break
-  fi
+	if [[ $param != -* ]]; then
+		query="$param"
+		break
+	fi
 done
 
 result=$(
-  rga \
-    --ignore-case \
-    --color=always \
-    --line-number \
-    --no-heading "$query" \
-  | fzf \
-    --ansi \
-    --delimiter ':' \
-    --preview "bat --color=always {1} --highlight-line {2}" \
-    --preview-window 'right,60%,border-left,+{2}+3/3,~3' \
+	rga \
+		--ignore-case \
+		--color=always \
+		--line-number \
+		--no-heading "$query" |
+		fzf \
+			--ansi \
+			--delimiter ':' \
+			--preview "bat --color=always {1} --highlight-line {2}" \
+			--preview-window 'right,60%,border-left,+{2}+3/3,~3'
 )
 
 file="${result%%:*}"
@@ -49,13 +49,13 @@ for p in "$@"; do
 	elif [ "$p" == "--editor" ] || [ "$p" == "-e" ]; then
 		fn="$EDITOR \"$file:$linenumber\""
 		break
-	else
+	elif command -v pbcopy >/dev/null; then
 		fn="echo \"$file:$linenumber\" | pbcopy"
+		break
 	fi
 done
 
 if [ -n "$file" ]; then
-  echo "$file:$linenumber"
+	echo "$file:$linenumber"
 	eval "$fn"
 fi
-

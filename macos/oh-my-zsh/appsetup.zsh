@@ -37,5 +37,8 @@ export PATH="/usr/local/texlive/2022/bin/universal-darwin:$PATH"
 export MANPATH="/usr/local/texlive/2022/texmf-dist/doc/man:$MANPATH"
 export INFOPATH="/usr/local/texlive/2022/texmf-dist/doc/info:$INFOPATH"
 
+# Make fzf use fd, and respect .gitignore
+export FZF_DEFAULT_COMMAND='fd --type f --strip-cwd-prefix'
+
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform
