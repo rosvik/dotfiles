@@ -103,3 +103,13 @@ export NVM_DIR="$HOME/.config/nvm"
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+
+# bun completions
+[ -s "/Users/rosvik/.bun/_bun" ] && source "/Users/rosvik/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# zig
+export PATH="/opt/homebrew/bin/zig:$PATH"
