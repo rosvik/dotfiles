@@ -85,6 +85,7 @@ export DISABLE_AUTO_UPDATE=true
 export HOMEBREW_NO_ANALYTICS=1
 
 source $ZSH/oh-my-zsh.sh
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then

@@ -83,6 +83,7 @@ main() {
     "fzf"
     "fd"
     "ripgrep"
+    "zsh-autosuggestions"
   )
   for formula in "${formulae[@]}"; do
     echo "  - $formula"
