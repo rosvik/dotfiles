@@ -372,9 +372,6 @@ harvestapp.com###zendesk-widget-placeholder
 no.sofacompany.com###cookie-information-template-wrapper
 no.sofacompany.com##body:style(overflow:scroll !important;)
 
-! 2021-10-05 https://github.com
-github.com##.js-notification-top-shelf
-
 ! 2021-10-06 https://hillsong.brushfire.com
 hillsong.brushfire.com##.help-widget-wrapper
 hillsong.brushfire.com##.goog-te-banner-frame
