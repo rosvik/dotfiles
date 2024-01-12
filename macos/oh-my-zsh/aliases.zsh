@@ -53,7 +53,7 @@ alias dl="curl -O"
 alias gitnvm="git reset --soft HEAD~1"
 alias gtl='git log --graph --pretty='\''%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset'\'
 alias podi='npx pod-install ios'
-alias rebuild='yarn clean:install && yarn setup dev atb && podi && cd android && ./gradlew clean && cd - && bundle install && yarn start --reset-cache && yarn ios'
+alias rebuild='yarn clean:install && yarn setup dev atb && podi && cd android && ./gradlew clean && cd - && bundle install && yarn ios --list-devices'
 
 # Display connected drives
 alias disks="df -h"
