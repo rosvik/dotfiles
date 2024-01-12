@@ -23,7 +23,7 @@
 		"description": "Insert property"
 	},
 	"Component": {
-		"prefix": "comp",
+		"prefix": "component",
 		"description": "Basic react component for the AtB app",
 		"body": ["import {StyleSheet} from '@atb/theme';",
 			"import {useTranslation} from '@atb/translations';",
@@ -32,7 +32,7 @@
 			"",
 			"type ${1:Component}Props = {};",
 			"",
-			"export default function ${1:Component}({}: ${1:Component}Props): JSX.Element {",
+			"export function ${1:Component}({}: ${1:Component}Props): JSX.Element {",
 			"\tconst styles = useStyles();",
 			"\tconst {t} = useTranslation();",
 			"",

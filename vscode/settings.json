@@ -20,7 +20,7 @@
   // ---------------------------------------------------------------------------
   // Font
 
-  // The quick brown fox jumps over the lazy dog
+  // 0123456789 The quick brown fox jumps over the lazy dog
   // => --> -< <> >>= >= << !! ++ -- fi == != *** ## <~> (*) :: || <| /> /**
 
   // "editor.fontFamily": "Monaspace Neon Var",
