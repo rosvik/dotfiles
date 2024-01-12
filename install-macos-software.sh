@@ -80,6 +80,7 @@ main() {
     "xz"
     "zlib"
     "bat"
+    "micro"
     "fzf"
     "fd"
     "ripgrep"
