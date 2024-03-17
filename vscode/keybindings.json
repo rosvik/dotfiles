@@ -58,6 +58,10 @@
     "when": "editorTextFocus"
   },
   {
+    "key": "alt+ctrl+.",
+    "command": "workbench.action.toggleEditorGroupLayout",
+  },
+  {
     "key": "alt+ctrl+down",
     "command": "workbench.action.moveEditorToBelowGroup",
     "when": "editorTextFocus"
@@ -72,16 +76,19 @@
     "command": "editor.action.jumpToBracket",
     "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
   },
-
   // ---------------------------------------------------------------------------
   // Extensions
   {
     "key": "ctrl+alt+n",
     "command": "-code-runner.run"
   },
-
+  {
+    "key": "cmd+shift+g",
+    "command": "workbench.view.scm",
+    "when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
+  },
   // Notebooks
-    {
+  {
     "key": "alt+enter",
     "command": "notebook.cell.execute",
     "when": "notebookCellListFocused && notebookMissingKernelExtension && !notebookCellExecuting && notebookCellType == 'code' || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelCount > 0"
@@ -102,4 +109,3 @@
     "when": "notebookCellListFocused && notebookMissingKernelExtension && !notebookCellExecuting && notebookCellType == 'code' || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelCount > 0"
   },
 ]
-
