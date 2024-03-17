@@ -90,8 +90,6 @@
   "files.exclude": {
     "**/__pycache__/": true,
     "node_modules/": true,
-    "cvelist/": true,
-    "cvelistV5/": true,
   },
 
 
@@ -212,6 +210,9 @@
   "[prisma]": {
     "editor.formatOnSave": true
   },
+  "[svelte]": {
+    "editor.formatOnSave": true
+  },
   "[postcss]": {
     "editor.defaultFormatter": "stylelint.vscode-stylelint"
   },
@@ -273,10 +274,10 @@
   ],
   "github.copilot.enable": {
     "*": true,
-    "markdown": true,
-    "dotenv": false,
     "plaintext": false,
+    "markdown": true,
     "scminput": false,
+    "dotenv": false,
   },
 
   "apc.electron": {
