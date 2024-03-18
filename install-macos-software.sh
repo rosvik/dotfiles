@@ -6,7 +6,7 @@ HELP="
   ${UNDERLINE}https://github.com/rosvik/dotfiles${RESET}
 
   When running or updating this script, keep in mind:
-  - It is safe to run several times.
+  - It is safe to run several times, but some upgrades may happen when doing so.
   - It does not require dotfiles to be installed, but some of the software
     requires setup from dotfiles to work properly.
 
@@ -14,6 +14,7 @@ HELP="
   - node:    ${YELLOW}nvm install --lts && nvm use --lts${RESET}
   - python:  ${YELLOW}pyenv install 3.9 && pyenv global 3.9${RESET}
   - ruby:    ${YELLOW}rbenv install 2.7.6 && rbenv global 2.7.6${RESET}
+  - java:    ${YELLOW}sdk install java 21.0.2-open${RESET}
 "
 
 if [[ "${1-}" =~ ^-*h(elp)?$ ]]; then
@@ -110,6 +111,13 @@ main() {
 
   print "Installing nvm"
   PROFILE=/dev/null bash -c 'curl --silent -o- https://raw.githubusercontent.com/nvm-sh/nvm/HEAD/install.sh | bash'
+
+  if [ ! -f "$HOME/.sdkman/bin/sdkman-init.sh" ]; then
+    print "Installing sdkman"
+    curl -s "https://get.sdkman.io" | bash
+  else
+    print "Skipping sdkman installation, since it's already installed"
+  fi
 }
 
 main "$@"
