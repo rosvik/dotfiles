@@ -21,6 +21,7 @@ alias gradle="./gradlew"
 alias cop="gh copilot suggest -t shell"
 alias cog="gh copilot suggest -t git"
 alias hpe="rclone mount hpe.lan:/data ~/tmp/hpemnt &"
+alias jqi="jnv"
 
 # Directory shortcuts
 alias gf="cd ~/git;pwd"
@@ -45,6 +46,7 @@ alias up="uptime" # Computer uptime
 alias reload="$SHELL"
 alias t="tree -CF --filelimit 25 --dirsfirst"
 alias portsplz="sudo lsof -i -P -n | grep LISTEN"
+alias pwdplz="openssl rand -base64 24 | tr -d '+/='"
 alias psearch="ps ax | grep"
 alias dog="bat"
 alias grep="grep --color=always"
