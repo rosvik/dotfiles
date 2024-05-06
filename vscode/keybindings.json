@@ -76,6 +76,11 @@
     "command": "editor.action.jumpToBracket",
     "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
   },
+  {
+    "key": "cmd+shift+j",
+    "command": "editor.action.selectToBracket",
+    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+  },
   // ---------------------------------------------------------------------------
   // Extensions
   {
