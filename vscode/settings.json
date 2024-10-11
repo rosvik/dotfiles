@@ -3,7 +3,7 @@
 
   // ---------------------------------------------------------------------------
   // Theme
-  "workbench.colorTheme": "Copilot Theme - Higher Contrast",
+  "workbench.colorTheme": "Copilot Theme",
   "workbench.iconTheme": "bearded-icons",
 
   "workbench.colorCustomizations": {
@@ -157,8 +157,13 @@
 
   "[rust]": {
     "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true,
+      "source.fixAll": true
+    },
     "editor.defaultFormatter": "rust-lang.rust-analyzer",
     "editor.insertSpaces": true,
+    "editor.tabSize": 4,
   },
   // "rust-analyzer.inlayHints.renderColons": false,
   "rust-analyzer.inlayHints.chainingHints.enable": false,
@@ -278,6 +283,7 @@
     "markdown": true,
     "scminput": false,
     "dotenv": false,
+    "terraform-vars": false
   },
 
   "apc.electron": {
@@ -314,13 +320,6 @@
   "codesnap.transparentBackground": true,
   "codesnap.boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px",
   "codesnap.containerPadding": "0",
-
-  "customizeUI.titleBar": "inline",
-  "customizeUI.activityBar": "bottom",
-  "customizeUI.listRowHeight": 18,
-  "customizeUI.stylesheet": {
-    ".editor-actions": "display: none !important;"
-  },
 
   "gitlens.showWelcomeOnInstall": false,
   "gitlens.views.repositories.files.compact": false,
