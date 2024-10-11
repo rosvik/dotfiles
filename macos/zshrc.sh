@@ -104,6 +104,10 @@ export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
+# deno
+export DENO_INSTALL="/Users/rosvik/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
+
 # bun completions
 [ -s "/Users/rosvik/.bun/_bun" ] && source "/Users/rosvik/.bun/_bun"
 
@@ -113,3 +117,7 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # zig
 export PATH="/opt/homebrew/bin/zig:$PATH"
+
+# go
+export GOPATH="$HOME/go"
+export PATH="$GOPATH/bin:$PATH"
