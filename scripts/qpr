@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -e
+
+url="$(gh repo view --json url --jq .url)"
+branch="$(git rev-parse --abbrev-ref HEAD)"
+
+git push &&
+open "$url/compare/$branch?expand=1"
