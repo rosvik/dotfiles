@@ -58,6 +58,9 @@ alias podi='npx pod-install ios'
 alias rebuild='yarn clean:install && yarn setup dev atb && podi && cd android && ./gradlew clean && cd - && bundle install && yarn ios --list-devices'
 alias ssh-noagent='ssh -a -i /dev/null' # https://www.clockwork.com/insights/ssh-agent-hijacking/
 
+# Git
+alias gap="git add -p"
+
 # Display connected drives
 alias disks="df -h"
 alias disk="df -h"
