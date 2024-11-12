@@ -96,10 +96,7 @@ main() {
   casks=(
     "bartender"
     "bitwarden"
-    "dash"
-    "docker"
     "hex-fiend"
-    "insomnia"
     "slack"
     "spotify"
     "vlc"
