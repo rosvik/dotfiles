@@ -17,7 +17,6 @@ alias rc='subl ~/.oh-my-zsh/custom && subl ~/.zshrc'
 alias ai="ollama run llama2:13b"
 alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 alias gw="./gradlew"
-alias gradle="./gradlew"
 alias cop="gh copilot suggest -t shell"
 alias cog="gh copilot suggest -t git"
 alias hpe="rclone mount hpe.lan:/data ~/tmp/hpemnt &"
