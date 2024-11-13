@@ -79,7 +79,7 @@ ZSH_THEME="rosvik1"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 # List of plugins: https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins
-plugins=(git macos)
+plugins=(macos)
 
 export DISABLE_AUTO_UPDATE=true
 export HOMEBREW_NO_ANALYTICS=1
@@ -103,6 +103,11 @@ export NVM_DIR="$HOME/.config/nvm"
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/rosvik/bin/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/rosvik/bin/google-cloud-sdk/path.zsh.inc'; fi
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/rosvik/bin/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/rosvik/bin/google-cloud-sdk/completion.zsh.inc'; fi
 
 # deno
 export DENO_INSTALL="/Users/rosvik/.deno"
