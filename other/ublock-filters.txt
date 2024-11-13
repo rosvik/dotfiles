@@ -386,17 +386,11 @@ www.economist.com##.layout-article-sharing
 ! 2021-10-16 https://press.stripe.com
 press.stripe.com##.Notification__card
 
-! 2021-10-20 https://www.nature.com
-###onetrust-banner-sdk
-
 ! 2021-10-27 https://www.science.org
 www.science.org##.news-article__share
 
 ||disqus.com
 ||disquscdn.com
-
-! 2021-11-03 https://archive.org
-archive.org##.js-donate-banner
 
 ! 2021-11-05 https://ourworldindata.org
 ourworldindata.org##.open.cookie-notice
@@ -415,9 +409,6 @@ portal.cemasys.com##.popmake
 
 ! 2021-11-11 https://arstechnica.com
 ###onetrust-consent-sdk
-
-! 2021-11-26 https://www.wired.com
-www.wired.com##.newsletter-subscribe-form
 
 ! 2021-12-01 https://www.princeton.edu
 www.princeton.edu##.sharebox
@@ -508,9 +499,6 @@ www.aliexpress.com##.footer-copywrite
 ! 2022-08-12 https://no.pinterest.com
 no.pinterest.com##video:upward(div)
 
-! 2022-08-16 https://en.wikipedia.org
-en.wikipedia.org##.cn-fundraising
-
 ! 2022-03-01 https://www.economist.com
 ||buy.tinypass.com/checkout/$subdocument
 
@@ -541,3 +529,219 @@ www.economist.com##iframe:style(height:500px)
 
 ! 2023-06-27 https://www.twitch.tv
 www.twitch.tv##button[aria-label="Hype Chat"]
+
+! 2021-10-11 https://www.economist.com
+www.economist.com##.layout-article-sharing
+!||www.economist.com^$csp=script-src 'none'
+
+! 2021-10-16 https://press.stripe.com
+press.stripe.com##.Notification__card
+
+! 2021-10-27 https://www.science.org
+www.science.org##.news-article__share
+
+||disqus.com
+||disquscdn.com
+
+! 2021-11-03 https://archive.org
+archive.org##.js-donate-banner
+
+! 2022-08-16 https://en.wikipedia.org
+en.wikipedia.org##.cn-fundraising
+
+||widget.solvemate.com
+||static.hotjar.com
+
+! 2022-08-30 https://www.computersalg.no
+www.computersalg.no##.energy-label-container-list
+www.computersalg.no##.energy-label-container
+www.computersalg.no##.energy-label-container-itembox
+
+! 2022-10-11 https://www.kode24.no
+www.kode24.no###company-sponsors-list
+www.kode24.no###desktop-sidemenu-front > *
+www.kode24.no##.diamond-partners-list
+www.kode24.no##.native-advertisement
+www.kode24.no##.added.row
+||talk.hyvor.com/api/embed/$subdocument
+www.kode24.no##.company-league-table-wrapper
+
+! 2022-10-12 https://www.adressa.no
+www.adressa.no##.gdpr-modal
+
+! 2022-10-14 https://www.bgafotobutikk.no
+www.bgafotobutikk.no###CybotCookiebotDialogBodyUnderlay
+www.bgafotobutikk.no###wrapper:style(overflow:scroll !important;)
+
+||client.crisp.chat
+||accounts.google.com/gsi/iframe/select$subdocument
+
+! 2022-12-04 https://adventofcode.com
+adventofcode.com###sponsor
+
+! 2022-12-10 https://www.nordicnest.no
+www.nordicnest.no##.x.hs.hr.hq.fs.fr.ek.e8.a9
+
+! 2022-12-10 https://kremmerhuset.no
+###CybotCookiebotDialog
+
+! 2022-12-19 https://www.washingtonpost.com
+||talk.washingtonpost.com/embed/stream$subdocument
+www.washingtonpost.com###qa-modal-body
+www.washingtonpost.com###comments-wrapper
+
+||www.nytimes.com^$csp=script-src 'none'
+
+! 2023-01-05 https://lyko.com
+###CybotCookiebotDialogBodyUnderlay
+lyko.com##body:style(overflow:scroll !important;)
+
+! 2023-01-12 https://www.twitch.tv
+www.twitch.tv##.consent-banner
+
+! 2023-01-18 https://www.pexels.com
+www.pexels.com##.inline-ads
+
+! 2023-02-02 https://www.lampegiganten.no
+www.bgafotobutikk.no##body:style(overflow:scroll !important;)
+www.lampegiganten.no##.cmpBoxWelcomeOI
+
+runescape.com##body:style(overflow:scroll !important;)
+
+! 2023-02-14 https://thehackernews.com
+thehackernews.com##div.cf.google-1
+thehackernews.com##.float-share
+thehackernews.com##.sharebelow
+thehackernews.com##.PopularPosts
+
+||vercel.live/_next-live/feedback/
+
+! 2023-03-08 https://www.bonappetit.com
+www.bonappetit.com##div[class^="PersistentBottomWrapper"]
+www.bonappetit.com##div[class^="VideoFigure"]
+www.bonappetit.com##.persistent-aside
+www.bonappetit.com##iframe
+
+! 2023-03-29 https://www.theverge.com
+www.theverge.com##.fixed.duet--cta--cookie-banner
+
+! 2023-04-02 https://hbr.org
+hbr.org##.hide-for-print
+
+! 2023-04-10 https://www.salon.com
+www.salon.com##.social_comments_app_wrapper
+www.salon.com##.trending_article_container
+www.salon.com##.main_social_user_wrap
+www.salon.com##.subscription_inner_wrapper
+www.salon.com##.outer_searchbox_container
+www.salon.com##.read_more
+www.salon.com##.related_article
+
+! 2023-04-25 https://www.bloomberg.com
+www.bloomberg.com##.banner
+
+! 2023-06-06 https://old.reddit.com
+old.reddit.com##.premium-banner
+
+! 2023-06-09 https://e24.no
+||cmp.e24.no/index.html$subdocument
+||cmmnts.i.bt.no/$subdocument
+e24.no###cc-comments
+e24.no##.dr-edition-teaser
+e24.no##[data-test-tag="share"]
+e24.no##[id^="adPlacement"]
+
+! 2023-06-09 https://www.biltema.no
+www.biltema.no##.cookiedisclaimer__content
+
+! 2023-06-14 https://www.kode24.no
+www.kode24.no###kode24-dagen-banner
+www.kode24.no##.commercial
+www.kode24.no##.body-copy > .preview
+www.kode24.no##.newest-comments
+www.kode24.no###tip-us-call-to-action
+www.kode24.no##.counter
+www.kode24.no###top-notification:upward(2)
+
+! 2023-06-28 https://www.twitch.tv
+www.twitch.tv##.channel-skins-banner__interactive
+www.twitch.tv##[class*="channel-skins"]
+
+! 2023-07-07 https://www.rbnett.no
+www.rbnett.no##.gdpr-modal
+
+
+www.youtube.com##ytd-guide-renderer a.yt-simple-endpoint path[d^="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33"]:upward(ytd-guide-entry-renderer)
+www.youtube.com##ytd-mini-guide-renderer a.yt-simple-endpoint path[d^="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33"]:upward(ytd-mini-guide-entry-renderer)
+www.youtube.com##ytd-browse #dismissible ytd-rich-grid-slim-media[is-short]:upward(ytd-rich-section-renderer)
+www.youtube.com##ytd-browse[page-subtype="home"] .ytd-thumbnail[href^="/shorts/"]:upward(ytd-rich-item-renderer)
+www.youtube.com##ytd-browse[page-subtype="subscriptions"] .ytd-thumbnail[href^="/shorts/"]:upward(ytd-grid-video-renderer,ytd-rich-item-renderer)
+www.youtube.com##ytd-search .ytd-thumbnail[href^="/shorts/"]:upward(ytd-video-renderer)
+www.youtube.com##ytd-watch-next-secondary-results-renderer .ytd-thumbnail[href^="/shorts/"]:upward(ytd-compact-video-renderer,ytd-shelf-renderer)
+www.youtube.com##ytd-watch-next-secondary-results-renderer ytd-reel-shelf-renderer
+www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-video-renderer .ytd-thumbnail[href^="/shorts/"]:upward(ytd-item-section-renderer)
+www.youtube.com##ytd-browse[page-subtype="channels"] #contents.ytd-reel-shelf-renderer:upward(ytd-item-section-renderer)
+www.youtube.com##ytd-browse[page-subtype="trending"] .ytd-thumbnail[href^="/shorts/"]:upward(ytd-video-renderer)
+
+! 2023-07-12 https://duckduckgo.com
+duckduckgo.com##.js-text-promo-link
+
+! 2023-09-12 https://www.kode24.no
+www.kode24.no###diamond-partners-list-tile
+www.kode24.no##.patreons
+www.kode24.no##.podcast-player
+
+! 2023-09-20 https://www.twitch.tv
+www.twitch.tv##.subtember-gradient
+
+! 2023-09-29 https://old.reddit.com
+old.reddit.com##.listingsignupbar.infobar
+
+! 2023-10-04 https://fossforce.com
+fossforce.com##ul.ticker
+fossforce.com##.breaking-news
+
+! 2023-12-14 https://www.economist.com
+www.economist.com##.paywall
+www.economist.com##html:style(overflow:scroll !important;)
+
+! 2023-12-21 https://www.quantamagazine.org
+www.quantamagazine.org##.flex-justify-between.flex-items-start.flex.relative.post__content > aside.flex-justify-center.flex.hide.post__sidebar > .post__sidebar__content > .sidebar__poster
+
+! 2024-01-04 https://www.digi.no
+||digi.no^$csp=script-src 'none'
+||ifragasatt.se
+||tumedia.no
+
+! 2024-01-09 https://direkte.dn.no
+||dntv.dn.no/players/$subdocument
+
+! 2024-01-13 https://www.adressa.no
+!||www.adressa.no^$csp=script-src 'none'
+www.adressa.no##iframe
+www.adressa.no##body:style(overflow:scroll !important; position:static !important;)
+www.adressa.no##[id*="message_container"]
+
+! 2024-01-23 https://www.kode24.no
+||sp.kode24.no/$subdocument
+
+! 2024-03-04 https://stackoverflow.com
+stackoverflow.com###signup-dialog-container
+
+! 2024-04-05 https://refactoring.guru
+||refactoring.guru/images/content-public/ann/spring/spring.svg$image
+refactoring.guru##.announcement-block
+
+! May 31, 2024 https://time.com
+time.com##.jw-reset.jw-media
+time.com##.jw-reset.jw-wrapper > .jw-reset.jw-aspect
+
+! Jun 29, 2024 https://www.hetzner.com
+www.hetzner.com###InitModal
+
+! Aug 15, 2024 https://www.newyorker.com
+www.newyorker.com##.bookmark
+
+! Oct 3, 2024 https://axios-http.com
+axios-http.com##.sponsors_container
+

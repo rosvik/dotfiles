@@ -15,11 +15,30 @@
 ||sourcepoint.theguardian.com$subdocument
 ||js.driftt.com/$subdocument
 ||buy.tinypass.com/checkout/$subdocument
+||disqus.com
+||disquscdn.com
+||widget.solvemate.com
+||static.hotjar.com
+||talk.hyvor.com/api/embed/$subdocument
+||client.crisp.chat
+||accounts.google.com/gsi/iframe/select$subdocument
+||talk.washingtonpost.com/embed/stream$subdocument
+||www.nytimes.com^$csp=script-src 'none'
+||vercel.live/_next-live/feedback/
+||cmp.e24.no/index.html$subdocument
+||cmmnts.i.bt.no/$subdocument
+||digi.no^$csp=script-src 'none'
+||ifragasatt.se
+||tumedia.no
+||dntv.dn.no/players/$subdocument
+||sp.kode24.no/$subdocument
+||refactoring.guru/images/content-public/ann/spring/spring.svg$image
 
 
 !! Misc filters
+###CybotCookiebotDialog
+###CybotCookiebotDialogBodyUnderlay
 ###mtm-root-container
-###onetrust-banner-sdk
 ###onetrust-consent-sdk
 *##html[data-darkreader-scheme="dark"] hypothesis-highlight:style(color: black !important;)
 ajo.prod.reuters.tv
@@ -32,6 +51,13 @@ www.adobe.com###onetrust-consent-sdk
 
 ! adressa.no
 adressa.no###pm-privacy-banner
+www.adressa.no##.gdpr-modal
+www.adressa.no##iframe
+www.adressa.no##body:style(overflow:scroll !important; position:static !important;)
+www.adressa.no##[id*="message_container"]
+
+! adventofcode.com
+adventofcode.com###sponsor
 
 ! aliexpress.com
 aliexpress.com##.ui-fixed-panel
@@ -57,12 +83,21 @@ archive.org##.js-donate-banner
 askubuntu.com##.js-consent-banner
 askubuntu.com##.js-dismissable-hero
 
+! axios-http.com
+axios-http.com##.sponsors_container
+
 ! bbc.com
 www.bbc.com##.fc-dialog-overlay
 www.bbc.com##.fc-dialog
 
 ! bgafotobutikk.no
 www.bgafotobutikk.no###CybotCookiebotDialog
+www.bgafotobutikk.no###CybotCookiebotDialogBodyUnderlay
+www.bgafotobutikk.no###wrapper:style(overflow:scroll !important;)
+www.bgafotobutikk.no##body:style(overflow:scroll !important;)
+
+! biltema.no
+www.biltema.no##.cookiedisclaimer__content
 
 ! blackboard.com
 ntnu.blackboard.com##.eesy
@@ -71,9 +106,16 @@ ntnu.blackboard.com##.eesy
 bloomberg.com##.mini-player
 bloomberg.com##.postr-recirc
 bloomberg.com##.leaderboard-ad-mock
+www.bloomberg.com##.banner
 
 ! bohus.no
 www.bohus.no###coi-cookie
+
+! bonappetit.com
+www.bonappetit.com##div[class^="PersistentBottomWrapper"]
+www.bonappetit.com##div[class^="VideoFigure"]
+www.bonappetit.com##.persistent-aside
+www.bonappetit.com##iframe
 
 ! brushfire.com
 hillsong.brushfire.com##.help-widget-wrapper
@@ -101,6 +143,9 @@ columbianewsservice.com##.share-this-page-links
 
 ! computersalg.no
 www.computersalg.no##.BannerZoneMain
+www.computersalg.no##.energy-label-container-list
+www.computersalg.no##.energy-label-container
+www.computersalg.no##.energy-label-container-itembox
 
 ! dagbladet.no
 www.dagbladet.no##.css-pp-box
@@ -114,6 +159,13 @@ duckduckgo.com##.showcase
 duckduckgo.com##.social
 duckduckgo.com##.footer_cards
 duckduckgo.com##.feedback-btn
+duckduckgo.com##.js-text-promo-link
+
+! e24.no
+e24.no###cc-comments
+e24.no##.dr-edition-teaser
+e24.no##[data-test-tag="share"]
+e24.no##[id^="adPlacement"]
 
 ! economist.com
 www.economist.com##.layout-article-sharing
@@ -122,6 +174,9 @@ www.economist.com##div[class^="adComponent"]
 www.economist.com##._podcast-promo
 www.economist.com##._newsletter-promo-container
 www.economist.com##iframe:style(height:500px)
+www.economist.com##.layout-article-sharing
+www.economist.com##.paywall
+www.economist.com##html:style(overflow:scroll !important;)
 
 ! fastcompany.com
 fastcompany.com##.sticky-inner-wrapper
@@ -135,14 +190,15 @@ fortune.com##div[class^="gutenbergContent__content"] > div:style(width:calc((100
 fortune.com##div[class^="socialList"]:style(visibility:hidden !important;)
 fortune.com##div[class^="popularPosts__"]
 
+! fossforce.com
+fossforce.com##ul.ticker
+fossforce.com##.breaking-news
+
 ! gatesfoundation.org
 gatesfoundation.org##.cookie-message
 
 ! gear4music.no
 www.gear4music.no###cookieConsentWidgetDiv
-
-! github.com
-github.com##.js-notification-top-shelf
 
 ! gq.com
 www.gq.com##.social-icons
@@ -150,8 +206,14 @@ www.gq.com##.social-icons
 ! harvestapp.com
 harvestapp.com###zendesk-widget-placeholder
 
+! hbr.org
+hbr.org##.hide-for-print
+
 ! helor.com
 www.helor.com##.un-before-unloader
+
+! hetzner.com
+www.hetzner.com###InitModal
 
 ! hillsong.com
 hillsong.com##.optanon-show-settings-popup-wrapper
@@ -187,8 +249,29 @@ independent.co.uk##.social-share
 independent.co.uk###comments
 independent.co.uk##.show-comments
 
+! kode24.no
+www.kode24.no###company-sponsors-list
+www.kode24.no###desktop-sidemenu-front > *
+www.kode24.no##.diamond-partners-list
+www.kode24.no##.native-advertisement
+www.kode24.no##.added.row
+www.kode24.no##.company-league-table-wrapper
+www.kode24.no###kode24-dagen-banner
+www.kode24.no##.commercial
+www.kode24.no##.body-copy > .preview
+www.kode24.no##.newest-comments
+www.kode24.no###tip-us-call-to-action
+www.kode24.no##.counter
+www.kode24.no###top-notification:upward(2)
+www.kode24.no###diamond-partners-list-tile
+www.kode24.no##.patreons
+www.kode24.no##.podcast-player
+
 ! komplett.no
 www.komplett.no##.sticky-box
+
+! lampegiganten.no
+www.lampegiganten.no##.cmpBoxWelcomeOI
 
 ! last.fm
 last.fm###_evidon_banner
@@ -215,6 +298,9 @@ longreads.com##.entry-email-signup
 longreads.com##.member-promo
 longreads.com###container:style(margin-top:0!important)
 longreads.com##.modal
+
+! lyko.com
+lyko.com##body:style(overflow:scroll !important;)
 
 ! marketwatch.com
 www.marketwatch.com##.article__social
@@ -259,6 +345,10 @@ www.newyorker.com##.ticker-view:has-text(newsletter)
 www.newyorker.com##a[href*="subscribe.newyorker.com"]
 www.newyorker.com##.grid-layout__aside
 www.newyorker.com##.social-icons__list
+www.newyorker.com##.bookmark
+
+! nordicnest.no
+www.nordicnest.no##.x.hs.hr.hq.fs.fr.ek.e8.a9
 
 ! nordnet.no
 www.nordnet.no##.cookie-consent
@@ -275,6 +365,9 @@ www.nytimes.com##.expanded-dock
 
 ! ourworldindata.org
 ourworldindata.org##.open.cookie-notice
+
+! pexels.com
+www.pexels.com##.inline-ads
 
 ! pinterest.com
 pinterest.com##[data-grid-item]:has([title="Promoted by"])
@@ -306,9 +399,18 @@ psyche.co##div[class^="styled__SocialShare"]
 ! quantamagazine.org
 www.quantamagazine.org##.sshare
 www.quantamagazine.org##.theme__anchors--solid.flex-justify-center:style(visibility: hidden !important;)
+www.quantamagazine.org##.flex-justify-between.flex-items-start.flex.relative.post__content > aside.flex-justify-center.flex.hide.post__sidebar > .post__sidebar__content > .sidebar__poster
+
+! rbnett.no
+www.rbnett.no##.gdpr-modal
 
 ! reddit.com
 reddit.com##.cookie-infobar
+old.reddit.com##.premium-banner
+old.reddit.com##.listingsignupbar.infobar
+
+! refactoring.guru
+refactoring.guru##.announcement-block
 
 ! reuters.com
 www.reuters.com###onetrust-consent-sdk
@@ -322,8 +424,19 @@ www.reuters.com##div[class^="SocialTools"]
 ! runescape.com
 secure.runescape.com##.c-cookie-consent
 secure.runescape.com##.c-news-article__share
+runescape.com##body:style(overflow:scroll !important;)
+
+! salon.com
+www.salon.com##.social_comments_app_wrapper
+www.salon.com##.trending_article_container
+www.salon.com##.main_social_user_wrap
+www.salon.com##.subscription_inner_wrapper
+www.salon.com##.outer_searchbox_container
+www.salon.com##.read_more
+www.salon.com##.related_article
 
 ! science.org
+www.science.org##.news-article__share
 www.science.org##.news-article__share
 
 ! scientificamerican.com
@@ -359,8 +472,10 @@ stackexchange.com##.js-freemium-cta
 ! stackoverflow.com
 stackoverflow.com##.js-freemium-cta
 stackoverflow.com##.js-consent-banner
+stackoverflow.com###signup-dialog-container
 
 ! stripe.com
+press.stripe.com##.Notification__card
 press.stripe.com##.Notification__card
 
 ! texasmonthly.com
@@ -378,6 +493,12 @@ www.theatlantic.com##.NavAccountLinks_root__1JJK_
 thefederalist.com##.article-share-simple
 thefederalist.com##.general-callout
 
+! thehackernews.com
+thehackernews.com##div.cf.google-1
+thehackernews.com##.float-share
+thehackernews.com##.sharebelow
+thehackernews.com##.PopularPosts
+
 ! theparisreview.org
 www.theparisreview.org##.article-body:style(font-size:1.1em;text-align:justify;)
 www.theparisreview.org##.article-tools_desktop
@@ -393,12 +514,22 @@ app.thestorygraph.com##.icon-cheveron-up-circle
 theverge.com##.m-privacy-consent
 theverge.com##.c-comments
 theverge.com##.l-col__sidebar:style(visibility: hidden !important;)
+www.theverge.com##.fixed.duet--cta--cookie-banner
+
+! time.com
+time.com##.jw-reset.jw-media
+time.com##.jw-reset.jw-wrapper > .jw-reset.jw-aspect
 
 ! trd.by
 trd.by###pm-privacy-banner
 
 ! twitch.tv
 twitch.tv##.video-player__container--theatre-whispers:style(bottom:0 !important;)
+www.twitch.tv##button[aria-label="Hype Chat"]
+www.twitch.tv##.consent-banner
+www.twitch.tv##.channel-skins-banner__interactive
+www.twitch.tv##[class*="channel-skins"]
+www.twitch.tv##.subtember-gradient
 
 ! twitter.com
 twitter.com##[aria-label$="trending now" i]
@@ -420,6 +551,8 @@ code.visualstudio.com###cookie-banner
 
 ! washingtonpost.com
 www.washingtonpost.com##.softwall-overlay
+www.washingtonpost.com###qa-modal-body
+www.washingtonpost.com###comments-wrapper
 
 ! whatsapp.com
 whatsapp.com##body > div[tabindex^="-1"]
@@ -438,7 +571,10 @@ wired.com##.ad-stickyhero
 wired.com##.social-icons__list-item--has-background
 wired.com##.ad--rail.ad
 wired.com##.callout--related-list
-www.wired.com##.newsletter-subscribe-form
+wired.com##.persistent-bottom
+wired.com##.persistent-aside
+wired.com##.newsletter-subscribe-form
+wired.com##.cne-video-embed
 
 ! yamaha.com
 usa.yamaha.com###pop-div0039839572796802836
@@ -446,8 +582,21 @@ usa.yamaha.com###pop-div2025857536621143296
 
 ! youtube.com
 youtube.com##ytd-watch-flexy[theater] #full-bleed-container:style(max-height: calc(100vh - 56px) !important;)
-youtube.com##ytd-watch-flexy[fullscreen] #player-theater-container:style(max-height: none !important;)
-youtube.com###clarify-box > .ytd-watch-flexy.style-scope
+youtube.com##ytd-watch-flexy[fullscreen] #full-bleed-container:style(max-height: none !important;)
+youtube.com##ytd-search ytd-item-section-renderer ytd-shelf-renderer
+youtube.com##ytd-search ytd-item-section-renderer ytd-horizontal-card-list-renderer
+youtube.com##ytd-search ytd-item-section-renderer ytd-reel-shelf-renderer
+www.youtube.com##ytd-guide-renderer a.yt-simple-endpoint path[d^="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33"]:upward(ytd-guide-entry-renderer)
+www.youtube.com##ytd-mini-guide-renderer a.yt-simple-endpoint path[d^="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33"]:upward(ytd-mini-guide-entry-renderer)
+www.youtube.com##ytd-browse #dismissible ytd-rich-grid-slim-media[is-short]:upward(ytd-rich-section-renderer)
+www.youtube.com##ytd-browse[page-subtype="home"] .ytd-thumbnail[href^="/shorts/"]:upward(ytd-rich-item-renderer)
+www.youtube.com##ytd-browse[page-subtype="subscriptions"] .ytd-thumbnail[href^="/shorts/"]:upward(ytd-grid-video-renderer,ytd-rich-item-renderer)
+www.youtube.com##ytd-search .ytd-thumbnail[href^="/shorts/"]:upward(ytd-video-renderer)
+www.youtube.com##ytd-watch-next-secondary-results-renderer .ytd-thumbnail[href^="/shorts/"]:upward(ytd-compact-video-renderer,ytd-shelf-renderer)
+www.youtube.com##ytd-watch-next-secondary-results-renderer ytd-reel-shelf-renderer
+www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-video-renderer .ytd-thumbnail[href^="/shorts/"]:upward(ytd-item-section-renderer)
+www.youtube.com##ytd-browse[page-subtype="channels"] #contents.ytd-reel-shelf-renderer:upward(ytd-item-section-renderer)
+www.youtube.com##ytd-browse[page-subtype="trending"] .ytd-thumbnail[href^="/shorts/"]:upward(ytd-video-renderer)
 
 ! yr.no
 www.yr.no##.clippy
