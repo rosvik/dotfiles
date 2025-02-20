@@ -47,6 +47,16 @@ main() {
   print "Creating ~/bin (if not already present)"
   mkdir -pv ~/bin
 
+  print "Installing nvm"
+  PROFILE=/dev/null bash -c 'curl --silent -o- https://raw.githubusercontent.com/nvm-sh/nvm/HEAD/install.sh | bash'
+
+  if [ ! -f "$HOME/.sdkman/bin/sdkman-init.sh" ]; then
+    print "Installing sdkman"
+    curl -s "https://get.sdkman.io" | bash
+  else
+    print "Skipping sdkman installation, since it's already installed"
+  fi
+
   print "Installing yt-dlp"
   curl --silent -L -o ~/bin/yt-dlp "https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp" &&
     chmod +x ~/bin/yt-dlp
@@ -82,6 +92,7 @@ main() {
     "zlib"
     "bat"
     "micro"
+    "ncdu"
     "fzf"
     "fd"
     "ripgrep"
@@ -97,24 +108,12 @@ main() {
     "bartender"
     "bitwarden"
     "hex-fiend"
-    "slack"
-    "spotify"
     "vlc"
   )
   for cask in "${casks[@]}"; do
     echo "  - $cask"
     brew install --cask --quiet "$cask"
   done
-
-  print "Installing nvm"
-  PROFILE=/dev/null bash -c 'curl --silent -o- https://raw.githubusercontent.com/nvm-sh/nvm/HEAD/install.sh | bash'
-
-  if [ ! -f "$HOME/.sdkman/bin/sdkman-init.sh" ]; then
-    print "Installing sdkman"
-    curl -s "https://get.sdkman.io" | bash
-  else
-    print "Skipping sdkman installation, since it's already installed"
-  fi
 }
 
 main "$@"
