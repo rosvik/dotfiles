@@ -1,0 +1,42 @@
+[user]
+	name = Johannes Røsvik
+	email = j.rosvik@gmail.com
+	signingkey = ~/.ssh/id_ed.pub
+[commit]
+	gpgsign = true
+[push]
+	autoSetupRemote = true
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[branch]
+	sort = -committerdate
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	allowedSignersFile = ~/.config/git/allowed_signers
+[alias]
+	co = checkout
+	cp = cherty-pick
+
+	head = "!f() { git branch -rl \"*/HEAD\" | rev | cut -d/ -f1 | rev; }; f"
+
+	stache = "!f() { \
+		echo ''; \
+		echo '    ██████        ██████████  ██████████        ██████'; \
+		echo '  ████        ██████████████████████████████        ████'; \
+		echo '  ████    ██████████████████████████████████████    ████'; \
+		echo '  ██████████████████████████████████████████████████████'; \
+		echo '    ████████████████████████  ████████████████████████'; \
+		echo '      ██████████████████          ██████████████████'; \
+		echo '          ████████                      ████████'; \
+		echo ''; \
+		git stash $@; \
+	}; f"
+
+	dshow = -c diff.external=difft show --ext-diff
+	ddiff = -c diff.external=difft diff
+[init]
+	defaultBranch = main
