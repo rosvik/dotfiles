@@ -21,6 +21,7 @@ alias cop="gh copilot suggest -t shell"
 alias cog="gh copilot suggest -t git"
 alias hpe="rclone mount hpe.lan:/data ~/tmp/hpemnt &"
 alias jqi="jnv"
+alias cur="cursor"
 
 # Directory shortcuts
 alias gf="cd ~/git;pwd"
