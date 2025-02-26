@@ -4,5 +4,10 @@ set -e
 url="$(gh repo view --json url --jq .url)"
 branch="$(git rev-parse --abbrev-ref HEAD)"
 
-git push &&
+if [ "$branch" = "main" ] || [ "$branch" = "master" ]; then
+  echo "🚨 Thy shall not make PRs to $branch!"
+  exit 1
+fi
+
+git push
 open "$url/compare/$branch?expand=1"
