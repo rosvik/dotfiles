@@ -7,7 +7,7 @@ alias o="open ." # Open the current directory in Finder
 alias py="python3.9" # Make using python less terrible
 alias daisy="ncdu --color dark"
 alias yt-best="youtube-dl -f bestvideo[ext=mp4]+bestaudio[ext=m4a]"
-alias firefox="/Applications/Firefox Nightly.app/Contents/MacOS/firefox-bin"
+alias firefox="/Applications/Firefox\ Nightly.app/Contents/MacOS/firefox"
 alias ql='qlmanage -p "$@" &> /dev/null' # Quick look
 alias b='EDITOR=nano ranger'
 alias gd='git diff | bat'
@@ -55,7 +55,7 @@ alias dl="curl -O"
 alias gitnvm="git reset --soft HEAD~1"
 alias gtl='git log --graph --pretty='\''%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset'\'
 alias podi='npx pod-install ios'
-alias rebuild='yarn clean:install && yarn setup dev atb && podi && cd android && ./gradlew clean && cd - && bundle install && yarn ios --list-devices'
+alias rebuild='yarn clean:install && yarn setup dev atb && bundle install && podi && cd android && ./gradlew clean && cd - && yarn ios --list-devices'
 alias ssh-noagent='ssh -a -i /dev/null' # https://www.clockwork.com/insights/ssh-agent-hijacking/
 
 # Git
