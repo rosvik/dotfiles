@@ -22,6 +22,7 @@ alias cog="gh copilot suggest -t git"
 alias hpe="rclone mount hpe.lan:/data ~/tmp/hpemnt &"
 alias jqi="jnv"
 alias cur="cursor"
+alias venv="python -m venv venv && source venv/bin/activate"
 
 # Directory shortcuts
 alias gf="cd ~/git;pwd"
