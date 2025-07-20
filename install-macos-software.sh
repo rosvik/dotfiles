@@ -11,7 +11,7 @@ HELP="
     requires setup from dotfiles to work properly.
 
   Some version managers are installed instead of specific languages:
-  - node:    ${YELLOW}nvm install --lts && nvm use --lts${RESET}
+  - node:    ${YELLOW}fnm install --lts && fnm use 22${RESET}
   - python:  ${YELLOW}pyenv install 3.9 && pyenv global 3.9${RESET}
   - ruby:    ${YELLOW}rbenv install 2.7.6 && rbenv global 2.7.6${RESET}
   - java:    ${YELLOW}sdk install java 21.0.2-open${RESET}
@@ -46,9 +46,6 @@ main() {
 
   print "Creating ~/bin (if not already present)"
   mkdir -pv ~/bin
-
-  print "Installing nvm"
-  PROFILE=/dev/null bash -c 'curl --silent -o- https://raw.githubusercontent.com/nvm-sh/nvm/HEAD/install.sh | bash'
 
   if [ ! -f "$HOME/.sdkman/bin/sdkman-init.sh" ]; then
     print "Installing sdkman"
@@ -93,6 +90,7 @@ main() {
     "bat"
     "micro"
     "ncdu"
+    "fnm"
     "fzf"
     "fd"
     "ripgrep"

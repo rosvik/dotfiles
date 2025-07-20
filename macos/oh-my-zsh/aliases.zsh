@@ -23,6 +23,7 @@ alias hpe="rclone mount hpe.lan:/data ~/tmp/hpemnt &"
 alias jqi="jnv"
 alias cur="cursor"
 alias venv="python -m venv venv && source venv/bin/activate"
+alias nvm="fnm"
 
 # Directory shortcuts
 alias gf="cd ~/git;pwd"
