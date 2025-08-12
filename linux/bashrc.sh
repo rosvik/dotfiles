@@ -138,7 +138,7 @@ export HASTE_SERVER="https://haste.qore.no"
 # Laravel vendor public access:
 export PATH="$PATH:$HOME/.config/composer/vendor/bin"
 
-export PS1="\[$(tput setaf 7)\]$(hostname) \[$(tput setaf 6)\]\W\[$(tput setaf 7)$(tput bold)\] > \[$(tput sgr0)\]"
+export PS1="\[$(tput setaf 7)\]$HOSTNAME \[$(tput setaf 6)\]\W\[$(tput setaf 7)$(tput bold)\] > \[$(tput sgr0)\]"
 #export PS1="D2: \W > "
 
 export LS_COLORS="no=00:fi=00:di=36:ln=01;34:pi=40;33:so=01;35:bd=40;33;01:cd=40;33;01:or=01;05;37;41:mi=01;05;37;41:ex=32:*.cmd=32:*.exe=32:*.com=32:*.btm=32:*.bat=32:*.sh=32:*.csh=32:*.tar=31:*.tgz=31:*.arj=31:*.taz=31:*.lzh=31:*.zip=31:*.z=31:*.Z=31:*.gz=31:*.bz2=31:*.bz=31:*.tz=31:*.rpm=31:*.cpio=31:*.jpg=35:*.gif=35:*.bmp=35:*.xbm=35:*.xpm=35:*.png=35:*.tif=35:"
