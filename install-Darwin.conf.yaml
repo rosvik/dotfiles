@@ -13,6 +13,7 @@
     ~/.gitconfig: "unix/.gitconfig"
     ~/.nanorc: "unix/nanorc.sh"
     ~/.zshrc: "macos/zshrc.sh"
+    ~/.zprofile: "macos/zprofile.sh"
     ~/.oh-my-zsh/custom: "macos/oh-my-zsh/"
     ~/.config/neofetch/config.conf: "unix/neofetch.conf"
     ~/Library/Application Support/Sublime Text/Packages/User: "sublimetext3/"
