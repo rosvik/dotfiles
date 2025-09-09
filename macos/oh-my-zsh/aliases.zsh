@@ -22,6 +22,8 @@ alias cog="gh copilot suggest -t git"
 alias hpe="rclone mount hpe.lan:/data ~/tmp/hpemnt &"
 alias jqi="jnv"
 alias cur="cursor"
+alias codi="code-insiders"
+alias p="pnpm"
 alias venv="python -m venv venv && source venv/bin/activate"
 alias nvm="fnm"
 
@@ -56,11 +58,12 @@ alias calc="bc -l <<<"
 alias dl="curl -O"
 alias gitnvm="git reset --soft HEAD~1"
 alias gtl='git log --graph --pretty='\''%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset'\'
-alias podi='npx pod-install ios'
-alias rebuild='yarn clean:install && yarn setup dev atb && cd ios && bundle exec pod install && cd ../android && ./gradlew clean && cd .. && yarn ios --list-devices'
+alias podi='cd ios && bundle exec pod install ; cd ..'
+alias rebuild='yarn clean:install && yarn setup dev atb && bundle install && cd ios && bundle exec pod install && cd .. && cd android && ./gradlew clean && cd - && yarn ios --list-devices'
 alias ssh-noagent='ssh -a -i /dev/null' # https://www.clockwork.com/insights/ssh-agent-hijacking/
 
 # Git
+alias gut="git"
 alias gap="git add -p"
 
 # Display connected drives
