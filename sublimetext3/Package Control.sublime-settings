@@ -4,28 +4,29 @@
 	[
 		"A File Icon",
 		"ayu",
-		"Babel",
-		"Babel Snippets",
 		"Blade Snippets",
+		"Catppuccin color schemes",
 		"CodeFormatter",
 		"CSS3",
-		"Emmet",
 		"Formatter",
 		"gruvbox",
 		"Javascript Beautify",
-		"Laravel 5 Snippets",
-		"Laravel Blade Highlighter",
 		"Night Owl",
-		"P3 Assembly",
+		"Nord",
 		"Package Control",
 		"Pretty JSON",
 		"Project Specific Syntax Settings",
-		"React IDE",
-		"React Native Autocomplete",
-		"rsub",
 		"Sass",
 		"Swift",
-		"Vue Syntax Highlight",
 		"WordingStatus",
+	],
+	"in_process_packages":
+	[
+	],
+	"channels":
+	[
+		"https://raw.githubusercontent.com/evandrocoan/StudioChannel/master/channel.json",
+		"https://packagecontrol.github.io/channel/channel_v4.json",
+		"https://packagecontrol.io/channel_v3.json"
 	],
 }
