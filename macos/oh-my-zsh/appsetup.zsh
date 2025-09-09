@@ -7,7 +7,10 @@ export PATH="$HOME/.local/bin:$PATH"
 export GPG_TTY=$(tty)
 
 eval "$(rbenv init - zsh)"
-eval `ssh-agent -s`
+
+# Set up ssh agent
+eval `ssh-agent -s` > /dev/null
+ssh-add --apple-use-keychain ~/.ssh/id_ed 2>/dev/null
 
 export DISABLE_UPDATE_PROMPT=true
 export DISABLE_AUTO_UPDATE=true
@@ -28,9 +31,9 @@ if [ -f '/Users/rosvik/bin/google-cloud-sdk/completion.zsh.inc' ]; then . '/User
 
 export GOOGLE_APPLICATION_CREDENTIALS="$HOME/.config/gcloud/application_default_credentials.json"
 
-export SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk
-alias ios="export SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk"
-alias mac="export SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk"
+# export SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk
+alias iossdk="export SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk"
+alias macsdk="export SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk"
 
 # TeX Live setup
 export PATH="/usr/local/texlive/2022/bin/universal-darwin:$PATH"
