@@ -59,7 +59,7 @@ alias dl="curl -O"
 alias gitnvm="git reset --soft HEAD~1"
 alias gtl='git log --graph --pretty='\''%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset'\'
 alias podi='cd ios && bundle exec pod install ; cd ..'
-alias rebuild='yarn clean:install && yarn setup dev atb && bundle install && cd ios && bundle exec pod install && cd .. && cd android && ./gradlew clean && cd - && yarn ios --list-devices'
+alias rebuild='yarn clean:install && yarn setup dev atb && bundle install && cd ios && bundle exec pod install --repo-update && cd .. && cd android && ./gradlew clean && cd - && yarn ios --list-devices'
 alias ssh-noagent='ssh -a -i /dev/null' # https://www.clockwork.com/insights/ssh-agent-hijacking/
 
 # Git
