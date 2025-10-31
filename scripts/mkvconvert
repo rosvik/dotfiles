@@ -1,0 +1,95 @@
+#!/usr/bin/env bash
+#
+# mkvconvert — Smart MKV converter for browser compatibility
+# Chooses WebM or MP4 automatically based on codecs.
+#
+# Logic:
+#  - If video is VP8/VP9/AV1 → output WebM
+#    - If audio is Opus/Vorbis → remux
+#    - Else re-encode audio to Opus
+#  - If video is H.264 → output MP4
+#    - If audio is AAC → remux
+#    - Else re-encode audio to AAC
+#  - Otherwise → re-encode to VP9+Opus (WebM)
+#
+# Usage: mkvconvert input.mkv [output]
+#
+
+set -e
+
+if [ -z "$1" ]; then
+  echo "Usage: mkvconvert input.mkv [output]"
+  exit 1
+fi
+
+INPUT="$1"
+OUTPUT="$2"
+
+if [ ! -f "$INPUT" ]; then
+  echo "Error: File '$INPUT' not found."
+  exit 1
+fi
+
+# Extract codecs
+VIDEO_CODEC=$(ffprobe -v error -select_streams v:0 -show_entries stream=codec_name \
+  -of default=noprint_wrappers=1:nokey=1 "$INPUT" | tr '[:upper:]' '[:lower:]')
+
+AUDIO_CODEC=$(ffprobe -v error -select_streams a:0 -show_entries stream=codec_name \
+  -of default=noprint_wrappers=1:nokey=1 "$INPUT" | tr '[:upper:]' '[:lower:]')
+
+echo "Detected video codec: $VIDEO_CODEC"
+echo "Detected audio codec: $AUDIO_CODEC"
+
+# Decide container and conversion strategy
+if [[ "$VIDEO_CODEC" =~ ^(vp8|vp9|av1)$ ]]; then
+  CONTAINER="webm"
+  if [[ "$AUDIO_CODEC" =~ ^(opus|vorbis)$ ]]; then
+    MODE="remux"
+    OUTPUT="${OUTPUT:-${INPUT%.*}.webm}"
+  else
+    MODE="audio-reencode"
+    OUTPUT="${OUTPUT:-${INPUT%.*}.webm}"
+  fi
+
+elif [[ "$VIDEO_CODEC" =~ ^(h264|av1|hevc|h265)$ ]]; then
+  CONTAINER="mp4"
+  if [[ "$AUDIO_CODEC" =~ ^(aac|mp3|opus|alac)$ ]]; then
+    MODE="remux"
+    OUTPUT="${OUTPUT:-${INPUT%.*}.mp4}"
+  else
+    MODE="audio-reencode"
+    OUTPUT="${OUTPUT:-${INPUT%.*}.mp4}"
+  fi
+
+else
+  CONTAINER="webm"
+  MODE="full-reencode"
+  OUTPUT="${OUTPUT:-${INPUT%.*}.webm}"
+fi
+
+echo "Target container: $CONTAINER"
+echo "Conversion mode: $MODE"
+
+# Run ffmpeg with the right strategy
+case "$MODE" in
+  remux)
+    echo "✅ Remuxing without re-encoding..."
+    ffmpeg -hide_banner -loglevel error -i "$INPUT" -c copy -map 0 "$OUTPUT"
+    ;;
+  audio-reencode)
+    if [ "$CONTAINER" = "webm" ]; then
+      echo "🎧 Re-encoding audio to Opus..."
+      ffmpeg -hide_banner -loglevel error -i "$INPUT" -c:v copy -c:a libopus -b:a 128k -map 0 "$OUTPUT"
+    else
+      echo "🎧 Re-encoding audio to AAC..."
+      ffmpeg -hide_banner -loglevel error -i "$INPUT" -c:v copy -c:a aac -b:a 128k -map 0 "$OUTPUT"
+    fi
+    ;;
+  full-reencode)
+    echo "⚙️ Re-encoding video to VP9 + Opus for full WebM compatibility..."
+    ffmpeg -hide_banner -loglevel error -i "$INPUT" \
+      -c:v libvpx-vp9 -b:v 6M -c:a libopus -b:a 128k -map 0 "$OUTPUT"
+    ;;
+esac
+
+echo "✅ Done! Output saved to: $OUTPUT"
