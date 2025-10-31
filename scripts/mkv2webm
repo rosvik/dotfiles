@@ -1,0 +1,66 @@
+#!/usr/bin/env bash
+#
+# mkv2webm — Convert an MKV to a browser-compatible WebM
+# Supports VP8, VP9, and AV1 video + Opus/Vorbis audio.
+# Re-encodes only when necessary.
+#
+# Usage: mkv2webm input.mkv [output.webm]
+
+set -e
+
+if [ -z "$1" ]; then
+  echo "Usage: mkv2webm input.mkv [output.webm]"
+  exit 1
+fi
+
+INPUT="$1"
+OUTPUT="${2:-${INPUT%.*}.webm}"
+
+if [ ! -f "$INPUT" ]; then
+  echo "Error: File '$INPUT' not found."
+  exit 1
+fi
+
+# Get codec info
+VIDEO_CODEC=$(ffprobe -v error -select_streams v:0 -show_entries stream=codec_name \
+  -of default=noprint_wrappers=1:nokey=1 "$INPUT" | tr '[:upper:]' '[:lower:]')
+
+AUDIO_CODEC=$(ffprobe -v error -select_streams a:0 -show_entries stream=codec_name \
+  -of default=noprint_wrappers=1:nokey=1 "$INPUT" | tr '[:upper:]' '[:lower:]')
+
+echo "Detected video codec: $VIDEO_CODEC"
+echo "Detected audio codec: $AUDIO_CODEC"
+
+# Define compatibility
+is_video_compatible=false
+is_audio_compatible=false
+
+case "$VIDEO_CODEC" in
+  vp8|vp9|av1)
+    is_video_compatible=true
+    ;;
+esac
+
+case "$AUDIO_CODEC" in
+  opus|vorbis)
+    is_audio_compatible=true
+    ;;
+esac
+
+# Decide conversion strategy
+if $is_video_compatible && $is_audio_compatible; then
+  echo "✅ Video and audio are WebM-compatible — remuxing without re-encode..."
+  ffmpeg -hide_banner -loglevel error -i "$INPUT" -c copy -map 0 "$OUTPUT"
+
+elif $is_video_compatible; then
+  echo "🎧 Video codec is WebM-compatible ($VIDEO_CODEC), converting audio to Opus..."
+  ffmpeg -hide_banner -loglevel error -i "$INPUT" \
+    -c:v copy -c:a libopus -b:a 128k -map 0 "$OUTPUT"
+
+else
+  echo "⚙️ Re-encoding video to VP9 and audio to Opus for full WebM compatibility..."
+  ffmpeg -hide_banner -loglevel error -i "$INPUT" \
+    -c:v libvpx-vp9 -b:v 6M -c:a libopus -b:a 128k -map 0 "$OUTPUT"
+fi
+
+echo "✅ Done! Output saved to: $OUTPUT"
