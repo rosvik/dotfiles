@@ -79,21 +79,21 @@ process_file() {
   case "$MODE" in
     remux)
       echo "✅ Remuxing without re-encoding..."
-      ffmpeg -hide_banner -loglevel error -i "$INPUT" -c copy -map 0 "$OUTPUT"
+      ffmpeg -hide_banner -loglevel error -i "$INPUT" -c copy -sn -map 0 "$OUTPUT"
       ;;
     audio-reencode)
       if [ "$CONTAINER" = "webm" ]; then
         echo "🎧 Re-encoding audio to Opus..."
-        ffmpeg -hide_banner -loglevel error -i "$INPUT" -c:v copy -c:a libopus -b:a 128k -map 0 "$OUTPUT"
+        ffmpeg -hide_banner -loglevel error -i "$INPUT" -c:v copy -c:a libopus -b:a 128k -sn -map 0 "$OUTPUT"
       else
         echo "🎧 Re-encoding audio to AAC..."
-        ffmpeg -hide_banner -loglevel error -i "$INPUT" -c:v copy -c:a aac -b:a 128k -map 0 "$OUTPUT"
+        ffmpeg -hide_banner -loglevel error -i "$INPUT" -c:v copy -c:a aac -b:a 128k -sn -map 0 "$OUTPUT"
       fi
       ;;
     full-reencode)
       echo "⚙️ Re-encoding video to VP9 + Opus for full WebM compatibility..."
       ffmpeg -hide_banner -loglevel error -i "$INPUT" \
-        -c:v libvpx-vp9 -b:v 6M -c:a libopus -b:a 128k -map 0 "$OUTPUT"
+        -c:v libvpx-vp9 -b:v 6M -c:a libopus -b:a 128k -sn -map 0 "$OUTPUT"
       ;;
   esac
 
