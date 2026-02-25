@@ -63,6 +63,7 @@ alias rebuild='yarn clean:install && yarn setup dev atb && bundle install && cd 
 alias ssh-noagent='ssh -a -i /dev/null' # https://www.clockwork.com/insights/ssh-agent-hijacking/
 alias androidstudio='open -a "Android Studio"'
 alias metro='yarn start --reset-cache --client-logs'
+alias androidshake='adb shell input keyevent 82'
 
 # Git
 alias gut="git"
