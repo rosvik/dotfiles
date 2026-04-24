@@ -28,6 +28,7 @@ fi
 
 export EDITOR="nano"
 export NCDU_SHELL="bash -l"
+export DO_NOT_TRACK=true
 
 export INFIPATH="$HOME/Git/infinote/"
 export INFIFILE="$HOME/Git/infinote/infinote.md"

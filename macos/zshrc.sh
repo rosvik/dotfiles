@@ -88,6 +88,7 @@ plugins=(macos)
 
 export DISABLE_AUTO_UPDATE=true
 export HOMEBREW_NO_ANALYTICS=1
+export DO_NOT_TRACK=true
 
 source $ZSH/oh-my-zsh.sh
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
