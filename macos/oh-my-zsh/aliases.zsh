@@ -25,7 +25,6 @@ alias cur="cursor"
 alias codi="code-insiders"
 alias p="pnpm"
 alias venv="python -m venv venv && source venv/bin/activate"
-alias nvm="fnm"
 
 # Directory shortcuts
 alias gf="cd ~/git;pwd"
@@ -59,10 +58,10 @@ alias dl="curl -O"
 alias gitnvm="git reset --soft HEAD~1"
 alias gtl='git log --graph --pretty='\''%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset'\'
 alias podi='cd ios && bundle exec pod install --repo-update ; cd ..'
-alias rebuild='yarn clean:install && yarn setup dev atb && bundle install && cd ios && bundle exec pod install --repo-update && cd .. && cd android && ./gradlew clean && cd - && yarn ios --list-devices'
+alias rebuild='pnpm clean:install && pnpm setup dev atb && bundle install && cd ios && bundle exec pod install --repo-update && cd .. && cd android && ./gradlew assembleDebug && cd - && pnpm ios --list-devices'
 alias ssh-noagent='ssh -a -i /dev/null' # https://www.clockwork.com/insights/ssh-agent-hijacking/
 alias androidstudio='open -a "Android Studio"'
-alias metro='yarn start --reset-cache --client-logs'
+alias metro='pnpm start --reset-cache --client-logs'
 alias androidshake='adb shell input keyevent 82'
 
 # Git
