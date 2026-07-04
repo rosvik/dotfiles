@@ -11,6 +11,7 @@
     ~/.bash_aliases: "macos/bash_aliases.sh"
     ~/.bash_aliases_unix: "unix/bash_aliases_unix.sh"
     ~/.gitconfig: "unix/.gitconfig"
+    ~/.gitignore: "unix/.gitignore"
     ~/.nanorc: "unix/nanorc.sh"
     ~/.zshrc: "macos/zshrc.sh"
     ~/.zprofile: "macos/zprofile.sh"

@@ -17,6 +17,8 @@
 	format = ssh
 [gpg "ssh"]
 	allowedSignersFile = ~/.config/git/allowed_signers
+[core]
+	excludesFile = ~/.gitignore
 [alias]
 	co = checkout
 	cp = cherty-pick
