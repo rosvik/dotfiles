@@ -28,8 +28,8 @@ When running or updating the script, keep in mind:
 
 Some version managers are installed instead of specific languages:
 - node:    `nvm install --lts && nvm use --lts`
-- python:  `pyenv install 3.9 && pyenv global 3.9`
 - ruby:    `rbenv install 2.7.6 && rbenv global 2.7.6`
+- java:    `sdk install java 21.0.2-open`
 
 ### Sublime Text 3
 To install the config files for Sublime Text 3, a few additional steps is required.

@@ -12,7 +12,6 @@ HELP="
 
   Some version managers are installed instead of specific languages:
   - node:    ${YELLOW}fnm install --lts && fnm use 22${RESET}
-  - python:  ${YELLOW}pyenv install 3.9 && pyenv global 3.9${RESET}
   - ruby:    ${YELLOW}rbenv install 2.7.6 && rbenv global 2.7.6${RESET}
   - java:    ${YELLOW}sdk install java 21.0.2-open${RESET}
 "
