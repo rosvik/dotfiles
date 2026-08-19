@@ -4,15 +4,13 @@
 
 alias ll="ls -laFh" # List all files in current directory in long list format
 alias o="open ." # Open the current directory in Finder
-alias py="python3.9" # Make using python less terrible
+alias py="python3"
 alias daisy="ncdu --color dark"
 alias yt-best="youtube-dl -f bestvideo[ext=mp4]+bestaudio[ext=m4a]"
 alias firefox="/Applications/Firefox\ Nightly.app/Contents/MacOS/firefox"
 alias ql='qlmanage -p "$@" &> /dev/null' # Quick look
 alias b='EDITOR=nano ranger'
 alias gd='git diff | bat'
-alias s='spotify'
-alias sp='spotify pause'
 alias rc='subl ~/.oh-my-zsh/custom && subl ~/.zshrc'
 alias ai="ollama run llama2:13b"
 alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
@@ -57,9 +55,11 @@ alias calc="bc -l <<<"
 alias dl="curl -O"
 alias gitnvm="git reset --soft HEAD~1"
 alias gtl='git log --graph --pretty='\''%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset'\'
-alias podi='cd ios && bundle exec pod install --repo-update ; cd ..'
-alias rebuild='pnpm clean:install && pnpm setup dev atb && bundle install && cd ios && bundle exec pod install --repo-update && cd .. && cd android && ./gradlew assembleDebug && cd - && pnpm ios --list-devices'
 alias ssh-noagent='ssh -a -i /dev/null' # https://www.clockwork.com/insights/ssh-agent-hijacking/
+
+# Mobile / React Native
+alias podi='cd ios && bundle exec pod install --repo-update ; cd ..'
+alias rebuild='pnpm clean:install && pnpm setup dev atb && bundle install && cd ios && bundle exec pod install --repo-update && cd .. && cd android && ./gradlew assembleDebug && cd - && pnpm ios "iPhone 16 Pro" --no-packager && metro'
 alias androidstudio='open -a "Android Studio"'
 alias metro='pnpm start --reset-cache --client-logs'
 alias androidshake='adb shell input keyevent 82'
