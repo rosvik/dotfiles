@@ -54,6 +54,13 @@ main() {
     print "Skipping sdkman installation, since it's already installed"
   fi
 
+  # Install uv and python
+  print "Installing uv and Python"
+  if [ ! -f "$HOME/.uv/bin/uv" ]; then
+    curl -LsSf https://astral.sh/uv/install.sh | sh
+    uv python install --default
+  else
+
   print "Installing yt-dlp"
   curl --silent -L -o ~/bin/yt-dlp "https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp" &&
     chmod +x ~/bin/yt-dlp
@@ -78,7 +85,6 @@ main() {
     "jq"
     "neofetch"
     "openssl"
-    "pyenv"
     "rbenv"
     "readline"
     "ruby-build"
