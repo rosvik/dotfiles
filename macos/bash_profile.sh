@@ -30,8 +30,8 @@ export EDITOR="nano"
 export NCDU_SHELL="bash -l"
 export DO_NOT_TRACK=true
 
-export INFIPATH="$HOME/Git/infinote/"
-export INFIFILE="$HOME/Git/infinote/infinote.md"
+export INFIPATH="$HOME/git/infinote/"
+export INFIFILE="$HOME/git/infinote/infinote.md"
 
 # Setting locale settings
 export LC_ALL=en_US.UTF-8
@@ -41,8 +41,6 @@ export LANG=en_US.UTF-8
 # Generate LSCOLORS: https://geoff.greer.fm/lscolors/
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
-
-export HASTE_SERVER="https://haste.qore.no"
 
 # Set prompt
 # Parameters: http://osxdaily.com/2006/12/11/how-to-customize-your-terminal-prompt/
