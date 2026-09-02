@@ -2,6 +2,9 @@
 	name = Johannes Røsvik
 	email = j.rosvik@gmail.com
 	signingkey = ~/.ssh/id_ed.pub
+[core]
+	excludesFile = ~/.gitignore
+	ignorecase = false
 [commit]
 	gpgsign = true
 [push]
@@ -16,12 +19,10 @@
 [gpg]
 	format = ssh
 [gpg "ssh"]
-	allowedSignersFile = ~/.config/git/allowed_signers
-[core]
-	excludesFile = ~/.gitignore
+	allowedSignersFile = /Users/rosvik/.config/git/allowed_signers
 [alias]
 	co = checkout
-	cp = cherty-pick
+	cp = cherry-pick
 
 	head = "!f() { git branch -rl \"*/HEAD\" | rev | cut -d/ -f1 | rev; }; f"
 
