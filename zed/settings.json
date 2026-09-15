@@ -7,6 +7,23 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "lsp": {
+    "vtsls": {
+      "settings": {
+        "typescript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always"
+          }
+        },
+        "javascript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always"
+          }
+        }
+      },
+      "enable_lsp_tasks": true
+    }
+  },
   "scrollbar": {
     "axes": {
       "vertical": true,
@@ -25,6 +42,12 @@
       "tab_size": 2,
       "formatter": "language_server",
     },
+    "TSX": {
+      "format_on_save": "on"
+    },
+    "TypeScript": {
+      "format_on_save": "on"
+    }
   },
   "agent_servers": {
     "claude-acp": {
@@ -35,6 +58,7 @@
     },
   },
   "bottom_dock_layout": "contained",
+  "wrap_guides": [80, 100],
   "tab_bar": {
     "show_nav_history_buttons": false,
     "show_tab_bar_buttons": true,
@@ -84,6 +108,8 @@
   "ui_font_family": ".SystemUIFont",
   "diff_view_style": "split",
   "git": {
+    "enable_diff": true,
+    "path_style": "file_path_first",
     "diff_base": "head",
     "file_diff": {
       "show_full_file": true,
@@ -95,7 +121,8 @@
       "show_avatar": true,
     },
     "inline_blame": {
-      "enabled": false,
+      "location": "status_bar",
+      "enabled": true,
     },
   },
   "theme": "GitHub Copilot Theme - Dark",
@@ -130,6 +157,7 @@
     "model_parameters": [],
   },
   "git_panel": {
+    "tree_view": true,
     "dock": "left",
   },
   "buffer_font_family": "Fira Code",
