@@ -59,7 +59,7 @@ alias ssh-noagent='ssh -a -i /dev/null' # https://www.clockwork.com/insights/ssh
 
 # Mobile / React Native
 alias podi='cd ios && bundle exec pod install --repo-update ; cd ..'
-alias rebuild='pnpm clean:install && pnpm setup dev atb && bundle install && cd ios && bundle exec pod install --repo-update && cd .. && cd android && ./gradlew assembleDebug && cd - && pnpm ios "iPhone 16 Pro" --no-packager && metro'
+alias rebuild='pnpm clean:install && pnpm run setup dev atb && bundle install && cd ios && bundle exec pod install --repo-update && cd .. && cd android && ./gradlew assembleDebug && cd - && pnpm ios "iPhone 16 Pro" --no-packager && metro'
 alias androidstudio='open -a "Android Studio"'
 alias metro='pnpm start --reset-cache --client-logs'
 alias androidshake='adb shell input keyevent 82'
